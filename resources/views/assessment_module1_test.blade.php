@@ -427,7 +427,7 @@
                D: 'Vehicle availability from dealers to retailer'
            },
            {
-               name:"Audio sound systems import their speakers from USA. Order is placed in January for April, May and June requirement of Audio sound systems. April,May,June demand is 500, 1000, 1000 units respectively. How many units are ordered in January is Audio order 20% extra speakers than required amount?",
+               name:"Audio sound systems import their speakers from USA. Order is placed in January for April, May and June requirement of Audio sound systems. April,May,June demand is 500, 1000, 1000 units respectively. How many units ordered in January will be 20% extra speakers than required amount?",
                A: '3000',
                B: '2000',
                C: '2500',
