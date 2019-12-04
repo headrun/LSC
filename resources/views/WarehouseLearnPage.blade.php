@@ -60,10 +60,10 @@ li{
   <body id="body" style="background-color: #dbe3e6;">
   <div class="container-fluid">
       <div class="row" style="background-color: white;">
-        <h2 id="heading"><b>Warehouse</b></h2>
+        <h2 id="heading" align="center"><b>Warehouse</b></h2>
       </div>
-<div class="row" align="center" style="margin-top: 80px;">
-        <video width="500" height="280" controls poster="newcss/images/Unit3Thumbnail2.png">
+<div class="row" align="center" style="margin-top: 15px;">
+        <video width="750" height="500" controls poster="newcss/images/Unit3Thumbnail2.png" style="outline-color: #dbe3e6;">
           <source src="newcss/images/Unit3Video2.mp4" type="video/mp4">
         </video>
       </div>
@@ -71,7 +71,7 @@ li{
      <div class="row footer">
        <div class="col-lg-3 col-md-3 col-sm-3">
            <div style="cursor: pointer;">
-     <button class="btn" id="back" style="background-color: #9f59b0;color:white;left:10%;position: absolute;width:118px;bottom:10px;display:none;">Previous Page</button>
+     <button class="btn" id="back" style="background-color: #9f59b0;color:white;left:10%;position: absolute;width:118px;bottom:10px;">Previous Page</button>
          </div>
        </div>
        <div class="col-lg-6 col-md-6 col-sm-6" align="center" >
@@ -80,7 +80,7 @@ li{
        <div class="col-lg-3 col-md-3 col-sm-3">
          <div style="cursor: pointer;">
 	 <!--  <img id="next" src="https://img.icons8.com/color/48/000000/right-squared.png" align="right">-->
-             <button class="btn" id="next" style="background-color: #9f59b0;color:white;left:10%;position: absolute;width:118px;bottom:10px;">Next Page</button>
+             <button class="btn" id="next" style="background-color: #9f59b0;color:white;left:10%;position: absolute;width:118px;bottom:10px;left: 171px;">Next Page</button>
          </div>
        </div>
      </div>
@@ -97,6 +97,18 @@ li{
              success: function(response) {
                console.log('success');
                window.location = "{{url()}}/Unit3LearnActivity2";
+             }
+});
+   });
+    $(document).on('click', '#back', function(){
+       $.ajax({
+             url : "{{url()}}/quick/goToSample",
+             type : "POST",
+             // data : { 'getuser' : user,'getpassword' : password },
+             dataType : 'json',
+             success: function(response) {
+               console.log('success');
+               window.location = "{{url()}}/DistributionLearning";
              }
 });
    });

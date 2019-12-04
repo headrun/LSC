@@ -60,11 +60,11 @@ li{
   <body id="body" style="background-color: #dbe3e6;">
   <div class="container-fluid">
       <div class="row" style="background-color: white;">
-        <h2 id="heading"><b>Transport Planning</b></h2>
+        <h2 id="heading" align="center"><b>Transport Planning</b></h2>
       </div>
 
-      <div class="row" align="center" style="margin-top: 80px;">
-        <video width="500" height="280" controls poster="newcss/images/thumbnail3.png">
+      <div class="row" align="center" style="margin-top: 25px;">
+        <video width="750" height="430" controls poster="newcss/images/thumbnail3.png" style="outline-color: #dbe3e6;">
           <source src="newcss/images/shipping.mp4" type="video/mp4">
         </video>
       </div>

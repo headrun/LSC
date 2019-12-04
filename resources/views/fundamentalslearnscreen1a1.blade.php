@@ -60,11 +60,11 @@ video[poster]{
   <body id="body" style="background-color: #DBE3E6;">
   <div class="container-fluid">
       <div class="row" style="background-color: white;">
-        <h2 id="heading"><b>Demand and Supply Module</b></h2>
+        <h2 id="heading" align="center"><b>Demand and Supply Module</b></h2>
       </div>
-      <div class="row" align="center" style="margin-top: 70px;">
+      <div class="row" align="center" style="margin-top: 2px;">
 	<h2>Lets learn it in more detail</h2>
-        <video width="500" height="280" controls poster="newcss/images/demand.png">
+        <video width="750" height="430" controls poster="newcss/images/demand.png" style="outline-color: #dbe3e6;">
           <source src="newcss/images/demandandsupply.mp4" type="video/mp4">
         </video>
       </div>

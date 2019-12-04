@@ -60,11 +60,11 @@ li{
   <body id="body" style="background-color: #dbe3e6;">
   <div class="container-fluid">
       <div class="row" style="background-color: white;">
-        <h2 id="heading"><b>Logistics framework</b></h2>
+        <h2 id="heading" align="center"><b>Logistics framework</b></h2>
       </div>
          <h3 align = "center"><b>Now Lets Summarize Our Understanding Through Following Videos And Activities.</b></h3>
-      <div class="row" align="center" style="margin-top: 80px;">
-        <video width="500" height="280" controls poster="newcss/images/thumbnail1.png">
+      <div class="row" align="center" style="margin-top: 2px;">
+        <video width="750" height="430" controls poster="newcss/images/thumbnail1.png" style="outline-color: #dbe3e6;">
           <source src="newcss/images/logistics_framework.mp4" type="video/mp4">
         </video>
       </div>
