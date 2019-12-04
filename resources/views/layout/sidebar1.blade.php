@@ -402,6 +402,9 @@ section.box {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.home{
+  display: none;
+}
 </style>
 </head>
   <body>
@@ -510,4 +513,9 @@ $(document).on('click', '#signout', function(){
           }
     });
 });
+
+var currurl = window.location.pathname;
+if(currurl == "/Assessment/Module1_Test")
+$('#home_icon').addClass('home');
+
 </script>
