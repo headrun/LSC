@@ -400,6 +400,10 @@ section.box {
 background-color: rgba(33, 33, 33, 0.1);
 border-left: 4px solid #35395c;
 }
+.rslt{
+background-color: rgba(33, 33, 33, 0.1);
+border-left: 4px solid #35395c;
+}
 </style>
 <style>
 .dropdown-content {
@@ -503,6 +507,12 @@ border-left: 4px solid #35395c;
           <?php if(Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com' || Session::get('email') == 'testuser@gmail.com' || Session::get('email') == 'rohit@gmail.com'){?>
 	  <li id="assessment"><a href="/SidebarAssessmentpage"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/svg/1875/1875525.svg" width="25" height="25"></span> <span class="menu-title">Assessment</span></a></li>
           <?php }?>
+
+    <?php if(Session::get('email') == 'teacher@gmail.com'){?>
+        <li id="rslt"><a href="/SidebarResultPage"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/png/512/2132/2132129.png" width="25" height="25"></span> <span class="menu-title">Student's Result</span></a></li>
+    <?php }?>
+
+
           <li><a href="/signout"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/svg/529/529873.svg" width="25" height="25"></span> <span class="menu-title">Sign Out</span></a></li>
           </ul>
         </div>

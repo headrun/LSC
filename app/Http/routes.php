@@ -87,6 +87,11 @@ Route::group(array('prefix' => ''), function() {
 
 Route::post('/login', "AuthenticationController@module");
 
+Route::any('/UsersData',"AuthenticationController@getusersdata");
+Route::any('/modaldata',"AuthenticationController@getmodaldata");
+
+Route::any('/SidebarResultPage', function(){return view('SidebarResultPage');});
+
 Route::group(array('prefix' => '/quick'), function() {
     Route::post('/generate/token', "AuthenticationController@generateToken");
     Route::any('/goToSample', "AuthenticationController@sample");

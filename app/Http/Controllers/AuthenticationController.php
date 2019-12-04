@@ -249,6 +249,31 @@ class AuthenticationController extends Controller
             return Response::json(array("status"=>"success"));
 }
 
+public function getusersdata(){
+    $users_data = DB::table('users')->get();
+    $data = array('users_data');
+    return view('usersdata',compact($data));
+  }
+  public function getmodaldata(){
+    $inputs = Input::all();
+    $useransw =  Assessment_Student::where('unit','=','Fundamentals of Logistics')
+                                    ->where('student_id','=',$inputs)
+                                    ->select('question_id','user_answer')
+                                    ->get();
+    $actans = Assessment_Questions::where('unit','=','Fundamentals of Logistics')
+                                    ->select('question','actual_answer')
+                                    ->get();
+    foreach ($useransw as $key => $value) {
+      $final = Assessment_Questions::where('unit','=','Fundamentals of Logistics')                            ->where('question','=',$value['question_id'])
+                                     ->get();
+      $useransw[$key]['actual_answer'] = $final[0]['actual_answer'];
+    }
+    if($useransw){
+      return Response::json(array("status"=>"success",'useransw'=>$useransw));
+    }
+  }
+  
+
 public function submitQuizAssessment(){
         $count = 0;
         $result = 0;
