@@ -28,8 +28,16 @@ class AuthenticationController extends Controller
 {
 
     public function login(Request $request){
-        $view_data = array();
-        return view('login', compact($view_data));
+      if(Session::get('email')){
+        return view('SidebarLearningPage');
+      }else{
+        return view('login');
+      }
+    }
+
+    public function signout(){
+      Session::flush();
+        return view('login');
     }
 
     public function module(){

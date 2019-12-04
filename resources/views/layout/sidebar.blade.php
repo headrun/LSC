@@ -452,7 +452,7 @@ border-left: 4px solid #35395c;
                  <span style="color: white;font-size: 18px;font-family: monospace;">{{ Session::get('user_name') }}<i class="fa fa-angle-down"></i></span>
              </a>
             <div class="dropdown-content" style="cursor: pointer;height: 60px;padding: 0px;">
-            <a href="/login">
+            <a href="/signout">
               <p>
                 <span class="glyphicon glyphicon-log-out" style="margin-left: 5px;color: black;font-size: 15px;">
                 <span style="font-size: 20px;font-family: monospace;color: #35395c;">Logout</span>
@@ -476,7 +476,7 @@ border-left: 4px solid #35395c;
                         </li>
                         
                         <li class="last" id="signout">
-                            <a href="{{url()}}/login" id="signout">
+                            <a href="{{url()}}/signout" id="signout">
                                 <i class="fa fa-lock"></i>
                                 Sign Out
                             </a>
@@ -503,7 +503,7 @@ border-left: 4px solid #35395c;
           <?php if(Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com' || Session::get('email') == 'testuser@gmail.com' || Session::get('email') == 'rohit@gmail.com'){?>
 	  <li id="assessment"><a href="/SidebarAssessmentpage"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/svg/1875/1875525.svg" width="25" height="25"></span> <span class="menu-title">Assessment</span></a></li>
           <?php }?>
-          <li><a href="/login"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/svg/529/529873.svg" width="25" height="25"></span> <span class="menu-title">Sign Out</span></a></li>
+          <li><a href="/signout"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/svg/529/529873.svg" width="25" height="25"></span> <span class="menu-title">Sign Out</span></a></li>
           </ul>
         </div>
     </div>

@@ -21,6 +21,7 @@ Route::get('/demo', function(){
 Route::group(array('prefix' => ''), function() {
     Route::get('/',"AuthenticationController@login");
     Route::get('/login',"AuthenticationController@login");
+    Route::get('/signout',"AuthenticationController@signout");
     Route::any('/Subjects', "AuthenticationController@subjectsPage");
     Route::any('/Module', "AuthenticationController@modulePage");
     Route::any('/TrainingPage', "AuthenticationController@trainingPage");
