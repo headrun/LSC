@@ -449,8 +449,8 @@
            },
            {
                name:"Crazybin stores plastic containers in 3 different warehouses. On Wednesday, there was orders from 10 different customers. What is the sequence of process it should follow?",
-               A: 'Order Planning - Order picking - Transport Planning',
-               B: 'Order Planning - Order picking - Transport Planning',
+               A: 'Order Planning - Order Picking - Transport Planning',
+               B: 'Order Picking - Order Planning - Transport Planning',
                C: 'Transport Planning - Order Planning - Order Fulfilment',
                D: 'No planning required'
            },
