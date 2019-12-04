@@ -428,7 +428,7 @@ section.box {
 		 <span style="color: white;font-size: 18px;font-family: monospace;padding-top: 5px;">{{ Session::get('user_name') }}<i class="fa fa-angle-down"></i></span>
              </a>
            <div class="dropdown-content" style="cursor: pointer;height: 60px;padding: 0px;">
-            <a href="/login">
+            <a href="/signout">
               <p style="padding:0px;margin-top: 0px;">
                 <span class="glyphicon glyphicon-log-out" style="margin-left: 5px;color: black;font-size: 15px;">
                 <span style="font-size: 20px;font-family: monospace;color: #35395c;">Logout</span>
