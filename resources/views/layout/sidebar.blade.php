@@ -509,7 +509,7 @@ border-left: 4px solid #35395c;
           <?php }?>
 
     <?php if(Session::get('email') == 'teacher@gmail.com'){?>
-        <li id="rslt"><a href="/SidebarResultPage"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/png/512/2132/2132129.png" width="25" height="25"></span> <span class="menu-title">Student's Result</span></a></li>
+        <li id="rslt"><a href="/SidebarResultPage"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/svg/1444/1444352.svg" width="25" height="25"></span> <span class="menu-title">Student's Result</span></a></li>
     <?php }?>
 
 
