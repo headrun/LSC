@@ -105,9 +105,9 @@ textarea {
 
            <hr>
      <!-- </div> -->
-     <div style="padding: 25px;">
+     <!-- <div style="padding: 25px;">
       <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;" onclick="stopQuiz()" >End</button>
-   </div>
+   </div> -->
  </div>
 </div>
 
