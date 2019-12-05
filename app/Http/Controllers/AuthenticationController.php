@@ -325,7 +325,11 @@ public function submitQuizAssessment(){
          
         $result = $count;
 
-        $dataToView = array('result');
+        $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))
+                                          ->count();
+
+
+        $dataToView = array('result','test_retake_value');
         //if($result){
         //  return Response::json(array("status"=>"success"));
         //} else {
@@ -336,6 +340,18 @@ public function submitQuizAssessment(){
          return Response::json(array("status"=>"success"));
 
    }
+
+   public function retakeAssessment() {
+       $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
+                                ->update(['status' => 'inactive']);
+       
+       if($quizsubmit){
+          return Response::json(array("status"=>"success")); 
+       }else{
+         return Response::json(array("status"=>"failed"));
+       }
+     }
+
 
         public function gotToNextText()
 	{

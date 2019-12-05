@@ -86,12 +86,23 @@ textarea {
        <span style="font-size: 28px;line-height: 28px;color: #34495e">RESULT</span>
        <hr>
        <div style="background: #eaedf0;padding: 10px;border-radius:4px;">
-         <?php if($result!==0){?>
-             <p align="center" style="color: #4dbfbf; font-size: 20px;">Your Score : {{$result}}/20</p>
-             <?php }else{ ?>
-             <p align="center" style="color: #4dbfbf; font-size: 20px;">Your Score : 0/20</p>
-             <?php } ?>
-           </div>
+                <?php if($test_retake_value<=30){?>
+                <?php if($result!==0 && $result>=12){?>
+                    <p align="center" style="color: #4dbfbf; font-size: 20px;">You have Successfully completed the Assessment. Please click on End button to go to home page.</p>
+                    <br>
+                    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;margin-top:40px;" onclick="stopQuiz()" >End</button>
+                    <?php }else{ ?>
+                    <p align="center" id="oldRetakeText" style="color: #4dbfbf; font-size: 20px;">Please Retake The Test.</p>
+                    <br>
+                    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;margin-top:40px;" onclick="retakeAssessment()">Retake</button>
+                    <?php } ?>
+                    <?php }else{ ?>
+                       <p align="center" style="color: #4dbfbf; font-size: 20px;">You have Successfully completed the Assessment. Please click on End button to go to home page.</p>
+                    <br>
+                    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;margin-top:40px;" onclick="stopQuiz()" >End</button>
+                     <?php } ?>
+                  </div>
+
            <hr>
      <!-- </div> -->
      <div style="padding: 25px;">
@@ -146,6 +157,27 @@ anime.timeline({loop: true})
           }
         });
  }
+ 
+ function retakeAssessment(){
+  $.ajax({
+          type: "GET",
+            url: "{{URL::to('/retakeAssessment')}}",
+          data: {
+             '_token':$("input[name='_token']").val()
+            },
+          dataType: 'json',
+         success: function(response){
+            if(response.status === "success"){
+              
+              window.location = "{{URL::to('/Assessment/Module1_Test')}}";
+            } else if (response.status === "failed"){
+             
+              window.location = "{{URL::to('/SidebarAssessmentpage')}}";
+            }
+          }
+        });
+ }
+
 
  function token() {
               // $.ajax({

@@ -167,6 +167,7 @@ Route::any('/submitAnswer',"AuthenticationController@submitAnswer");
 Route::any('/getAnswer',"AuthenticationController@getAnswer");
 
 Route::any('/gotToNextText',"AuthenticationController@gotToNextText");
+Route::any('/retakeAssessment',"AuthenticationController@retakeAssessment");
 
 Route::any('/WarehouseSimulator', function(){return view('WarehouseSimulator');});
 Route::any('/WarehouseSimulator1', function(){return view('WarehouseSimulator1');});
