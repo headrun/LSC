@@ -324,6 +324,9 @@ public function submitQuizAssessment(){
    //  return count($user_ans);
          
         $result = $count;
+        
+        $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
+                                        ->update(['assessment_result1' => $result]);
 
         $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))
                                           ->count();

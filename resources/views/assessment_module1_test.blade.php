@@ -233,46 +233,25 @@
                D: 'None of the above'
            },
            {
-               name:"500 people have to travel from Bangalore to Mysore by bus. If 40 buses with 12 seats per are available for booking, how many persons will not have enough seats?",
-               A: '20 persons',
-               B: '480 persons',
-               C: '500 persons',
-               D: 'No shortage'
-           },
-           {
                name:"400 trucks full of oranges arrive at Hyderabad. Each truck can carry 1000kg and each orange weighs 100gr. What is the total supply of oranges?",
                A: '40 lakh oranges',
                B: '50 lakh oranges',
                C: '10 lakh oranges',
                D: 'None of the above'
            },
-           {
+            {
                name:"A to Z online stores sells 300 T-shirts to 150 student. What is the average demand per student?",
                A: '2',
                B: '3',
                C: '300',
                D: '150'
            },
-           {
-               name:"A soap factory has 2 manufacturing plants. Plant 1 consumes 500 liters of vegetable oil per day. Plant 2 consumes 100 liters of vegetable oil per day. What is the total demand of oil in a 7-day week?",
-               A: '600 liters',
-               B: '3500 liters',
-               C: '4200 liters',
-               D: '700 liters'
-           },
-           {
+            {
                name:"Relaxfit shoes ltd makes 100 shoes per day. Total sales in November was 2500 shoes. How many shoes were in excess?",
                A: '500',
                B: '3000',
                C: '2550',
                D: 'No excess'
-           },
-           {
-               name:"You have 5kg of Atta. Expected sales over the day is 4kg. If you want to close the day with 4kg in hand how much should you buy today?",
-               A: '5kg',
-               B: '4kg',
-               C: '3kg',
-               D: '2kg'
            },
            {
                name:"Which of the following is an example of seasonal supply?",
@@ -281,19 +260,15 @@
                C: 'Cars',
                D: 'Mobile Phones'
            },
+
+           //   5 were done
+
            {
                name:"Every 1 lakh cell phones needs one cell tower. If population of Chennai is 100 lakh and 70% of population have cell phone, how many cell towers are needed?",
                A: '70',
                B: '100',
                C: '1000',
                D: '700'
-           },
-           {
-               name:"A factory has a manufacturing capacity of 200 tonnes per day. If 50% of production was in excess than the demand. What is the demand in April?",
-               A: '3000 tonnes',
-               B: '6000 tonnes',
-               C: '200 tonnes',
-               D: '100 tonnes'
            },
            {
                name:"A housing complex has 200 houses and an average of 3 persons per house. If each person needs 4 liters of drinking water per day, what is total daily demand?",
@@ -303,20 +278,13 @@
                D: '1000 liters'
            },
            {
-               name:"A distributor stocks 500kg of rice in his godown. 1kg requires a space of 2 square feet (sqft) and 20% additional space requires for seating area. What is the total warehousing space?",
-               A: '1200 sqft',
-               B: '1000 sqft',
-               C: '600 sqft',
-               D: 'cannot be determined'
-           },
-           {
                name:"Transportation cost of 1 truck from warehouse to depot is Rs.10,000. Each truck can carry 7 tonnes of material. If 140 tonnes are to be shipped, what is the total transportation cost?",
                A: 'Rs.2,00,000',
                B: 'Rs.20,000',
                C: 'Rs.1,00,000',
                D: 'Rs.7,00,000'
            },
-           {
+            {
                name:"A firm receives orders from 1000 customers. It has to decide which warehouse to ship the order from. What is the planning type?",
                A: 'Transportation Planning',
                B: 'Order Planning',
@@ -324,11 +292,70 @@
                D: 'None of the above'
            },
            {
+               name:"Ashwin buys 700 units of cell phones and sells 35 units every month. How many months will it take to sell entire stock?",
+               A: '20 months',
+               B: '10 months',
+               C: '70 months',
+               D: '15 months'
+           },
+           // 10 were done
+
+           {
+               name:"500 people have to travel from Bangalore to Mysore by bus. If 40 buses with 12 seats per are available for booking, how many persons will not have enough seats?",
+               A: '20 persons',
+               B: '480 persons',
+               C: '500 persons',
+               D: 'No shortage'
+           },
+            {
+               name:"A soap factory has 2 manufacturing plants. Plant 1 consumes 500 liters of vegetable oil per day. Plant 2 consumes 100 liters of vegetable oil per day. What is the total demand of oil in a 7-day week?",
+               A: '600 liters',
+               B: '3500 liters',
+               C: '4200 liters',
+               D: '700 liters'
+           },
+            {
+               name:"A factory has a manufacturing capacity of 200 tonnes per day. If 50% of production was in excess than the demand. What is the demand in April?",
+               A: '3000 tonnes',
+               B: '6000 tonnes',
+               C: '200 tonnes',
+               D: '100 tonnes'
+           },
+           {
                name:"A warehouse has an opening stock of 10 lakh shirts. It receives 5 lakh additional shirts in 1 month and closing stock at end of the month is 3 lakh shirts. How many units were sold in the month?",
                A: '12 lakh',
                B: '3 lakh',
                C: '15 lakh',
                D: '10 lakh'
+           },
+           {
+               name:"Retailer in Chennai ordered 1000 microwave ovens from a company. The company has a warehouse in chennai that has 700 units of oven in stock. A Hyderabad warehouse has 1000 units in stock. What is the Optimal distribution plan?",
+               A: 'Chennai warehouse : 1000 units',
+               B: 'Chennai warehouse : 700 units',
+               C: 'Hyderabad warehouse : 1000 units',
+               D: 'None of the above'
+           },
+           // 15 were done
+           {
+               name:"An entrepreneur starts a business to sell TVs in Mumbai. He decides to import the TVs from Singapore by ship. Travel time is 1 month. How many TVs, will he order in November, if December sales is expected to be 20 Lakh Rs with 20,000Rs of sales price per TV unit?",
+               A: '100 units',
+               B: '20 units',
+               C: '20 lakh units',
+               D: '1000 units'
+           },
+            {
+               name:"You have 5kg of Atta. Expected sales over the day is 4kg. If you want to close the day with 4kg in hand how much should you buy today?",
+               A: '5kg',
+               B: '4kg',
+               C: '3kg',
+               D: '2kg'
+           },
+           {
+               name:"A distributor stocks 500kg of rice in his godown. 1kg requires a space of 2 square feet (sqft) and 20% additional space requires for seating area. What is the total warehousing space?",
+               A: '1200 sqft',
+               B: '1000 sqft',
+               C: '600 sqft',
+               D: 'cannot be determined'
            },
            {
                name:"A retail store has 100 packets of chips. It sells 30 receivers & 30 packets in 1 day. what is the stock of the end of day?",
@@ -344,6 +371,7 @@
                C: '1st of September',
                D: '1st of May'
            },
+           //  20 were done
            {
                name:"A tonner Truck costs 20,000Rs from A to B.A 10 tonner truck costs 12,000Rs. If you have to ship 60 tonnes of steel, which truck would you choose and what would be total cost?",
                A: '10 tonner truck; 60,000 Rs',
@@ -351,28 +379,7 @@
                C: '20 tonner truck; 72,000 Rs',
                D: '10 tonner truck; 72,000 Rs'
            },
-           {
-               name:"Retailer in Chennai ordered 1000 microwave ovens from a company. The company has a warehouse in chennai that has 700 units of oven in stock. A Hyderabad warehouse has 1000 units in stock. What is the Optimal distribution plan?",
-               A: 'Chennai warehouse : 1000 units',
-               B: 'Chennai warehouse : 700 units',
-               C: 'Hyderabad warehouse : 1000 units',
-               D: 'None of the above'
-           },
-           {
-               name:"An entrepreneur starts a business to sell TVs in Mumbai. He decides to import the TVs from Singapore by ship. Travel time is 1 month. How many TVs, will he order in November, if December sales is expected to be 20 Lakh Rs with 20,000Rs of sales price per TV unit?",
-               A: '100 units',
-               B: '20 units',
-               C: '20 lakh units',
-               D: '1000 units'
-           },
-           {
-               name:"Ashwin buys 700 units of cell phones and sells 35 units every month. How many months will it take to sell entire stock?",
-               A: '20 months',
-               B: '10 months',
-               C: '70 months',
-               D: '15 months'
-           },
-           {
+            {
                name:"Rapido sells 2-wheelers in Pune. It has 480 units of 2-wheelers which is expected to cover of 2 years. what is the demand per month?",
                A: '25 units',
                B: '20 units',
@@ -400,6 +407,7 @@
                C: 'December: 60%, January: 80 %',
                D: 'December: 70%, January: 70 %'
            },
+           // 25 were done
            {
                name:"Which of the following is a classic example of non-seasonal demand?",
                A: 'Salt',
@@ -435,6 +443,7 @@
                C: '2500',
                D: '5000'
            },
+           // 30 were done
            {
                name:"Dealer takes 1 month to reach Retailer. Plant takes 1 month to reach Dealer. Supplier takes 2 months to reach plant. If retailer sells 600 units, 700 units, 800 units in January, February and March. How much should the retailer supply in October of previous year?",
                A: '700',
@@ -470,8 +479,9 @@
                C: 'Courier: 1,750 Rs',
                D: 'Both will cost the same; 2000 Rs'
            },
-           //  ----------------vUNIT 2 --------------------
-           {
+           // 35 were done
+           //  ------------   UNIT 2    -------------
+             {
                name:'Train from munich, germany to salzburg, Austria takes 2 hours. If the distance is 500km, what is the speed of train?',
                A: '500 km/hr',
                B: '250 km/hr',
@@ -506,6 +516,7 @@
                C: '20 km/hr',
                D: '15 km/hr'
            },
+           // 40 were done
            {
                name:'Ravi travelled 600m in 1 minute. What is his speed?',
                A: '10 m/s',
@@ -521,32 +532,11 @@
                D: '3 km/hr'
            },
            {
-               name:'If a cyclist moves at 5 m/s, what is the distance travelled in 1hr?',
-               A: '18 m',
-               B: '12 m',
-               C: '18 km',
-               D: '12 km'
-           },
-           {
-               name:'A car moves from one city to another 120 km away. It breaks down in between and takes 1hr for repair. If the overall average speed including break is 40 km/hr. what speed does the car travel at?',
-               A: '60 km/hr',
-               B: '50 km/hr',
-               C: '40 km/hr',
-               D: '120 km/hr'
-           },
-           {
                name:'Which is the fastest means of transport?',
                A: 'Airways',
                B: 'Seaways',
                C: 'Roadways',
                D: 'Railways'
-           },
-           {
-               name:'A truck carries 10lakh Rs worth material from factory to warehouse and returns back empty. If the round trip takes 2 days, how many trips can the truck take in a month? What is the value of material carried?',
-               A: '10 trips; 1 Crores Rs',
-               B: '10 trips; 2 Crores Rs',
-               C: '15 trips; 1.5 Crores Rs',
-               D: '15 trips; 3 Crores Rs'
            },
            {
                name:'A food delivery company receives 100 orders a day.A bike delivery person serve 5 orders in 1 round trip and can do 4 trips a day.How many bike delivery personnel are required per day?',
@@ -562,13 +552,7 @@
                C: '1 ton',
                D: 'None of the above'
            },
-           {
-               name:'A truck can carry a maximum of 2 tonnes, carries 24 bags of fertilizer. Each bag weights 0.5 tonnes. What is the utilization percentage of truck?(Truck utilization=weight carrier/max.capacity)',
-               A: '60%',
-               B: '70%',
-               C: '100%',
-               D: '20%'
-           },
+           // 45 were done
            {
                name:'A car ride costs 12 Rs/km. If it travels for 2 hours at 40 km/hr, what is the total cost?',
                A: '800 Rs',
@@ -576,26 +560,12 @@
                C: '1000 Rs',
                D: '480 Rs'
            },
-           {
+            {
                name:'A lorry trip carries 10 tonnes of goods to kolkata. If 500 tonnes are shipped and each trip by a lorry cost 10,000Rs, what is the total cost?',
                A: '10 lakhs',
                B: '5 lakhs',
                C: '1 lakh Rs',
                D: 'None of the above'
-           },
-           {
-               name:'Mileage of a bike is 30km/ltr. How many liters of fuel is consumed if you travel 45km?',
-               A: '1 ltr',
-               B: '2 ltr',
-               C: '1.5 ltr',
-               D: '3 ltr'
-           },
-           {
-               name:'A liter of diesel costs, 70Rs. Your car has a mileage of 15 km/litre. If you travel for 60km, what is your fuel spend?',
-               A: '300 Rs',
-               B: '60 Rs',
-               C: '280 Rs',
-               D: '420 Rs'
            },
            {
                name:'Your maped has 2 litres of petrol. You travel 15km and 0.5 ltr of petrol is left in  the tank. What is your mileage?',
@@ -618,61 +588,13 @@
                C: '5 km/hr',
                D: '8 km/hr'
            },
+           // 50 were done
            {
-               name:"A courier delivery package reaches the central hub at 6 am in the morning. It gets picked by the delivery person at 7am. When will the package reach the destination, which is 10 kms away?The delivery cab's speed is known to be 40km/hr",
-               A: '06:30 AM',
-               B: '07:30 AM',
-               C: '06:15 AM',
-               D: '07:15 AM'
-           },
-           {
-               name:'Food delivery from a restaurant is free for destinations within a radius of 2 kms. They charge extra Rs.10/- for every km further. Renus house is 5 kms away from the restaurant and she has ordered 2 pizzas each worth Rs.150/- . What is the Final cost she has to pay?',
-               A: 'Rs.350/-',
-               B: 'Rs.330/-',
-               C: 'Rs.200/-',
-               D: 'Rs.280/-'
-           },
-           {
-               name:'Tony and family drove to a farmhouse which is 100 kms away. He fillled his car tank for Rs.2000/- and anticipated three toll-booths on the way. Also, he spent Rs.320/- for breakfast on the way. When he reached the farmhouse, he had spent a total of Rs.2500/- . What was the cost at each toll-booth if all the tolls were of equal price?',
-               A: '60',
-               B: '80',
-               C: '100',
-               D: '70'
-           },
-           {
-               name:'Ram travels in his bike at a constant speed of 20km/hr and spends Rs.2/- for every kilometer he covers. He rode his bike for 2 hours on Monday, 3 hours on Tuesday and 4 hours on Wednesday. What is the total cost he spent from Monday to Wednesday?',
-               A: '200',
-               B: '320',
-               C: '180',
-               D: '360'
-           },
-           {
-               name:'You have to travel 200 KM to your hometown and you have 200 Rs with you. You can take a bus which will cost you 3 Rs/ KM or share a cab at 50 Rs/ hour travelling at a speed of 50 KM/ hour. Which will you choose and what will be your cost?',
-               A: 'Cab; Rs.200/-',
-               B: 'Cab; Rs.150/-',
-               C: 'Bus; Rs.150/-',
-               D: 'Bus; RS.200/-'
-           },
-           {
-               name:'Your bike mileage is 40 km/ltr. You have half a litre of fuel left. You can either directly go home which is 25 kms away or you can refill the tank at a station which is 10 kms and then go home. What is your constraint here and which will you choose ?',
-               A: 'Time constraint ; fuel station',
-               B: 'Speed constraint; home',
-               C: 'Distance constraint ; fuel station',
-               D: 'Distance constraint ; home'
-           },
-           {
-               name:'You are going to attend a concert which will start in another one hour. You can ride a bicycle at a speed of 8 km/hr. You reached the destination half an hour late. How far is the concert from your starting point?',
-               A: '8 kms',
-               B: '4 kms',
-               C: '10 kms',
-               D: '12 kms'
-           },
-           {
-               name:'You are going from Chennai to Bengaluru, 300 KM away. You have 2 carton boxes with you. You can go by car which will cost you 15 Rs/ Km, or you can by bike at 8 Rs/KM but you should courier the boxes to Bengaluru. Courier charge per box is 500 Rs. If you decide to take the cheaper option, what is your cost?',
-               A: 'Rs.3400/-',
-               B: 'Rs.4500/-',
-               C: 'Rs.2400/-',
-               D: 'Rs.2900/-'
+               name:'A truck can carry a maximum of 2 tonnes, carries 24 bags of fertilizer. Each bag weights 0.5 tonnes. What is the utilization percentage of truck?(Truck utilization=weight carrier/max.capacity)',
+               A: '60%',
+               B: '70%',
+               C: '100%',
+               D: '20%'
            },
            {
                name:'You have two options to go to school. Through the city and through bypass road. City route is 30 KM away and you can go at 15 KM/Hour. Bypass route is 50 KM away and you can go at 50 KM/ hour with a 20 min wait at the toll. Which is the faster of the 2 options and how much time will you save?',
@@ -688,35 +610,6 @@
                C: 'Both takes same time',
                D: ''
            },
-           {
-               name:'Raju and friends are travelling around the city on a Sunday. They hired a bicycle in which they travelled for one hour in 10km/hr speed. Later they got into a bus which goes in 20 km/hr and continued their travel for another 2 hours. After a break of 2 hours, they hired a cab to return in a speed of 40km/hr and it took one hour.What is the total distance travelled by them in the day?',
-               A: '70 kms',
-               B: '60 kms',
-               C: '50 kms',
-               D: '70 kms'
-           },
-           {
-               name:'Tony is driving his car to his grandmothers house, which is about 200 kms from his place. Tony drove in a speed of 40km/hr on Monday and 50km/hr on Tuesday. Additionally, he takes a break of 10 minutes during the travel. What is be the average time taken by Tony to reach his grandmothers house?',
-               A: '270 minutes',
-               B: '280 minutes',
-               C: '4 hours',
-               D: '5 hours'
-           },
-           {
-               name:'A truck is moving from Chandigarh to Delhi covering 250 kms costing Rs.20/- per km and a fixed daily fee for the driver. Total cost is Rs.5500/-. The next day, truck travelled for 400 kms, what was the total cost?',
-               A: '8000',
-               B: '8500',
-               C: '5500',
-               D: 'None of the above'
-           },
-           {
-               name:'You can hire a cycle for Rs.10/- per hour. You took it to your home and returned covering a total distance of 16 kms away. You paid Rs.20/- for the service. What was your speed?',
-               A: '16 km/h',
-               B: '10 km/h',
-               C: '8 km/h',
-               D: '4 km/h'
-           }
-
            ]
    }; 
  function nextFun() {
@@ -777,8 +670,11 @@
       nextHide =  qsnsArray.length; 
    }
 function myFunction() {
-    randomQuestionsForUnit(0,34,15);
-    randomQuestionsForUnit(35,69,15);
+    randomQuestionsForUnit(0,9,10);
+    randomQuestionsForUnit(10,15,3);
+    randomQuestionsForUnit(16,34,2);
+    randomQuestionsForUnit(35,49,12);
+    randomQuestionsForUnit(50,52,3);
     countdown();
     reqIndex = 0;
     reqQsn = qsnsArray[reqIndex];
