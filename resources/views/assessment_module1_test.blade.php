@@ -54,7 +54,7 @@
                 <span style="font-size: 28px;line-height: 28px;color: #7d929d;">Fundamentals Of Logistics</span>
                 <hr>
                 <div style="background: #eaedf0;padding: 10px;border-radius:4px;">
-                  <p style="color: #3f464c;font-family: 'Varela Round','ProximaRegular', Helvetica, Arial, sans-serif;">Number of Questions:<span style="color: #4dbfbf;">20</span></p>
+                  <p style="color: #3f464c;font-family: 'Varela Round','ProximaRegular', Helvetica, Arial, sans-serif;">Number of Questions:<span style="color: #4dbfbf;">30</span></p>
                   <p style="color: #3f464c;font-family: 'Varela Round','ProximaRegular', Helvetica, Arial, sans-serif;">Time Limit:<span style="color: #4dbfbf;"> 60 m 0 s</span></p>
                 </div>
                 <hr>
