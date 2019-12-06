@@ -65,9 +65,9 @@
                             <!-- </div> -->
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                            <h3>1. Fundamentals of Logistics</h3>
+                            <h3>First Assessment</h3>
                             <br>
-                            <p>Provides a unique opportunity to leverage high profile, quality authorship into a market segment .</p>
+                            <p>Please Click Here To Write Your First Assessment.</p>
                         </div>
                     </div>
                 </div>        
