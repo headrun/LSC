@@ -83,7 +83,7 @@
         @foreach ($users_data as $key => $value)
         <div class="col-md-3">
           <div class="card-counter primary" onClick="get('{{ $value->id }}')" data-toggle="modal" data-target="#exampleModal">
-            <span class="count-numbers">{{ $value->user_name }}</span>
+            <span class="count-numbers">{{ $value->new_name }}</span>
             <?php if( $value->assessment_result1 == 0){?>
             <p class="count-name">Not Attempted</p>
             <?php }else if ($value->assessment_result1 <12){ ?>
