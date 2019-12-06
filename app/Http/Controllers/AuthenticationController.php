@@ -251,6 +251,17 @@ class AuthenticationController extends Controller
 
 public function getusersdata(){
     $users_data = DB::table('users')->get();
+    $userNameFinal = '';
+    foreach ($users_data as $key => $value) {
+      $userNameSplit = preg_split("/[_]+/", $users_data[$key]->user_name);
+        for ($i=0; $i < count($userNameSplit); $i++) {
+           $firstName = ucfirst($userNameSplit[$i]);
+           $userNameFinal = $userNameFinal . $firstName .' ';
+           
+        } 
+        $users_data[$key]->new_name = $userNameFinal;
+        $userNameFinal = '';
+    }
     $data = array('users_data');
     return view('usersdata',compact($data));
   }
@@ -324,7 +335,7 @@ public function submitQuizAssessment(){
    //  return count($user_ans);
          
         $result = $count;
-        
+
         $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
                                         ->update(['assessment_result1' => $result]);
 
