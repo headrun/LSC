@@ -96,6 +96,11 @@
         @endforeach
       <?php }?>
     </div>
+
+    <div class="row text-center">
+      <button onclick="home()" type="button" class="btn btn-success" style="margin: 20px;">Go To Home Page</button>
+    </div>
+
     <!----- modal ----->
    <div class="modal fade" id="exampleModal" role="dialog" style="max-width: 500px;    margin-top: 30px;margin-left: 365px;">
       <div class="">
@@ -164,5 +169,10 @@
           }
     })
   }
+
+  function home() {
+    window.location = "{{url()}}/SidebarResultPage";
+  }
+  
 </script>
 @stop
