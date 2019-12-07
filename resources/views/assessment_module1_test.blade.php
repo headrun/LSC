@@ -167,9 +167,11 @@
   }
   function onlyOne(checkbox) {
     var checkboxes = document.getElementsByName('quiz');
-    checkboxes.forEach((item) => {
+     if ( !Array.prototype.forEach ) {
+       checkboxes.forEach((item) => {
         if (item !== checkbox) item.checked = false;
-    });
+        });
+     }
     realValues=["a","b","c"];
     if(AllQuestions.data[indexId].D !=''){
       realValues=["a","b","c","d"];
