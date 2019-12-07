@@ -250,7 +250,9 @@ class AuthenticationController extends Controller
 }
 
 public function getusersdata(){
-    $users_data = DB::table('users')->get();
+    $users_data = DB::table('users')->where('school_name','=','TSAHSS')
+                                    ->orWhere('school_name','=','KVMHSS')
+                                    ->get();
     $userNameFinal = '';
     foreach ($users_data as $key => $value) {
       $userNameSplit = preg_split("/[_]+/", $users_data[$key]->user_name);
