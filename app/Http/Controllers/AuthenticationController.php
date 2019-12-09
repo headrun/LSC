@@ -95,8 +95,8 @@ class AuthenticationController extends Controller
 			return  Redirect::back()->withErrors(['User Not Available']);
 		    }
 		    if(count($userData) != 0) {			 
-			        Session::put('userId', $userData->id);
-		       	        Session::put('user_name', $userNameFinal);
+			 Session::put('userId', $userData->id);
+		    Session::put('user_name', $userData->user_name);
 				Session::put('school_name', $userData->school_name);
 				Session::put('email', $userData->email);
 				Session::put('password', $userData->password);
