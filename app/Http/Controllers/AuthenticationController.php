@@ -66,6 +66,7 @@ class AuthenticationController extends Controller
                      Session::put('school_name', $userData->school_name);
                      Session::put('email', $userData->email);
                      Session::put('password', $userData->password);
+                     Session::put('roll_number', $userData->student_roll_number);
             }
             // }
                 
