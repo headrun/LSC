@@ -124,6 +124,7 @@
         </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <p style="display: none;">Testing</p>
           </div>
         </div>
       </div>
