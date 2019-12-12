@@ -21,7 +21,7 @@
       </style>
    </head>
    <body class="newbg">
-     <div id="start" class="modal fade">
+     <div id="start" class="modal fade" style="margin-top: 40px;">
       <div class="modal-dialog">
           <div class="modal-content">
               <!--<div class="modal-header">
