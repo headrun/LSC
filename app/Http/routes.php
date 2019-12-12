@@ -358,3 +358,8 @@ Route::any('/Unit2Activity1Page2', function(){return view('Unit2Activity1Page2')
 Route::any('/Unit2Activity2Page2', function(){return view('Unit2Activity2Page2');});
 Route::any('/Unit2Activity2Page3', function(){return view('Unit2Activity2Page3');});
 Route::any('/Unit2Activity2Page4', function(){return view('Unit2Activity2Page4');});
+
+Route::any('/Unit3Activity1Page2', function(){return view('Unit3Activity1Page2');});
+Route::any('/Unit3Activity1Page3', function(){return view('Unit3Activity1Page3');});
+Route::any('/Unit3Activity1Page4', function(){return view('Unit3Activity1Page4');});
+Route::any('/Unit3Activity1Page5', function(){return view('Unit3Activity1Page5');});

@@ -35,7 +35,7 @@
            </ul>
          </div>
 
-<div class="getstarted"><a href="Unit3Activity1/screen2.html">Go to next screen</a></div>
+<div class="getstarted"><a href="/Unit3Activity1Page2">Go to next screen</a></div>
        </div>
 
      </div>

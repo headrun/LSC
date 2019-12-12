@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -35,7 +37,7 @@
            </ul>
          </div>
 
-<div class="getstarted"><a href="Unit3Activity1/screen2.html">Go to next screen</a></div>
+<div class="getstarted"><a href="/Unit3Activity1Page2">Go to next screen</a></div>
        </div>
 
      </div>
@@ -46,4 +48,4 @@
    <!-- <script src="js/intro.js" type="text/javascript"></script> -->
 
 </html>
-
+@stop
