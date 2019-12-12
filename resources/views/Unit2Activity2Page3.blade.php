@@ -6,12 +6,12 @@
       <meta charset="UTF-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <title>Activity2</title>
-      <link rel="stylesheet" href="Unit2Activity2/css/bootstrap.min.css">
-      <link rel="stylesheet" href="Unit2Activity2/css/fontawesome.css">
-      <link rel="stylesheet" href="Unit2Activity2/fontawsome/css/all.css">
-      <link rel="stylesheet" href="Unit2Activity2/css/style.css">
-      <link rel="stylesheet" href="Unit2Activity2/css/introjs.css">
-      <link rel="stylesheet" href="Unit2Activity2/fonts.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/css/bootstrap.min.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/css/fontawesome.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/fontawsome/css/all.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/css/style.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/css/introjs.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/fonts.css">
 
       <style type="text/css">
       body{
@@ -24,23 +24,27 @@
      <div id="start" class="modal fade" style="margin-top: 40px;">
       <div class="modal-dialog">
           <div class="modal-content">
-              <!--<div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                  <h4 class="modal-title">Let us perform a quick activity to understand Supply and Demand </h4>
-              </div>-->
+              <div class="modal-header">
+
+                  <h4 class="modal-title">Your Seleted Answer is:<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></h4>
+              </div>
               <div class="modal-body">
+                <div class="plain-section">
 
-          <button type="submit" class="btn btn-primary" onclick="javascript:introJs().start();" data-dismiss="modal" aria-hidden="true" style="width:100%;">Start</button>
-
+                  <div class="correctanswer">
+                    <h1>Your Selected answer is <span style="color:#ec171f;">Wrong</span></h1>
+                    <span class="time">Speed: <span>40 Km / Hour</span></span>
+                    <span class="time">Mileage: <span>35 Km per litre of fuel</span></span>
+                    <span class="time">Cost: <span>3 Rs / Km</span></span>
+                </div>
+                </div>
               </div>
           </div>
       </div>
   </div>
 
      <div class="content-section">
-      <h1>Constrains in Transportation</h1>
-      <div class="content-title">
-        <div class="level" data-step="2" data-intro="Level 1/3">Level: <span class="levelnum">1 </span><span class="levelnum1">/ 2</span></div>
+        <div class="content-title">
 
         <div class="remainig-data">
         <div class="remainig-budget" data-step="4" data-intro="Distance:100 km">Distance: <span>100 Km</span></div>
@@ -49,16 +53,15 @@
 
       </div>
       <div class="game-content">
-        <h2>Lets play the series of activities and transporation related constrains</h2>
 
 
 
 
         <div class="levelcontent">
-
+        <h3 style="text-align:left;">Your Results is:</h3>
 
         <div class="drag1">
-        <div class="drag-left">
+        <div class="box">
         <div class="plain-section">
           <div class="vehicle-img">
           <img src="Unit2Activity2copy/images/new-car.gif" alt="Car Journey" />
@@ -71,7 +74,7 @@
         </div>
       </div>
 
-      <div class="drag-right">
+      <div class="box">
         <div class="bus-section">
         <div class="vehicle-img1">
           <img src="Unit2Activity2copy/images/cycle.gif" alt="Cycle Journey" />
@@ -84,11 +87,8 @@
         </div>
       </div>
 
-    </div>
-
-
-    <div class="drag2">
-      <div class="drag-left">
+      <div class="box correct">
+        <h2>This is the Correct Answer</h2>
         <div class="plain-section">
           <div class="vehicle-img">
             <img src="Unit2Activity2copy/images/giphy1.gif" alt="Two Wheeler Journey" />
@@ -103,7 +103,8 @@
       </div>
 
 
-      <div class="drag-right">
+
+      <div class="box">
         <div class="bus-section">
         <div class="vehicle-img1">
           <img src="Unit2Activity2copy/images/truck.gif" alt="Truck Journey" />
@@ -119,10 +120,14 @@
     </div>
 
 
-    <div class="instruction">
+    <div class="bottom_links">
+    <div class="nextbut"><a href="/Unit2Activity2Page4"> Go to Next Level >></a></div>
+    <div class="backbut"><a href="/Unit2Activity2Page2"><< Back</a></div>
 
-      <a href="/Unit2Activity2Page2" class="play_but" >Let's Play</a>
     </div>
+
+
+
 
         </div>
 
@@ -144,12 +149,19 @@
 
 
    </body>
-   <script src="Unit2Activity2/js/jquery.min.js" type="text/javascript"></script>
-   <script src="Unit2Activity2/js/popper.min.js" type="text/javascript"></script>
-   <script src="Unit2Activity2/js/bootstrap.min.js" type="text/javascript"></script>
-   <script src="Unit2Activity2/js/intro.js" type="text/javascript"></script>
+   <script src="Unit2Activity2copy/js/jquery.min.js" type="text/javascript"></script>
+   <script src="Unit2Activity2copy/js/popper.min.js" type="text/javascript"></script>
+   <script src="Unit2Activity2copy/js/bootstrap.min.js" type="text/javascript"></script>
+   <script src="Unit2Activity2copy/js/intro.js" type="text/javascript"></script>
    <script type="text/javascript">
+   $("#close").click(function(){
+     $(".instruction_but").hide(1000);
+   });
 
+   $("#play").click(function(){
+     $(".levelcontent").show(1000);
+     $(".instruction").hide(1000);
+   });
 
     $(document).ready(function(){
       $("#start").modal('show');
@@ -159,18 +171,4 @@
 
    </script>
 </html>
-
-<button id = "back" style="color: #4dbfbf; background-color: red;" class="btn btn-primary btn-lg"> Back</button>
-
-
-<button id = "next" style="color: #4dbfbf; float: right; background-color: red; display:none;" class="btn btn-primary btn-lg"> Next</button>
-
-<script type="text/javascript">
-$(document).on('click', '#back', function(){
-	  window.location = "{{url()}}/Module3Theory";
-});
-$(document).on('click', '#next', function(){
-	  window.location = "{{url()}}/basicModule";
-});
-</script>
 @stop

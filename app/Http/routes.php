@@ -352,3 +352,9 @@ Route::any('/FundamentalLearnScreen1s', function(){return view('fundamentalslear
 
 // ----------------------------Basic Module  ----------
 Route::any('/basicModule', function(){return view('basicModule');});
+
+// --------------------------Activity html files --------------
+Route::any('/Unit2Activity1Page2', function(){return view('Unit2Activity1Page2');});
+Route::any('/Unit2Activity2Page2', function(){return view('Unit2Activity2Page2');});
+Route::any('/Unit2Activity2Page3', function(){return view('Unit2Activity2Page3');});
+Route::any('/Unit2Activity2Page4', function(){return view('Unit2Activity2Page4');});

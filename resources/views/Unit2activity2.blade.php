@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -27,7 +29,7 @@
       </style>
    </head>
    <body class="newbg">
-     <div id="start" class="modal fade">
+     <div id="start" class="modal fade" style="margin-top: 40px;">
       <div class="modal-dialog">
           <div class="modal-content">
               <!--<div class="modal-header">
@@ -127,7 +129,7 @@
 
     <div class="instruction">
 
-      <a href="Unit2Activity2/selection.html" class="play_but" >Let's Play</a>
+      <a href="/Unit2Activity2Page2" class="play_but" >Let's Play</a>
     </div>
 
         </div>
@@ -194,3 +196,4 @@ $(document).on('click', '#back', function(){
 	  window.location = "{{url()}}/Unit2activity1";
 });
 </script>
+@stop

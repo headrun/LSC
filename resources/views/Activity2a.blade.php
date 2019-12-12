@@ -1,3 +1,5 @@
+@extends('layout.sidebar1')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
  <head>
@@ -579,3 +581,4 @@ $("#pending_stock").html(500);
 });
    </script>
 </html>
+@stop

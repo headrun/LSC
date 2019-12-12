@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -265,4 +267,4 @@
       });
    </script>
 </html>
-
+@stop

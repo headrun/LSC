@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -19,7 +21,7 @@
       </style>
    </head>
    <body class="newbg">
-     <div id="start" class="modal fade">
+     <div id="start" class="modal fade" style="margin-top: 40px;">
       <div class="modal-dialog">
           <div class="modal-content">
               <!--<div class="modal-header">
@@ -105,7 +107,7 @@
     <div class="instruction">
       <input type="submit" Value="Submit" class="play_but" />
 
-    <div class="backbut"><a href="Unit2Activity1a/level2.html">Go to Next Level >></a></div>
+    <div class="backbut"><a href="/Unit2Activity1Page2">Go to Next Level >></a></div>
     </div>
 
         </div>
@@ -140,5 +142,6 @@
 
    </script>
 </html>
+@stop
                                                                                                                              143,7         99%
 

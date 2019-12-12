@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -105,7 +107,7 @@
     <div class="instruction">
       <input type="submit" Value="Submit" class="play_but" />
 
-    <div class="backbut"><a href="Unit2Activity1a/level2.html">Go to Next Level >></a></div>
+    <div class="backbut"><a href="/Unit2Activity1Page2">Go to Next Level >></a></div>
     </div>
 
         </div>
@@ -154,4 +156,4 @@ $(document).on('click', '#next', function(){
           window.location = "{{url()}}/basicModule";
 });
 </script>
-
+@stop
