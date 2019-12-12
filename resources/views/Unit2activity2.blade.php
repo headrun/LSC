@@ -129,7 +129,7 @@
 
     <div class="instruction">
 
-      <a href="/Unit2Activity2copyPage2" class="play_but" >Let's Play</a>
+      <a href="/Unit2Activity2Page2" class="play_but" >Let's Play</a>
     </div>
 
         </div>
