@@ -6,12 +6,12 @@
       <meta charset="UTF-8">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <title>Activity2</title>
-      <link rel="stylesheet" href="Unit2activity2copy/css/bootstrap.min.css">
-      <link rel="stylesheet" href="Unit2activity2copy/css/fontawesome.css">
-      <link rel="stylesheet" href="Unit2activity2copy/fontawsome/css/all.css">
-      <link rel="stylesheet" href="Unit2activity2copy/css/style.css">
-      <link rel="stylesheet" href="Unit2activity2copy/css/introjs.css">
-      <link rel="stylesheet" href="Unit2activity2copy/fonts.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/css/bootstrap.min.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/css/fontawesome.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/fontawsome/css/all.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/css/style.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/css/introjs.css">
+      <link rel="stylesheet" href="Unit2Activity2copy/fonts.css">
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
@@ -69,7 +69,7 @@
         <div class="drag-left">
         <div class="plain-section">
           <div class="vehicle-img">
-          <img src="Unit2activity2copy/images/new-car.gif" alt="Car Journey" />
+          <img src="Unit2Activity2copy/images/new-car.gif" alt="Car Journey" />
           </div>
           <div class="plaindetailes">
             <span class="time">Speed: 60 Km / Hour</span>
@@ -82,7 +82,7 @@
       <div class="drag-right">
         <div class="bus-section">
         <div class="vehicle-img1">
-          <img src="Unit2activity2copy/images/cycle.gif" alt="Cycle Journey" />
+          <img src="Unit2Activity2copy/images/cycle.gif" alt="Cycle Journey" />
         </div>
           <div class="plaindetailes">
             <span class="time">Speed: 18 Km / Hour</span>
@@ -99,7 +99,7 @@
       <div class="drag-left">
         <div class="plain-section">
           <div class="vehicle-img">
-            <img src="Unit2activity2copy/images/giphy1.gif" alt="Two Wheeler Journey" />
+            <img src="Unit2Activity2copy/images/giphy1.gif" alt="Two Wheeler Journey" />
           </div>
 
           <div class="plaindetailes">
@@ -114,7 +114,7 @@
       <div class="drag-right">
         <div class="bus-section">
         <div class="vehicle-img1">
-          <img src="Unit2activity2copy/images/truck.gif" alt="Truck Journey" />
+          <img src="Unit2Activity2copy/images/truck.gif" alt="Truck Journey" />
         </div>
           <div class="plaindetailes">
             <span class="time">Speed: 30 Km / Hour</span>
@@ -129,7 +129,7 @@
 
     <div class="instruction">
 
-      <a href="/Unit2activity2copyPage2" class="play_but" >Let's Play</a>
+      <a href="/Unit2Activity2copyPage2" class="play_but" >Let's Play</a>
     </div>
 
         </div>
@@ -152,10 +152,10 @@
 
 
    </body>
-   <script src="Unit2activity2copy/js/jquery.min.js" type="text/javascript"></script>
-   <script src="Unit2activity2copy/js/popper.min.js" type="text/javascript"></script>
-   <script src="Unit2activity2copy/js/bootstrap.min.js" type="text/javascript"></script>
-   <script src="Unit2activity2copy/js/intro.js" type="text/javascript"></script>
+   <script src="Unit2Activity2copy/js/jquery.min.js" type="text/javascript"></script>
+   <script src="Unit2Activity2copy/js/popper.min.js" type="text/javascript"></script>
+   <script src="Unit2Activity2copy/js/bootstrap.min.js" type="text/javascript"></script>
+   <script src="Unit2Activity2copy/js/intro.js" type="text/javascript"></script>
    <script type="text/javascript">
 
 
