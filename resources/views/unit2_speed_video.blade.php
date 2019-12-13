@@ -62,7 +62,7 @@ li{
       <div class="row" style="background-color: white;">
         <h2 id="heading" align="center"><b>Speed Distance Time</b></h2>
       </div>
-<div class="row" align="center" style="margin-top: 25px;">
+<div class="row" align="center" style="margin-top: 20px;">
         <video width="750" height="430" controls poster="newcss/images/unit2thumbnail1.png" style="outline-color: #dbe3e6;">
           <source src="newcss/images/unit2video1.mp4" type="video/mp4">
         </video>

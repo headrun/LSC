@@ -62,7 +62,7 @@ li{
       <div class="row" style="background-color: white;">
         <h2 id="heading" align="center"><b>Distribution</b></h2>
       </div>
-<div class="row" align="center" style="margin-top: 15px;">
+<div class="row" align="center" style="margin-top: 1px;">
         <video width="750" height="500" controls poster="newcss/images/Unit3Thumbnail.png" style="outline-color: #dbe3e6;">
           <source src="newcss/images/Unit3Video1.mp4" type="video/mp4">
         </video>
