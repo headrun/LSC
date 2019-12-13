@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -27,7 +29,7 @@
       </style>
    </head>
    <body class="newbg">
-     <div id="start" class="modal fade">
+     <div id="start" class="modal fade" style="margin-top: 40px;">
       <div class="modal-dialog">
           <div class="modal-content">
               <!--<div class="modal-header">
@@ -60,7 +62,7 @@
           <div class="play_but" id="play">Play</div>
         </div>
 
-        <div id="myModal" class="modal fade">
+        <div id="myModal" class="modal fade" style="margin-top: 40px;">
         <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-body modal-new">
@@ -74,7 +76,7 @@
         </div>
         </div>
 
-        <div id="myModal1" class="modal fade">
+        <div id="myModal1" class="modal fade" style="margin-top: 40px;">
         <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-body modal-new">
@@ -87,7 +89,7 @@
         </div>
 
 
-        <div id="myModal2" class="modal fade">
+        <div id="myModal2" class="modal fade" style="margin-top: 40px;">
         <div class="modal-dialog">
         <div class="modal-content">
         <div class="modal-body modal-new">
@@ -108,7 +110,7 @@
         <h3>You have 3 options</h3>
 
         <div class="drag-left">
-        <div class="plain-section" onclick="location.href = 'Unit2Activity3/plain.html';">
+        <div class="plain-section" onclick="location.href = '/Unit2Activity3Plain';">
           <img src="Unit2Activity3/images/giphy.gif" alt="plain Journey" />
           <div class="plaindetailes">
           <span class="time">Time: 2 Hour</span>
@@ -117,7 +119,7 @@
         </div>
         </div>
 
-        <div class="bus-section" onclick="location.href = 'Unit2Activity3/bus.html';">
+        <div class="bus-section" onclick="location.href = '/Unit2Activity3Bus';">
           <img src="Unit2Activity3/images/bus-animation.gif" alt="Bus Journey" />
           <div class="plaindetailes">
           <span class="time">Speed: 50km/Hour</span>
@@ -126,7 +128,7 @@
         </div>
         </div>
 
-        <div class="plain-section" onclick="location.href = 'Unit2Activity3/twowheeler.html';">
+        <div class="plain-section" onclick="location.href = '/Unit2Activity3Twowheeler';">
           <img src="Unit2Activity3/images/giphy1.gif" alt="Two Wheeler Journey" />
           <div class="plaindetailes">
           <span class="time">Speed: 25km/Hour</span>
@@ -217,3 +219,4 @@ $(document).on('click', '#back', function(){
 });
 
 </script>
+@stop

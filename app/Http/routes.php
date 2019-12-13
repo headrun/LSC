@@ -363,3 +363,20 @@ Route::any('/Unit3Activity1Page2', function(){return view('Unit3Activity1Page2')
 Route::any('/Unit3Activity1Page3', function(){return view('Unit3Activity1Page3');});
 Route::any('/Unit3Activity1Page4', function(){return view('Unit3Activity1Page4');});
 Route::any('/Unit3Activity1Page5', function(){return view('Unit3Activity1Page5');});
+
+Route::any('/Unit2Activity3Plain', function(){return view('Unit2Activity3Plain');});
+Route::any('/Unit2Activity3Bus', function(){return view('Unit2Activity3Bus');});
+Route::any('/Unit2Activity3Twowheeler', function(){return view('Unit2Activity3Twowheeler');});
+
+Route::any('/Unit2Activity3Level2', function(){return view('Unit2Activity3Level2');});
+
+
+Route::any('/Unit2Activity3Plainlevel2', function(){return view('Unit2Activity3Plainlevel2');});
+Route::any('/Unit2Activity3Car', function(){return view('Unit2Activity3Car');});
+Route::any('/Unit2Activity3Van', function(){return view('Unit2Activity3Van');});
+
+Route::any('/Unit2Activity3Level3', function(){return view('Unit2Activity3Level3');});
+
+
+Route::any('/Unit2Activity3Carlevel3', function(){return view('Unit2Activity3Carlevel3');});
+Route::any('/Unit2Activity3Cycle', function(){return view('Unit2Activity3Cycle');});
