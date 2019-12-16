@@ -105,6 +105,9 @@ $(document).on('click', '#demand', function(){
 $(document).on('click', '#supply', function(){
   window.location = "{{url()}}/DistributionTestPage2";
 });
+window.onload = function() {
+  document.getElementById('test').className = 'test';
+};
 </script>
 @stop
 

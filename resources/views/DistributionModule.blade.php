@@ -125,6 +125,9 @@ $(document).on('click', '#warehouse', function(){
     });
 });
 
+window.onload = function() {
+  document.getElementById('practice').className = 'practice';
+};
 </script>
 @stop
 

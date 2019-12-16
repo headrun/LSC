@@ -103,6 +103,9 @@
   $(document).on('click', '#warehouse', function(){
     window.location = "{{url()}}/WarehouseTest1";
   });
+  window.onload = function() {
+    document.getElementById('test').className = 'test';
+  };
 </script>
 @stop
 

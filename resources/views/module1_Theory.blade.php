@@ -66,7 +66,7 @@ margin-top:0px;
 
 </head>
 
-    <body style="background-color: #f1f1f1;">
+    <body style="background-color: #f1f1f1;overflow-x: hidden;">
     <div class="container" style="margin-top: 45px;">
     <h1 style="text-align: center;font-family: monospace;">THEORY</h1>
     <div class="card">
@@ -97,12 +97,19 @@ margin-top:0px;
         </div>
     </div></div></div>
 
-      <div class="col-lg-11 col-md-11 col-sm-11">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div style="cursor: pointer;float: left;">
+          <button class="btn" id = "back" style="background-color: #9f59b0;color:white;left:10%;bottom:10px;margin-left: 4px;">Previous Page</button>
+        </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
         <div style="cursor: pointer;float: right;">
-          <button class="btn" id = "next" style="background-color: #9f59b0;color:white;left:10%;bottom:10px;">Next Page</button>
-          <!-- <img id="back" src="https://img.icons8.com/color/48/000000/left-squared.png" align="left"> -->
+          <button class="btn" id = "next" style="background-color: #9f59b0;color:white;left:10%;bottom:10px;margin-right: 4px;">Next Page</button>
         </div>
       </div>
+      </div>
+
     </body>
 
     <script type="text/javascript">
@@ -130,6 +137,10 @@ $(document).on('click', '#next', function(){
             window.location = "{{url()}}/Unit2SpeedVideo";
           }
 });
+});
+
+$(document).on('click', '#back', function(){
+  window.location = "{{url()}}/basicModule";       
 });
 
 </script>

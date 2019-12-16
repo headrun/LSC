@@ -125,6 +125,9 @@ $(document).on('click', '#warehouse', function(){
     });
 });
 
+window.onload = function() {
+  document.getElementById('learn').className = 'learn';
+};
 </script>
 @stop
 
