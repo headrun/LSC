@@ -104,6 +104,9 @@ $(document).on('click', '#warehouse1', function(){
 $(document).on('click', '#warehouse2', function(){
   window.location = "{{url()}}/Distribution/Module2/Sample2";
 });
+window.onload = function() {
+  document.getElementById('practice').className = 'practice';
+};
 </script>
 @stop
 
