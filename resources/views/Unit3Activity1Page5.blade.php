@@ -96,7 +96,7 @@
 </div>
 <div class="submit">
 <input type="submit" value="Submit" Onclick="Get_Details();"/>
-<div class="watc"><a href="/SidebarLearningPage">Next</a></div>
+<div class="watc"><a href="/DistributionActivitiesPage">Next</a></div>
 </div>
     </div>
     </div>

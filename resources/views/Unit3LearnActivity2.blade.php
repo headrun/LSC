@@ -334,6 +334,7 @@
 
 <div class="getstarted">
   <ul>
+    <li><button class="resetcolr" onClick="back()">Back</button></li>
     <li><button onClick="Reset()">Reset</button></li>
     <li><button class="resetcolr" onClick="Submit()">Submit</button></li>
     <li><button  onClick="next()">Next</button></li>
@@ -425,6 +426,9 @@ $("."+cls).removeClass('cityseletd');
 }
 function next(){
   window.location = "{{url()}}/DistributionLearning";
+}
+function back() {
+ window.location = "{{url()}}/DistributionActivitiesPage"; 
 }
 function Submit(){
   var mumbai=['Mumbai','Pune','Rajkot'];
