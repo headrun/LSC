@@ -380,3 +380,10 @@ Route::any('/Unit2Activity3Level3', function(){return view('Unit2Activity3Level3
 
 Route::any('/Unit2Activity3Carlevel3', function(){return view('Unit2Activity3Carlevel3');});
 Route::any('/Unit2Activity3Cycle', function(){return view('Unit2Activity3Cycle');});
+
+// --------------------- Activity pages for learn -------------------------
+Route::any('/Unit2Activity1Page2L', function(){return view('Unit2Activity1Page2L');});
+Route::any('/Unit2Activity2Page2L', function(){return view('Unit2Activity2Page2L');}); 
+Route::any('/Unit2Activity2Page3L', function(){return view('Unit2Activity2Page3L');});
+Route::any('/Unit2Activity2Page4L', function(){return view('Unit2Activity2Page4L');});
+

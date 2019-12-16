@@ -17,6 +17,24 @@
       body{
 
       }
+       .watc{
+      float: left;
+      z-index: 99;
+      margin-top: 13px;
+      bottom: 0px;
+      right: 40px;
+    }
+    .watc a{
+      background: rgba(229,9,21,1);
+      color: #ffffff;
+      font-size: 14px;
+            font-family: 'Montserrat-Regular';
+            padding: 8px 15px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      text-decoration: none;
+    }
 
       </style>
    </head>
@@ -107,7 +125,7 @@
     <div class="instruction">
       <input type="submit" Value="Submit" class="play_but" />
 
-    <div class="backbut"><a href="/Unit2Activity1Page2">Go to Next Level >></a></div>
+    <div class="backbut"><a href="/Unit2Activity1Page2L">Go to Next Level >></a></div>
     </div>
 
         </div>
@@ -118,6 +136,7 @@
       </div>
 
       <div class="bottom-title">
+        <div class="watc"><a href="/Module2Theory">Back</a></div>
         <div class="bottom-heading"  data-step="1" data-intro="Transportation Strategy">Transportation Strategy</div>
 
       </div>
@@ -143,7 +162,7 @@
    </script>
 </html>
                                                                                                                              143,7         99%
-<button id = "back" style="color: #4dbfbf; background-color: red;" class="btn btn-primary btn-lg"> Back</button>
+<!-- <button id = "back" style="color: #4dbfbf; background-color: red;" class="btn btn-primary btn-lg"> Back</button> -->
 
 
 <button id = "next" style="color: #4dbfbf; float: right; background-color: red; display:none;" class="btn btn-primary btn-lg"> Next</button>

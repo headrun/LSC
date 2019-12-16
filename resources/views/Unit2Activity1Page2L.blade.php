@@ -14,7 +14,7 @@
       <link rel="stylesheet" href="Unit2Activity1a/fonts.css">
 
    </head>
-    <style type="text/css">
+   <style type="text/css">
     .watcBack{
       float: left;
       z-index: 99;
@@ -117,9 +117,10 @@
       </div>
 
       <div class="bottom-title">
-        <div class="watcBack"><a href="/Unit2activity1">Back</a></div>
+        <div class="watcBack"><a href="/Unit2CostActivity">Back</a></div>
         <div class="bottom-heading"  data-step="1" data-intro="Transportation Strategy">Transportation Strategy</div>
-        <div class="watc"><a href="/TransportationActivitiesPage">Next</a></div>
+	<!-- <button id = "next" style="color: #4dbfbf; float: right; background-color: red;" class="btn btn-primary btn-lg"> Home</button> -->
+  <div class="watc"><a href="/basicModule">Next</a></div>
       </div>
 
      </div>
@@ -184,7 +185,7 @@
     });
 
 $(document).on('click', '#next', function(){
-          window.location = "/SidebarLearningPage";
+  window.location = "/SidebarLearningPage";
 });
 
    </script>

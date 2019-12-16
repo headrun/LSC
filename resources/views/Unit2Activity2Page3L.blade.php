@@ -1,4 +1,4 @@
-@extends('layout.sidebar1')
+@extends('layout.sidebar2')
 @section('content')
 <!DOCTYPE html>
 <html lang="en">
@@ -17,33 +17,34 @@
       body{
 
       }
-    .watc{
-      float: left;
-      z-index: 99;
-      margin-top: 13px;
-      bottom: 0px;
-      right: 40px;
-    }
-    .watc a{
-      background: rgba(229,9,21,1);
-      color: #ffffff;
-      font-size: 14px;
-            font-family: 'Montserrat-Regular';
-            padding: 8px 15px;
-      -webkit-border-radius: 16px;
-      -moz-border-radius: 16px;
-      border-radius: 16px;
-      text-decoration: none;
-    }
 
       </style>
    </head>
    <body class="newbg">
+     <div id="start" class="modal fade" style="margin-top: 40px;">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
 
+                  <h4 class="modal-title">Your Seleted Answer is:<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></h4>
+              </div>
+              <div class="modal-body">
+                <div class="plain-section">
+
+                  <div class="correctanswer">
+                    <h1>Your Selected answer is <span style="color:#ec171f;">Wrong</span></h1>
+                    <span class="time">Speed: <span>40 Km / Hour</span></span>
+                    <span class="time">Mileage: <span>35 Km per litre of fuel</span></span>
+                    <span class="time">Cost: <span>3 Rs / Km</span></span>
+                </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
 
      <div class="content-section">
-    <div class="content-title">
-        <div class="level" data-step="2" data-intro="Level 1/3">Level: <span class="levelnum">1 </span><span class="levelnum1">/ 2</span></div>
+        <div class="content-title">
 
         <div class="remainig-data">
         <div class="remainig-budget" data-step="4" data-intro="Distance:100 km">Distance: <span>100 Km</span></div>
@@ -52,18 +53,15 @@
 
       </div>
       <div class="game-content">
-        <h2>You are to travel 100 KM in 5 hours with 6 Ltrs of fuel. You have 2000 Rs with you. Match the vehicles with relevant constraints</h2>
 
 
 
 
         <div class="levelcontent">
-
-        <h3>Match the following</h3>
+        <h3 style="text-align:left;">Your Results is:</h3>
 
         <div class="drag1">
-        <div class="drag-left">
-        <div class="checkbox"><input type="radio" name="matching"/></div>
+        <div class="box">
         <div class="plain-section">
           <div class="vehicle-img">
           <img src="Unit2Activity2copy/images/new-car.gif" alt="Car Journey" />
@@ -76,9 +74,8 @@
         </div>
       </div>
 
-      <div class="drag-right">
-        <div class="checkbox"><input type="radio" name="matching"/></div>
-        <div class="plain-section">
+      <div class="box">
+        <div class="bus-section">
         <div class="vehicle-img1">
           <img src="Unit2Activity2copy/images/cycle.gif" alt="Cycle Journey" />
         </div>
@@ -90,12 +87,8 @@
         </div>
       </div>
 
-    </div>
-
-
-    <div class="drag2">
-      <div class="drag-left">
-        <div class="checkbox"><input type="radio" name="matching"/></div>
+      <div class="box correct">
+        <h2>This is the Correct Answer</h2>
         <div class="plain-section">
           <div class="vehicle-img">
             <img src="Unit2Activity2copy/images/giphy1.gif" alt="Two Wheeler Journey" />
@@ -110,9 +103,9 @@
       </div>
 
 
-      <div class="drag-right">
-        <div class="checkbox"><input type="radio" name="matching"/></div>
-        <div class="plain-section">
+
+      <div class="box">
+        <div class="bus-section">
         <div class="vehicle-img1">
           <img src="Unit2Activity2copy/images/truck.gif" alt="Truck Journey" />
         </div>
@@ -127,10 +120,14 @@
     </div>
 
 
-    <div class="instruction">
+    <div class="bottom_links">
+    <div class="nextbut"><a href="/Unit2Activity2Page4L"> Go to Next Level >></a></div>
+    <div class="backbut"><a href="/Unit2Activity2Page2L"><< Back</a></div>
 
-      <a href="/Unit2Activity2Page3" class="play_but" >Submit</a>
     </div>
+
+
+
 
         </div>
 
@@ -140,7 +137,6 @@
       </div>
 
       <div class="bottom-title">
-        <div class="watc"><a href="/Unit2activity2">Back</a></div>
         <div class="bottom-heading"  data-step="1" data-intro="Speed Game">Speed Game</div>
         <div class="bottom-budget">
           <div class="total-time" data-step="6" data-intro="Avilable Fuel:6 Lts">Avilable Fuel: <span>6 Lts</span></div>

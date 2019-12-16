@@ -123,10 +123,10 @@
       </div>
 
       <div class="bottom-title">
-        <div class="watc"><a href="/Unit2Activity2Page3">Back</a></div>
+        <div class="watc"><a href="/Unit2Activity2Page3L">Back</a></div>
         <div class="bottom-heading"  data-step="1" data-intro="Speed Game">Speed Game</div>
         <!-- <button href="/Unit2Activity2" id="module" style="color: #4dbfbf; float: right; background-color: red;" class="btn btn-primary btn-lg"> Home</button> -->
-        <div class="watcNext"><a href="/TransportationActivitiesPage">Next</a></div>
+        <div class="watcNext"><a href="/basicModule">Next</a></div>
 
       </div>
 

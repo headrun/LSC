@@ -17,7 +17,24 @@
       body{
 
       }
-
+     .watc{
+      float: left;
+      z-index: 99;
+      margin-top: 13px;
+      bottom: 0px;
+      right: 40px;
+    }
+    .watc a{
+      background: rgba(229,9,21,1);
+      color: #ffffff;
+      font-size: 14px;
+            font-family: 'Montserrat-Regular';
+            padding: 8px 15px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      text-decoration: none;
+    }
       </style>
    </head>
    <body class="newbg">
@@ -121,7 +138,7 @@
 
     <div class="instruction">
 
-      <a href="/Unit2Activity2Page2" class="play_but" >Let's Play</a>
+      <a href="/Unit2Activity2Page2L" class="play_but" >Let's Play</a>
     </div>
 
         </div>
@@ -132,6 +149,7 @@
       </div>
 
       <div class="bottom-title">
+        <div class="watc"><a href="/Module3Theory">Back</a></div>
         <div class="bottom-heading"  data-step="1" data-intro="Speed Game">Speed Game</div>
         <div class="bottom-budget">
           <div class="total-time" data-step="6" data-intro="Avilable Fuel:6 Lts">Avilable Fuel: <span>6 Lts</span></div>
@@ -160,7 +178,7 @@
    </script>
 </html>
 
-<button id = "back" style="color: #4dbfbf; background-color: red;" class="btn btn-primary btn-lg"> Back</button>
+<!-- <button id = "back" style="color: #4dbfbf; background-color: red;" class="btn btn-primary btn-lg"> Back</button> -->
 
 
 <button id = "next" style="color: #4dbfbf; float: right; background-color: red; display:none;" class="btn btn-primary btn-lg"> Next</button>

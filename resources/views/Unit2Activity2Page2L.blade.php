@@ -129,7 +129,7 @@
 
     <div class="instruction">
 
-      <a href="/Unit2Activity2Page3" class="play_but" >Submit</a>
+      <a href="/Unit2Activity2Page3L" class="play_but" >Submit</a>
     </div>
 
         </div>
@@ -140,7 +140,7 @@
       </div>
 
       <div class="bottom-title">
-        <div class="watc"><a href="/Unit2activity2">Back</a></div>
+        <div class="watc"><a href="/Unit2ConstraintsActivity">Back</a></div>
         <div class="bottom-heading"  data-step="1" data-intro="Speed Game">Speed Game</div>
         <div class="bottom-budget">
           <div class="total-time" data-step="6" data-intro="Avilable Fuel:6 Lts">Avilable Fuel: <span>6 Lts</span></div>

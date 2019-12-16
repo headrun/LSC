@@ -25,7 +25,24 @@
       body{
 
       }
-
+    .watc{
+      float: left;
+      z-index: 99;
+      margin-top: 13px;
+      bottom: 0px;
+      right: 40px;
+    }
+    .watc a{
+      background: rgba(229,9,21,1);
+      color: #ffffff;
+      font-size: 14px;
+            font-family: 'Montserrat-Regular';
+            padding: 8px 15px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      text-decoration: none;
+    }
       </style>
    </head>
    <body class="newbg">
@@ -140,6 +157,7 @@
       </div>
 
       <div class="bottom-title">
+        <div class="watc"><a href="/TransportationActivitiesPage">Back</a></div>
         <div class="bottom-heading"  data-step="1" data-intro="Speed Game">Speed Game</div>
         <div class="bottom-budget">
           <div class="total-time" data-step="6" data-intro="Avilable Fuel:6 Lts">Avilable Fuel: <span>6 Lts</span></div>
