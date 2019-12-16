@@ -37,7 +37,7 @@
      <div class="activitymap">
       <div class="activity">
          <div class="container">
-            <h1>Chennai – 5,000, Coimbatore – 3,000<a style="float:right;" href="/Unit3Activity1Page4" class="back_right"><i class="fa fa-angle-left" aria-hidden="true"></i>
+            <h1>Chennai – 5,000, Coimbatore – 3,000<a style="float:right;" href="/Unit3Activity1Page4L" class="back_right"><i class="fa fa-angle-left" aria-hidden="true"></i>
  Back</a></h1>
 
 
@@ -96,7 +96,7 @@
 </div>
 <div class="submit">
 <input type="submit" value="Submit" Onclick="Get_Details();"/>
-<div class="watc"><a href="/SidebarLearningPage">Next</a></div>
+<div class="watc"><a href="/DistributionLearning">Next</a></div>
 </div>
     </div>
     </div>

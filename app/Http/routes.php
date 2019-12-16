@@ -387,3 +387,8 @@ Route::any('/Unit2Activity2Page2L', function(){return view('Unit2Activity2Page2L
 Route::any('/Unit2Activity2Page3L', function(){return view('Unit2Activity2Page3L');});
 Route::any('/Unit2Activity2Page4L', function(){return view('Unit2Activity2Page4L');});
 
+Route::any('/Unit3Activity1Page2L', function(){return view('Unit3Activity1Page2L');});
+Route::any('/Unit3Activity1Page3L', function(){return view('Unit3Activity1Page3L');});
+Route::any('/Unit3Activity1Page4L', function(){return view('Unit3Activity1Page4L');});
+Route::any('/Unit3Activity1Page5L', function(){return view('Unit3Activity1Page5L');});
+

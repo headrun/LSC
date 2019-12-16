@@ -319,6 +319,7 @@
   <ul>
     <li><button onClick="Reset()">Reset</button></li>
     <li><button class="resetcolr" onClick="Submit()">Submit</button></li>
+    <li><button  onClick="next()">Next</button></li>
   </ul>
 
 </div>
@@ -402,6 +403,9 @@ $(this).removeClass('activeware');
 var cls = $(this).children('h4').text();
 $("."+cls).removeClass('cityseletd');
 });
+}
+function next(){
+  window.location = "{{url()}}/DistributionActivitiesPage2";
 }
 function Submit(){
   var mumbai=['Mumbai','Pune','Rajkot'];

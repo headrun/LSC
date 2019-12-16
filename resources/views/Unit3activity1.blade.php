@@ -17,7 +17,24 @@
       body{
 
       }
-
+      .watcBack{
+      float: left;
+      z-index: 99;
+      margin-top: 13px;
+      bottom: 0px;
+      right: 40px;
+    }
+    .watcBack a{
+      background: rgba(229,9,21,1);
+      color: #ffffff;
+      font-size: 14px;
+            font-family: 'Montserrat-Regular';
+            padding: 8px 15px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      border-radius: 16px;
+      text-decoration: none;
+    }
       </style>
    </head>
    <body class="newbg">
@@ -38,6 +55,7 @@
          </div>
 
 <div class="getstarted"><a href="/Unit3Activity1Page2">Go to next screen</a></div>
+<div class="watcBack"><a href="/DistributionActivitiesPage">Back</a></div>
        </div>
 
      </div>
