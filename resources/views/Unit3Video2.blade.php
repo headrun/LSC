@@ -3,7 +3,7 @@
 <head>
    <meta charset="UTF-8">
    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-   <title>Warehouse</title>
+   <title>LSC</title>
    <link rel="stylesheet" href="newcss/css/bootstrap.min.css">
    <link rel="stylesheet" href="newcss/css/style.css">
    <link rel="stylesheet" href="newcss/fonts.css">
