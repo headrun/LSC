@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -121,5 +123,5 @@ function playVid1() {
 }
 </script>
 </html>
-
+@stop
 
