@@ -40,6 +40,8 @@
  }
  .quiz-choice {
    background-color: #baacd8;
+   width: 176px;
+   height: 171px;
  }
  .header_area {
    background-color: #7f5fc6;
@@ -119,6 +121,16 @@ button:hover {
 .scroll{
   overflow-x: hidden;
 }
+.footer {
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 10px 0;
+    }
+    p {
+  margin: 5px;
+  padding-top: 5px;
+}
   </style>
 
 </head>
@@ -172,7 +184,11 @@ button:hover {
       <p> Agra - 13 Rs/Sqft/Month Rental - Good truck linkages</p>
      </div>
 
-     <div style="padding-right: 12px;margin-top: 25px;">
+     <div>
+      <button onclick="myfunction()" style="float: right;">Next</button>
+    </div>
+
+     <div style="padding-right: 12px;margin-top: 25px; display: none;">
       <a href="#ex1" rel="modal:open" class= "open"><button>Show Solution</button></a>
      </div>
      <!-- Modal HTML embedded directly into document -->
@@ -257,7 +273,13 @@ button:hover {
         <p>Sensory</p>
       </div>
     </div> -->
-
+     <div class="footer">
+  <div class="container" style="text-align: center;">
+    <button type="button" class="btn btn-default" style="color: white;float: left;background-color: #bdc3c7;font-size: 15px;" onclick="previousFun()" id="Previous">Previous</button>
+    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;font-size: 15px;" onclick="nextFun()" id="Next">Next</button>
+    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;font-size: 15px;" onclick="stop()" id="FinishQuiz">Finish</button>
+  </div>
+</div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
@@ -267,6 +289,9 @@ button:hover {
 </html>
 
 <script>
+   $(document).ready(function(){
+        $(".footer").hide();
+  });
   $( ".open" ).click(function() {
     $('.modal').fadeIn('slow');
   });
@@ -293,24 +318,15 @@ button:hover {
   $('#quiz-result').hide();
 
   $('.correct-q1').click(function(){
-    score++
+    /*score++
     console.log(score);
     $data = $('.clock').text().split(':');
-    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()
+    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()*/
     $.confirm({
         title: 'Correct answer!',
-        content: 'Congratulations! You have finished in '+ $text,
+        content: 'Congratulations!',
         type: 'green',
         typeAnimated: true,
-        buttons: {
-            tryAgain: {
-                text: 'Go To Next Module',
-                btnClass: 'btn-green',
-                action: function(){
-                  window.location = "{{url()}}/WarehouseModule";  
-                }
-            },
-        }
     });
   });
 
@@ -344,17 +360,6 @@ button:hover {
         content: "Please choose correct Answer",
         type: 'red',
         typeAnimated: true,
-        buttons: {
-            tryAgain: {
-		text: 'Back to Concept',
-                btnClass: 'btn-red',
-                action: "{{url()}}/Economics/Module2/Concept",
-                action: function(){
-                 window.location = "{{url()}}/Distribution/Module2/Concept2";
-                }
-
-            },
-        }
     });
   });
 
@@ -413,6 +418,131 @@ function activate(){
     timer();
   }
 }
+var AllQuestions = {
+  data: [
+  {
+    name:'Which of the following is a factor to determine warehouse location?',
+     A: 'Organizational hierarchy of company',
+     B: 'Product margin',
+     C: 'None of the above',
+     D: 'Availabilioty of human resources in the locality for employment'
+  },
+  {
+    name:'Which of the following is a storage system classification',
+     A: 'Perishable products',
+     B: 'Costly storage',
+     C: 'Floor space',
+     D: 'Pallet storage'
+  },
+  {
+    name:'Which of the following items need strict First Expiry First Out from warehouse?',
+     A: 'Clothes',
+     B: 'Jewellery',
+     C: 'Wood',
+     D: 'Dairy Products'
+  },
+  {
+    name:'Which of the following scenario requires warehouses near customer demand locations?',
+     A: 'Continuous production',
+     B: 'High product cost',
+     C: 'All',
+     D: 'Urgent demand locations'
+  }]
+}
 
+function myfunction() {
+    var index = 0;
+    $('.card').empty();
+    $('.footer').show();
+    $("#FinishQuiz").hide();
+    getQuestions(index);
+}
+
+function getQuestions(index) {
+    var html = '';
+    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div>';
+      $('.card').html(html);
+      indexId = index;
+      previousQsn = index;
+      nextHide =  AllQuestions.data.length;
+   }
+
+   
+   function WrongAnswer(){
+    var x = document.getElementById("qqq").innerHTML;
+    console.log(x.substring(1).replace('.',''));
+     $.confirm({
+        title: 'Wrong Answer!',
+        content: "Please choose correct Answer",
+        type: 'red',
+        typeAnimated: true,
+      });
+   }
+
+   function CorrectAnswer() {
+    $.confirm({
+        title: 'Correct answer!',
+        content: 'Congratulations!',
+        type: 'green',
+        typeAnimated: true,
+    });
+   }
+
+   function nextFun() {
+
+     $('#Previous').show();
+    // $('.card').empty();
+     index = indexId +1;
+     if(index > nextHide-2){
+        $("#Next").hide();
+        $("#FinishQuiz").show();
+     }
+     else{
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+   
+     $('.card').empty();
+     getQuestions(index);
+   }
+   
+   function previousFun() {
+     $('.card').empty();
+     index = previousQsn - 1;
+     if(index < 1){
+        $("#Previous").hide();
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+     else{
+        $("#Previous").show();
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+     getQuestions(index);
+   }
+
+   function stop(){
+    var score = 0;
+    score++
+    console.log(score);
+    $data = $('.clock').text().split(':');
+    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()
+    $.confirm({
+        title: 'Congratulations!',
+        content: 'You have finished in '+ $text,
+        type: 'green',
+        typeAnimated: true,
+        buttons: {
+            tryAgain: {
+                text: 'Go To Next Module',
+                btnClass: 'btn-green',
+                action: function(){
+                  window.location = "{{url()}}/WarehouseModule";  
+                }
+            },
+        }
+    });
+   }
 </script>
 @stop

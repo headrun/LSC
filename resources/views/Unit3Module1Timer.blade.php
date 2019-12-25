@@ -40,6 +40,8 @@
  }
  .quiz-choice {
    background-color: #baacd8;
+   width: 176px;
+   height: 171px;
  }
  .header_area {
    background-color: #7f5fc6;
@@ -103,6 +105,12 @@ text-align: center;
 .scroll{
   overflow-x: hidden;
 }
+.footer {
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 10px 0;
+    }
 button {
   background-color: #7d929d;
   color: white;
@@ -112,6 +120,10 @@ button:hover {
     /* background-color: #E6772D; */
     background-color: #7f60c6;
     color: white;
+}
+p {
+  margin: 5px;
+  padding-top: 5px;
 }
   </style>
 
@@ -164,8 +176,11 @@ button:hover {
      <div class="quiz-choice wrong-q1">
        <p> None of the above</p>
      </div>
+      <div>
+      <button onclick="myfunction()" style="float: right;">Next</button>
+    </div>
 
-     <div style="padding-right: 12px;margin-top: 25px;">
+     <div style="padding-right: 12px;margin-top: 25px;display: none;">
       <a href="#ex1" rel="modal:open" class= "open"><button>Show Solution</button></a>
      </div>
      <!-- Modal HTML embedded directly into document -->
@@ -188,6 +203,14 @@ button:hover {
    </div>
 </div>
 
+<div class="footer">
+  <div class="container" style="text-align: center;">
+    <button type="button" class="btn btn-default" style="color: white;float: left;background-color: #bdc3c7;font-size: 15px;" onclick="previousFun()" id="Previous">Previous</button>
+    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;font-size: 15px;" onclick="nextFun()" id="Next">Next</button>
+    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;font-size: 15px;" onclick="stop()" id="FinishQuiz">Finish</button>
+  </div>
+</div>
+
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="index.js"></script>
@@ -201,6 +224,9 @@ button:hover {
   <!--================End Footer Area =================-->
 
 <script>
+  $(document).ready(function(){
+        $(".footer").hide();
+  });
   $( ".open" ).click(function() {
     $('.modal').fadeIn('slow');
   });
@@ -227,24 +253,15 @@ button:hover {
   $('#quiz-result').hide();
 
   $('.correct-q1').click(function(){
-    score++
+    /*score++
     console.log(score);
     $data = $('.clock').text().split(':');
-    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()
+    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()*/
     $.confirm({
         title: 'Correct answer!',
-        content: 'Congratulations! You have finished in '+ $text,
+        content: 'Congratulations!',
         type: 'green',
         typeAnimated: true,
-        buttons: {
-            tryAgain: {
-                text: 'Go To Next Module',
-                btnClass: 'btn-green',
-                action: function(){
-                  window.location = "{{url()}}/DistributionModule1";  
-                }
-            },
-        }
     });
   });
 
@@ -256,17 +273,6 @@ button:hover {
         content: "Please choose correct Answer",
         type: 'red',
         typeAnimated: true,
-        buttons: {
-            tryAgain: {
-		text: 'Back to Concept',
-                btnClass: 'btn-red',
-                action: "{{url()}}/Unit3Module1Concept",
-                action: function(){
-                 window.location = "{{url()}}/Unit3Module1Concept";
-                }
-
-            },
-        }
     });
   });
 
@@ -313,6 +319,167 @@ function activate(){
   }
 }
 
+var AllQuestions = {
+   data: [
+  {
+    name:'Distribution channels can be categorized as B2B (Business to Business) and B2C (Business to Customer). In B2B, customer is a business entity which buys product for further processing or selling. In B2C, customer is the end consumer. Which of the following in B2C?',
+     A: 'JKC Chemicals sells chemicals to JD industries which uses chemicals for making batteries in their factory',
+     B: 'Craftsvilla sells dresses to customers via Amazon',
+     C: 'Company Sells branded detergents to supermarket who resell it',
+     D: 'None of the Above'
+  },
+  {
+    name:'Distribution channels can be categorized as B2B (Business to Business) and B2C (Business to Customer). In B2B, customer is a business entity which buys product for further processing or selling. In B2C, customer is the end consumer. Which of the following in B2B2BC?',
+     A: 'Supermarket in Coimbatire to which customers walk in and buy products',
+     B: 'JKC Chemicals sells chemicals to JD industries which uses chemicals for making batteries in their factory',
+     C: 'Company sells insurance policies with sales guys directly going to each home and selling to customers',
+     D: 'None of the Above'
+  },
+  {
+    name:'Creations Limited sells 10 lakhs Rs worth of chocolate bars per month through e commerce and distributors. If E-commerce contributes to 50% business and each chocolate bar is sold at 100 Rs, how many chocolate bars are sold per month through E-commerce?',
+     A: '10000',
+     B: '5000',
+     C: '5 Lakhs',
+     D: '10 lakhs'
+  },
+  {
+    name:'ABC private limited is a spare parts firm which sells pumps through retail outlets and wholesalers. If wholesaler sale is 100 units per month and 10,000 Rs per unit and Retailer sale is 200 units per month at 12,000 Rs per unit, what is the total monthly sale value?',
+     A: '25 Lakh Rs',
+     B: '34 Lakh Rs',
+     C: '10 Lakh Rs',
+     D: '24 Lakh Rs'
+  },
+  {
+    name:'Company sells material to retailer at 10 Rs per unit. Retailer sells material at 15 Rs per unit to customer. If 500 units are sold per day, what is the daily profit made by retailer?',
+     A: '7500 Rs',
+     B: '2500 Rs',
+     C: '5000 Rs',
+     D: 'None of the above'
+  },
+  {
+    name:'Which of the following channels are known for providing credit facility to both manufacturers and suppliers?',
+     A: 'Retailers',
+     B: 'Wholesalers',
+     C: 'Supermarkets',
+     D: 'Online'
+  },
+  {
+    name:'A toy maker sells 1000 units in January and 2000 Units in February. E-Commerce contributed to 50% of his sale in January and 75% of sale in February. How many units additional did he sell in February through e-commerce as compared to January?',
+     A: '1500',
+     B: '1000',
+     C: '500',
+     D: '2000'
+  },
+  {
+    name:'Why are retail stores a preferred mode for distribution?',
+     A: 'Easily accessible due to large number of retail stores present',
+     B: 'All',
+     C: 'Direct relationship with customers with credit facilities in many retail shops',
+     D: 'Ability to sell in smaller quantities makes it more suited for customers'
+  },
+  {
+    name:'Which of the following is an example of Modern Trade?',
+     A: 'Amazon',
+     B: 'More Supermarket',
+     C: 'Wholesalers',
+     D: 'None of the above'
+  }]
+}
+
+function myfunction() {
+    var index = 0;
+    $('.card').empty();
+    $('.footer').show();
+    $("#FinishQuiz").hide();
+    getQuestions(index);
+}
+
+function getQuestions(index) {
+    var html = '';
+    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="WrongAnswer(this)"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div>';
+      $('.card').html(html);
+      indexId = index;
+      previousQsn = index;
+      nextHide =  AllQuestions.data.length;
+   }
+
+   
+   function WrongAnswer(thisinp){
+    var x = document.getElementById("qqq").innerHTML;
+    console.log(x.substring(1).replace('.',''));
+     $.confirm({
+        title: 'Wrong Answer!',
+        content: "Please choose correct Answer",
+        type: 'red',
+        typeAnimated: true,
+      });
+   }
+
+   function CorrectAnswer() {
+    $.confirm({
+        title: 'Correct answer!',
+        content: 'Congratulations!',
+        type: 'green',
+        typeAnimated: true,
+    });
+   }
+
+   function nextFun() {
+
+     $('#Previous').show();
+    // $('.card').empty();
+     index = indexId +1;
+     if(index > nextHide-2){
+        $("#Next").hide();
+        $("#FinishQuiz").show();
+     }
+     else{
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+   
+     $('.card').empty();
+     getQuestions(index);
+   }
+   
+   function previousFun() {
+     $('.card').empty();
+     index = previousQsn - 1;
+     if(index < 1){
+        $("#Previous").hide();
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+     else{
+        $("#Previous").show();
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+     getQuestions(index);
+   }
+
+   function stop(){
+    var score = 0;
+    score++
+    console.log(score);
+    $data = $('.clock').text().split(':');
+    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()
+    $.confirm({
+        title: 'Congratulations!',
+        content: 'You have finished in '+ $text,
+        type: 'green',
+        typeAnimated: true,
+        buttons: {
+            tryAgain: {
+                text: 'Go To Next Module',
+                btnClass: 'btn-green',
+                action: function(){
+                  window.location = "{{url()}}/DistributionModule1";  
+                }
+            },
+        }
+    });
+   }
 </script>
 
   @stop

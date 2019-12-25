@@ -40,6 +40,8 @@
  }
  .quiz-choice {
    background-color: #baacd8;
+   width: 176px;
+   height: 171px;
  }
  .header_area {
    background-color: #7f5fc6;
@@ -104,6 +106,12 @@ top: 22%;
 .scroll{
   overflow-x: hidden;
 }
+.footer {
+        bottom: 0;
+        z-index: 1000;
+        width: 100%;
+        padding: 10px 0;
+    }
 button {
   background-color: #7d929d;
   color: white;
@@ -113,6 +121,10 @@ button:hover {
     /* background-color: #E6772D; */
     background-color: #7f60c6;
     color: white;
+}
+p {
+  margin: 5px;
+  padding-top: 5px;
 }
   </style>
 
@@ -167,7 +179,11 @@ button:hover {
        <p> Apparel</p>
      </div>
 
-    <div style="padding-right: 12px;margin-top: 25px;">
+     <div>
+      <button onclick="myfunction()" style="float: right;">Next</button>
+    </div>
+
+    <div style="padding-right: 12px;margin-top: 25px;display: none;">
       <a href="#ex1" rel="modal:open" class= "open"><button>Show Solution</button></a>
     </div>
      <!-- Modal HTML embedded directly into document -->
@@ -250,7 +266,13 @@ button:hover {
         <p>Sensory</p>
       </div>
     </div> -->
-
+    <div class="footer">
+  <div class="container" style="text-align: center;">
+    <button type="button" class="btn btn-default" style="color: white;float: left;background-color: #bdc3c7;font-size: 15px;" onclick="previousFun()" id="Previous">Previous</button>
+    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;font-size: 15px;" onclick="nextFun()" id="Next">Next</button>
+    <button type="button" class="btn btn-default" style="color: white;float: right;background-color: #4dbfbf;font-size: 15px;" onclick="stop()" id="FinishQuiz">Finish</button>
+  </div>
+</div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
     <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.js"></script>
@@ -260,6 +282,9 @@ button:hover {
 </html>
 
 <script>
+  $(document).ready(function(){
+        $(".footer").hide();
+  });
   $( ".open" ).click(function() {
     $('.modal').fadeIn('slow');
   });
@@ -284,24 +309,15 @@ button:hover {
   $('#quiz-result').hide();
 
   $('.correct-q1').click(function(){
-    score++
+    /*score++
     console.log(score);
     $data = $('.clock').text().split(':');
-    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()
+    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()*/
     $.confirm({
         title: 'Correct answer!',
-        content: 'Congratulations! You have finished in '+ $text,
+        content: 'Congratulations!',
         type: 'green',
         typeAnimated: true,
-        buttons: {
-            tryAgain: {
-                text: 'Go To Next Module',
-                btnClass: 'btn-green',
-                action: function(){
-                  window.location = "{{url()}}/WarehouseModule";  
-                }
-            },
-        }
     });
   });
 
@@ -335,17 +351,6 @@ button:hover {
         content: "Please choose correct Answer",
         type: 'red',
         typeAnimated: true,
-        buttons: {
-            tryAgain: {
-		text: 'Back to Concept',
-                btnClass: 'btn-red',
-                action: "{{url()}}/Economics/Module2/Concept",
-                action: function(){
-                 window.location = "{{url()}}/Distribution/Module2/Concept1";
-                }
-
-            },
-        }
     });
   });
 
@@ -405,5 +410,131 @@ function activate(){
   }
 }
 
+var AllQuestions = {
+  data: [
+  {
+    name:'True or False: A product is manufactured seasonally but sold throughout the year. Is warehousing required?',
+     A: 'FALSE',
+     B: 'TRUE',
+     C: ' ',
+     D: ' '
+  },
+  {
+    name:'Noida warehouse is 300 KM away from Lucknow customer. If truck from Bangalore runs at 50 KM per hour, how many hours does it take for material to reach Lucknow?',
+     A: '9 hours',
+     B: '6 hours',
+     C: '3 hours',
+     D: '10 hours'
+  },
+  {
+    name:'A Warehouse handling charges of 60 Rs per ton. If the warehouse handles 50 tonnes every day, what is the handling cost per day?',
+     A: '3500 Rs',
+     B: '3000 Rs',
+     C: '2000 Rs',
+     D: '1000 Rs'
+  },
+  {
+    name:'A warehouse has a rent of 10 Rs/Sqft/Month. If total rental per year is 1,20,000 Rs. How large is the warehouse (in Sqft)?',
+     A: '2000 Sqft',
+     B: '1000 Sqft',
+     C: '12,000 Sqft',
+     D: '10,000 Sqft'
+  }]
+}
+
+function myfunction() {
+    var index = 0;
+    $('.card').empty();
+    $('.footer').show();
+    $("#FinishQuiz").hide();
+    getQuestions(index);
+}
+
+function getQuestions(index) {
+    var html = '';
+    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div>';
+      $('.card').html(html);
+      indexId = index;
+      previousQsn = index;
+      nextHide =  AllQuestions.data.length;
+   }
+
+   
+   function WrongAnswer(){
+    var x = document.getElementById("qqq").innerHTML;
+    console.log(x.substring(1).replace('.',''));
+     $.confirm({
+        title: 'Wrong Answer!',
+        content: "Please choose correct Answer",
+        type: 'red',
+        typeAnimated: true,
+      });
+   }
+
+   function CorrectAnswer() {
+    $.confirm({
+        title: 'Correct answer!',
+        content: 'Congratulations!',
+        type: 'green',
+        typeAnimated: true,
+    });
+   }
+
+   function nextFun() {
+
+     $('#Previous').show();
+    // $('.card').empty();
+     index = indexId +1;
+     if(index > nextHide-2){
+        $("#Next").hide();
+        $("#FinishQuiz").show();
+     }
+     else{
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+   
+     $('.card').empty();
+     getQuestions(index);
+   }
+   
+   function previousFun() {
+     $('.card').empty();
+     index = previousQsn - 1;
+     if(index < 1){
+        $("#Previous").hide();
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+     else{
+        $("#Previous").show();
+        $("#Next").show();
+        $("#FinishQuiz").hide();
+     }
+     getQuestions(index);
+   }
+
+   function stop(){
+    var score = 0;
+    score++
+    console.log(score);
+    $data = $('.clock').text().split(':');
+    $text = $data[0].trim()+':'+$data[1].trim()+':'+$data[2].trim()
+    $.confirm({
+        title: 'Congratulations!',
+        content: 'You have finished in '+ $text,
+        type: 'green',
+        typeAnimated: true,
+        buttons: {
+            tryAgain: {
+                text: 'Go To Next Module',
+                btnClass: 'btn-green',
+                action: function(){
+                  window.location = "{{url()}}/WarehouseModule";  
+                }
+            },
+        }
+    });
+   }
 </script>
 @stop
