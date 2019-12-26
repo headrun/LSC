@@ -40,8 +40,8 @@
  }
  .quiz-choice {
    background-color: #baacd8;
-   width: 176px;
-   height: 171px;
+   width: 195px;
+   height: 195px;
  }
  .header_area {
    background-color: #7f5fc6;
