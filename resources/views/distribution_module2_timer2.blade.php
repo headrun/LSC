@@ -543,7 +543,7 @@ function getQuestions(index) {
                 text: 'Go To Next Module',
                 btnClass: 'btn-green',
                 action: function(){
-                  window.location = "{{url()}}/WarehouseModule";  
+                  window.location = "{{url()}}/DistributionModule";  
                 }
             },
         }

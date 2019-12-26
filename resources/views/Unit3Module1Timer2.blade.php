@@ -462,7 +462,7 @@ function getQuestions(index) {
                 text: 'Go To Next Module',
                 btnClass: 'btn-green',
                 action: function(){
-                  window.location = "{{url()}}/DistributionModule1";  
+                  window.location = "{{url()}}/DistributionModule";  
                 }
             },
         }
