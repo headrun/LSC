@@ -390,6 +390,7 @@ function myfunction() {
     var index = 0;
     $('.card').empty();
     $('.footer').show();
+    $('#Previous').hide();
     $("#FinishQuiz").hide();
     getQuestions(index);
 }
