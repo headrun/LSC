@@ -417,28 +417,32 @@ var AllQuestions = {
      A: 'FALSE',
      B: 'TRUE',
      C: ' ',
-     D: ' '
+     D: ' ',
+     E: 'Since demand is non seasonal, manufactured products are to be stored to cover for round the year requirement by the consumers'
   },
   {
     name:'Noida warehouse is 300 KM away from Lucknow customer. If truck from Bangalore runs at 50 KM per hour, how many hours does it take for material to reach Lucknow?',
      A: '9 hours',
      B: '6 hours',
      C: '3 hours',
-     D: '10 hours'
+     D: '10 hours',
+     E: 'Distance: 300 KM. Speed: 50 KM/hour. Time = Distance/Speed = 300/50 = 6hrs'
   },
   {
     name:'A Warehouse handling charges of 60 Rs per ton. If the warehouse handles 50 tonnes every day, what is the handling cost per day?',
      A: '3500 Rs',
      B: '3000 Rs',
      C: '2000 Rs',
-     D: '1000 Rs'
+     D: '1000 Rs',
+     E: 'Handling charges per day = 60 Rs * 50 tonnes = 3000 Rs'
   },
   {
     name:'A warehouse has a rent of 10 Rs/Sqft/Month. If total rental per year is 1,20,000 Rs. How large is the warehouse (in Sqft)?',
      A: '2000 Sqft',
      B: '1000 Sqft',
      C: '12,000 Sqft',
-     D: '10,000 Sqft'
+     D: '10,000 Sqft',
+     E: 'Rent per month = 1,20,000/12 = 10,000 Rs. Rent per month = Rent per sqft per month * Total Area. 10,000 Rs/Month = 10 Rs/Sqft/month * Total Area (in Sqft).Total Area (in Sqft) = 10,000/10 = 1000 Sqft.'
   }]
 }
 
@@ -453,7 +457,7 @@ function myfunction() {
 
 function getQuestions(index) {
     var html = '';
-    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div>';
+    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div><br><div style="padding-right: 12px;margin-top: 25px;"><a href="#ex1" rel="modal:open" class= "open"><button>Show Solutionn</button></a></div><div id="ex1" class="modal"><h1 style="border-bottom: 1px solid grey;">Solution</h1><br><h3>'+AllQuestions.data[index].E +'</h3><br><hr><center><a href="#" rel="modal:close" style="font-size: 20px;text-decoration: none;" id="clos">Close</a></center></div>';
       $('.card').html(html);
       indexId = index;
       previousQsn = index;

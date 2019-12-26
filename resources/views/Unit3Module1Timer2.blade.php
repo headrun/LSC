@@ -328,42 +328,48 @@ var AllQuestions = {
      A: 'Manufacturer-Retailer-Wholesaler',
      B: 'Manufacturer-Dealer',
      C: 'Manufacturer-Wholesaler-Retailer',
-     D: 'All of the above'
+     D: 'All of the above',
+     E: 'Retailer sells to end customers. Wholesalers generally can sell to retailers or direct customers'
   },
   {
     name:'Which of the following is not a market related factor affecting distribution channel?',
      A: 'Perishability',
      B: 'Buy Quantity',
      C: 'Buying habits',
-     D: 'Market Size'
+     D: 'Market Size',
+     E: 'Perishability is a product related factor affecting distribution channel'
   },
   {
     name:'A small sized manufacturing unit in tiruppur wants to sell to customers all across the country with minimal middle men and with little investment. Which is the most stuitable channel of distribution?',
      A: 'Online or E-Commerce',
      B: 'Setting up retail stores across the country',
      C: 'Wholesaler network',
-     D: 'All of the above'
+     D: 'All of the above',
+     E: 'Setting up retail stores will have irect access to customers, but needs high investments. Wholesaler network, though not very costly, will need further middle men such as retailers before the material reaches consumers. Online or E-commerce is the most suitable way to eliminate middle men and also have lesser cost of distribution while reaching customers'
   },
   {
     name:'True or False: Perishable items require shorter chain of distribution.',
      A: 'TRUE',
      B: 'FALSE',
      C: 'Perishability is not related to distribution chain',
-     D: ' '
+     D: ' ',
+     E: 'Highly perishable products require a shorter chain to ensure product does not expire before reaching customer'
   },
   {
     name:'Certain chemicals are only bought by industries or manufacturing units for making specialized chemicals or commercial products such as cosmetics/ detergents. Which is of these channels is not an appropriate distribution mode for the chemical firm?',
      A: 'Retail and Online',
      B: 'Retail',
      C: 'Online',
-     D: 'Distribution'
+     D: 'Distribution',
+     E: 'Retail and Online targets end consumer. Since chemicals are not bought by end consumers, retail/online are not relevant channels for distribution'
   },
   {
     name:'Pac-G biscuits is sold at 7 Rs per packet. Analysis by the company revealed that setting up production unit and producing the biscuit is veryc heap compared to transporting the biscuits to various cities. Which of the below, do you think is the right channel for the company?',
      A: 'Multiple manufacturing units to reduce the transportation of the biscuits',
      B: 'One Manufacturing unit; Many warehouses across country to ship biscuits from factory to warehouses and then to customers',
      C: 'Any of the above',
-     D: ' '
+     D: ' ',
+     E: 'Since transportation is costlier than production, it is better to set up many manufturing units rather than make the product centrally and transport it across the country'
   }]
 }
 
@@ -378,7 +384,7 @@ function myfunction() {
 
 function getQuestions(index) {
     var html = '';
-    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div>';
+    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div><br><div style="padding-right: 12px;margin-top: 25px;"><a href="#ex1" rel="modal:open" class= "open"><button>Show Solutionn</button></a></div><div id="ex1" class="modal"><h1 style="border-bottom: 1px solid grey;">Solution</h1><br><h3>'+AllQuestions.data[index].E +'</h3><br><hr><center><a href="#" rel="modal:close" style="font-size: 20px;text-decoration: none;" id="clos">Close</a></center></div>';
       $('.card').html(html);
       indexId = index;
       previousQsn = index;

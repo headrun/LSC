@@ -425,28 +425,32 @@ var AllQuestions = {
      A: 'Organizational hierarchy of company',
      B: 'Product margin',
      C: 'None of the above',
-     D: 'Availabilioty of human resources in the locality for employment'
+     D: 'Availabilioty of human resources in the locality for employment',
+     E: 'Location of Warehouse - Layout of Building, Human Resource, Consumer Base, Proximity to Linkages, Cost Matrix'
   },
   {
     name:'Which of the following is a storage system classification',
      A: 'Perishable products',
      B: 'Costly storage',
      C: 'Floor space',
-     D: 'Pallet storage'
+     D: 'Pallet storage',
+     E: 'Unit Loads, Bulk Storage for Solids, Loose Item Storage, Pallet Storage Systems'
   },
   {
     name:'Which of the following items need strict First Expiry First Out from warehouse?',
      A: 'Clothes',
      B: 'Jewellery',
      C: 'Wood',
-     D: 'Dairy Products'
+     D: 'Dairy Products',
+     E: 'Since dairy products have a short shelf life, they have to move from the warehouse on first expiry basis'
   },
   {
     name:'Which of the following scenario requires warehouses near customer demand locations?',
      A: 'Continuous production',
      B: 'High product cost',
      C: 'All',
-     D: 'Urgent demand locations'
+     D: 'Urgent demand locations',
+     E: 'Urgenty demand requires product to be within customer access at a short span of time. Hence storage of products should be close to customer locations'
   }]
 }
 
@@ -461,7 +465,7 @@ function myfunction() {
 
 function getQuestions(index) {
     var html = '';
-    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div>';
+    html += '<div class="container"><div class="row" style="margin-left: 3%">  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8"> <div id="question-one" class="quiz-ans-container" style="padding-bottom: 60px;padding-top: 5px;"> <h2 style="text-align:-webkit-left;font-family: monospace;"><span style="margin-left: -44px;" id="qqq">Q' + (index + 2) + '. </span>' + AllQuestions.data[index].name +' </h2></div></div></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].A + '</p></div> <div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].B + '</p></div><div class="quiz-choice" onclick="WrongAnswer()"><p>'+ AllQuestions.data[index].C + ' </p></div><div class="quiz-choice" onclick="CorrectAnswer()"><p>'+ AllQuestions.data[index].D + '</p></div><div><br><div style="padding-right: 12px;margin-top: 25px;"><a href="#ex1" rel="modal:open" class= "open"><button>Show Solutionn</button></a></div><div id="ex1" class="modal"><h1 style="border-bottom: 1px solid grey;">Solution</h1><br><h3>'+AllQuestions.data[index].E +'</h3><br><hr><center><a href="#" rel="modal:close" style="font-size: 20px;text-decoration: none;" id="clos">Close</a></center></div>';
       $('.card').html(html);
       indexId = index;
       previousQsn = index;
