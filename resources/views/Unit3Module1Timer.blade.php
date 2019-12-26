@@ -180,7 +180,7 @@ p {
       <button onclick="myfunction()" style="float: right;">Next</button>
     </div>
 
-     <div style="padding-right: 12px;margin-top: 25px;display: none;">
+     <div style="padding-right: 12px;margin-top: 25px;">
       <a href="#ex1" rel="modal:open" class= "open"><button>Show Solution</button></a>
      </div>
      <!-- Modal HTML embedded directly into document -->
