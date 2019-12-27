@@ -138,29 +138,11 @@
 <script type="text/javascript">
 
 $(document).on('click', '#module1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen1a";
-          }
-    });
+  window.location = "{{url()}}/FundamentalLearnScreen1a";
 });
 
 $(document).on('click', '#module2', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/LogisticsInfrastureOverview";
-          }
-    });
+  window.location = "{{url()}}/LogisticsInfrastureOverview";
 });
 
  window.onload = function() {

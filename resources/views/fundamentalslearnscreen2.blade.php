@@ -130,44 +130,16 @@ input.addEventListener("keyup", function(event) {
 });
 
 $(document).on('click', '#next', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen3";
-          }
-    });
+  window.location = "{{url()}}/FundamentalLearnScreen3";
 });
 
 $(document).on('click', '#back', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen1";
-          }
-    });
+  window.location = "{{url()}}/FundamentalLearnScreen1";
 });
 
 $(document).on('click', '#gotohome', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/SidebarLearningPage";
-          }
-    });
+  window.location = "{{url()}}/SidebarLearningPage";
 });
-
 </script>
 @stop
 

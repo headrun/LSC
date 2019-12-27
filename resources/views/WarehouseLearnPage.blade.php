@@ -88,42 +88,15 @@ li{
      </body>
      </html>
 <script type="text/javascript">
-   $(document).on('click', '#next', function(){
-       $.ajax({
-             url : "{{url()}}/quick/goToSample",
-             type : "POST",
-             // data : { 'getuser' : user,'getpassword' : password },
-             dataType : 'json',
-             success: function(response) {
-               console.log('success');
-               window.location = "{{url()}}/Unit3LearnActivity2";
-             }
-});
-   });
-    $(document).on('click', '#back', function(){
-       $.ajax({
-             url : "{{url()}}/quick/goToSample",
-             type : "POST",
-             // data : { 'getuser' : user,'getpassword' : password },
-             dataType : 'json',
-             success: function(response) {
-               console.log('success');
-               window.location = "{{url()}}/DistributionLearning";
-             }
-});
-   });
-$(document).on('click', '#gotohome', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-console.log('success');
-            window.location = "{{url()}}/FundamentalLearnPage";
-          }
-    });
-});
+  $(document).on('click', '#next', function(){
+    window.location = "{{url()}}/Unit3LearnActivity2";
+  });
+  $(document).on('click', '#back', function(){
+    window.location = "{{url()}}/DistributionLearning";
+  });
+  $(document).on('click', '#gotohome', function(){
+    window.location = "{{url()}}/FundamentalLearnPage";
+  });
 </script>
 @stop
 

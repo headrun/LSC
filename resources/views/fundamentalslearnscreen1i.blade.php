@@ -88,18 +88,9 @@ li{
      </body>
      </html>
 <script type="text/javascript">
-   $(document).on('click', '#back', function(){
-       $.ajax({
-             url : "{{url()}}/quick/goToSample",
-             type : "POST",
-             // data : { 'getuser' : user,'getpassword' : password },
-             dataType : 'json',
-             success: function(response) {
-               console.log('success');
-               window.location = "{{url()}}/FundamentalLearnScreen1g";
-             }
-       });
-   });
+  $(document).on('click', '#back', function(){
+    window.location = "{{url()}}/FundamentalLearnScreen1g";
+  });
 var count = 0;
 var next = 0;
 var input = document.getElementById("body");

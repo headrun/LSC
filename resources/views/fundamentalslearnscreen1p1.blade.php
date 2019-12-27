@@ -88,30 +88,12 @@ li{
      </body>
      </html>
 <script type="text/javascript">
-   $(document).on('click', '#back', function(){
-       $.ajax({
-             url : "{{url()}}/quick/goToSample",
-             type : "POST",
-             // data : { 'getuser' : user,'getpassword' : password },
-             dataType : 'json',
-             success: function(response) {
-               console.log('success');
-               window.location = "{{url()}}/FundamentalLearnScreen1g";
-             }
-       });
-   });
-$(document).on('click', '#gotohome', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-console.log('success');
-            window.location = "{{url()}}/FundamentalLearnPage";
-          }
-    });
-});
+  $(document).on('click', '#back', function(){
+    window.location = "{{url()}}/FundamentalLearnScreen1g";
+  });
+  $(document).on('click', '#gotohome', function(){
+    window.location = "{{url()}}/FundamentalLearnPage";
+  });
 
 var count = 0;
 var next = 0;

@@ -112,22 +112,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <div class="card" id ="module4">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            
-                                <img src="https://image.flaticon.com/icons/svg/1792/1792155.svg" alt="Smiley face" width="110" height="110">
-                            
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                            <h3>Optimization</h3>
-                            <br>
-                            <p>The action of making the best use of a resource.</p>
-                        </div>
-                    </div>
-                </div>        
-            </div> -->
         </div>
     </div>
 </div>
@@ -138,100 +122,24 @@
 </html>
 
 <script type="text/javascript">
-$(document).on('click', '#module1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/TrainingPage";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module2', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/SocialModulePage";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module3', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/EconomicsTrainingPage";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module4', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module4/Sample";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module5', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module6', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-
-
+  $(document).on('click', '#module1', function(){
+    window.location = "{{url()}}/TrainingPage";
+  });
+  $(document).on('click', '#module2', function(){
+    window.location = "{{url()}}/SocialModulePage";
+  });
+  $(document).on('click', '#module3', function(){
+    window.location = "{{url()}}/EconomicsTrainingPage";
+  });
+  $(document).on('click', '#module4', function(){
+    window.location = "{{url()}}/Module4/Sample";
+  });
+  $(document).on('click', '#module5', function(){
+    window.location = "{{url()}}/Sample";
+  });
+  $(document).on('click', '#module6', function(){
+    window.location = "{{url()}}/Sample";
+  });
 </script>
 @stop
 

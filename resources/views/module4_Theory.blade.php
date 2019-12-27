@@ -112,36 +112,16 @@ font-size: 19px;
       </div>
       </div>
   </body>
-
-    <script type="text/javascript">
-
-$(document).on('click', '#submit', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToTimer",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module4/Timer";
-          }
-    });
-});
-
-$(document).on('click', '#next', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Unit2OptimizationActivity";
-          }
-});
-});
-$(document).on('click', '#back', function(){
-  window.location = "{{url()}}/basicModule";       
-});
+  
+<script type="text/javascript">
+  $(document).on('click', '#submit', function(){
+    window.location = "{{url()}}/Economics/Module4/Timer";
+  });
+  $(document).on('click', '#next', function(){
+    window.location = "{{url()}}/Unit2OptimizationActivity";
+  });
+  $(document).on('click', '#back', function(){
+    window.location = "{{url()}}/basicModule";       
+  });
 </script>
     

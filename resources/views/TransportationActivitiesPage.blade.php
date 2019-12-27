@@ -108,37 +108,13 @@
 
 <script type="text/javascript">
   $(document).on('click', '#module1', function(){
-      $.ajax({
-            url : "{{url()}}/quick/goToSample",
-            type : "POST",
-            dataType : 'json',
-            success: function(response) {
-              console.log('success');
-              window.location = "{{url()}}/Unit2activity1";
-            }
-      });
+    window.location = "{{url()}}/Unit2activity1";
   });
   $(document).on('click', '#module2', function(){
-      $.ajax({
-            url : "{{url()}}/quick/goToSample",
-            type : "POST",
-            dataType : 'json',
-            success: function(response) {
-              console.log('success');
-              window.location = "{{url()}}/Unit2activity2";
-            }
-      });
+    window.location = "{{url()}}/Unit2activity2";
   });
   $(document).on('click', '#module3', function(){
-      $.ajax({
-            url : "{{url()}}/quick/goToSample",
-            type : "POST",
-            dataType : 'json',
-            success: function(response) {
-              console.log('success');
-              window.location = "{{url()}}/Unit2activity3";
-            }
-      });
+    window.location = "{{url()}}/Unit2activity3";
   });
   window.onload = function() {
     document.getElementById('activity').className = 'activity';

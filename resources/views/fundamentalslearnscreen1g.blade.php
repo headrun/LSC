@@ -150,43 +150,12 @@ h4{
     </html>
 
 <script type="text/javascript">
-// $(document).on('click', '#next', function(){
-//         $.ajax({
-//           url : "{{url()}}/quick/goToSample",
-//                     type : "POST",
-//                     // data : { 'getuser' : user,'getpassword' : password },
-//                     dataType : 'json',
-//                     success: function(response) {
-//                       console.log('success');
-//                       window.location = "{{url()}}/FundamentalLearnScreen1h";
-//                     }
-//               });
-//           });
-
-          $(document).on('click', '#back', function(){
-              $.ajax({
-                    url : "{{url()}}/quick/goToSample",
-                    type : "POST",
-                    // data : { 'getuser' : user,'getpassword' : password },
-                    dataType : 'json',
-                    success: function(response) {
-                      console.log('success');
-                      window.location = "{{url()}}/FundamentalLearnScreen1f";
-                    }
-              });
-          });
+  $(document).on('click', '#back', function(){
+    window.location = "{{url()}}/FundamentalLearnScreen1f";
+  });
 $(document).on('click', '#gotohome', function(){
-              $.ajax({
-                    url : "{{url()}}/quick/goToSample",
-                    type : "POST",
-                    // data : { 'getuser' : user,'getpassword' : password },
-                    dataType : 'json',
-                    success: function(response) {
-                      console.log('success');
-                      window.location = "{{url()}}/FundamentalLearnPage";
-                    }
-              });
-          });
+  window.location = "{{url()}}/FundamentalLearnPage";
+});
 
 $(document).ready(function() {
   $("#img1").hide();

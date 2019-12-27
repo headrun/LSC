@@ -212,16 +212,7 @@ font-size: 17px;
 });
 
 $(document).on('click', '.concept', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToConcept",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Unit3Module1Concept";
-          }
-    });
+  window.location = "{{url()}}/Unit3Module1Concept";
 });
 </script>
 @stop

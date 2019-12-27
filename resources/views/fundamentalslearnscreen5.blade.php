@@ -213,29 +213,11 @@ h2,h3{
 });
 
 $(document).on('click', '#back', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen4";
-          }
-    });
+  window.location = "{{url()}}/FundamentalLearnScreen4";
 });
 
 $(document).on('click', '#gotohome', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/SidebarLearningPage";
-          }
-    });
+  window.location = "{{url()}}/SidebarLearningPage";
 });
 
 var count = 0;

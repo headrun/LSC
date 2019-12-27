@@ -116,48 +116,14 @@ h2{
 </html>
 
 <script type="text/javascript">
-
-/*$(document).ready(function(){
- $('[data-toggle="popover"]').popover('show');
-});*/
-
-$(document).on('click', '#next', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/PlanningPageSlide4";
-          }
-    });
-});
-
-$(document).on('click', '#back', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/TriviaMode2";
-          }
-    });
-});
-
-$(document).on('click', '#gotohome', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/EconomicsModule";
-          }
-    });
-});
+  $(document).on('click', '#next', function(){
+    window.location = "{{url()}}/PlanningPageSlide4";
+  });
+  $(document).on('click', '#back', function(){
+    window.location = "{{url()}}/TriviaMode2";
+  });
+  $(document).on('click', '#gotohome', function(){
+    window.location = "{{url()}}/EconomicsModule";
+  });
 </script>
 @stop

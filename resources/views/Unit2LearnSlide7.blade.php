@@ -197,42 +197,11 @@ else if (event.keyCode === 38) {
 }
 });
 
-//  $(document).on('click', '#next', function(){
-//      $.ajax({
-//            url : "{{url()}}/quick/goToSample",
-//            type : "POST",
-//            // data : { 'getuser' : user,'getpassword' : password },
-//            dataType : 'json',
-//            success: function(response) {
-//              console.log('success');
-// window.location = "{{url()}}/Unit2LearnSlide8";
-//            }
-//      });
-//  });
-
  $(document).on('click', '#back', function(){
-     $.ajax({
-           url : "{{url()}}/quick/goToSample",
-           type : "POST",
-           // data : { 'getuser' : user,'getpassword' : password },
-           dataType : 'json',
-           success: function(response) {
-             console.log('success');
-             window.location = "{{url()}}/Unit2LearnSlide6";
-           }
-     });
+  window.location = "{{url()}}/Unit2LearnSlide6";
  });
  $(document).on('click', '#gotohome', function(){
-     $.ajax({
-           url : "{{url()}}/quick/goToSample",
-           type : "POST",
-           // data : { 'getuser' : user,'getpassword' : password },
-           dataType : 'json',
-           success: function(response) {
-             console.log('success');
-             window.location = "{{url()}}/Learn";
-           }
-     });
+  window.location = "{{url()}}/Learn";
  });
  </script>
  @stop

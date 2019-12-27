@@ -267,96 +267,27 @@ $(document).on('click', '#module2', function(){
 </script>
 
 <script type="text/javascript">
-
-$(document).on('click', '#module3', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module3Theory";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module4', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module4Theory";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module5', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-
-$(document).on('click', '#module2a', function(){
-                $.ajax({
-                      url : "{{url()}}/quick/goToSample",
-                      type : "POST",
-                      // data : { 'getuser' : user,'getpassword' : password },
-                      dataType : 'json',
-                      success: function(response) {
-                        console.log('success');
-                        window.location = "{{url()}}/LogisticsInfrastureOverview";
-                      }
-                });
-            });
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module4a', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Unit2LearnSlide1";
-          }
-    });
-});
-
-$(document).on('click', '#moduleBasic', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/basicModule";
-          }
-    });
-});
+  $(document).on('click', '#module3', function(){
+    window.location = "{{url()}}/Module3Theory";
+  });
+  $(document).on('click', '#module4', function(){
+    window.location = "{{url()}}/Module4Theory";
+  });
+  $(document).on('click', '#module5', function(){
+    window.location = "{{url()}}/Sample";
+  });
+  $(document).on('click', '#module2a', function(){
+    window.location = "{{url()}}/LogisticsInfrastureOverview";
+  });
+  $(document).on('click', '#module4a', function(){
+    window.location = "{{url()}}/Unit2LearnSlide1";
+  });
+  $(document).on('click', '#moduleBasic', function(){
+    window.location = "{{url()}}/basicModule";
+  });
   window.onload = function() {
-  document.getElementById('learn').className = 'learn';
- };
+    document.getElementById('learn').className = 'learn';
+  };
 </script>
 @stop
 

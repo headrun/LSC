@@ -76,16 +76,7 @@ input.addEventListener("keyup", function(event) {
   }
 });
 $(document).on('click', '#back', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen1c";
-          }
-    });
+  window.location = "{{url()}}/FundamentalLearnScreen1c";
 });
 </script>
 @stop

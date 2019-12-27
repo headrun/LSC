@@ -119,50 +119,18 @@
 </html>
 
 <script type="text/javascript">
-$(document).on('click', '#module1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/ActivitiesPage";
-          }
-    });
-});
-
- window.onload = function() {
-   document.getElementById('activity').className = 'activity';
- };
-</script>
-
-<script type="text/javascript">
-$(document).on('click', '#module2', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/TransportationActivitiesPage";
-          }
-    });
-});
-
-$(document).on('click', '#module3', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/DistributionActivitiesPage";
-          }
-    });
-});
-
+  $(document).on('click', '#module1', function(){
+    window.location = "{{url()}}/ActivitiesPage";
+  });
+  window.onload = function() {
+    document.getElementById('activity').className = 'activity';
+  };
+  $(document).on('click', '#module2', function(){
+    window.location = "{{url()}}/TransportationActivitiesPage";
+  });
+  $(document).on('click', '#module3', function(){
+    window.location = "{{url()}}/DistributionActivitiesPage";
+  });
 </script>
 
 @stop

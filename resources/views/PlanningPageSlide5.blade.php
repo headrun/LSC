@@ -132,42 +132,13 @@ input.addEventListener("keyup", function(event) {
 });
 
 $(document).on('click', '#next', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/PlanningPageSlide6";
-          }
-    });
+  window.location = "{{url()}}/PlanningPageSlide6";
 });
-
 $(document).on('click', '#back', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/PlanningPageSlide4";
-          }
-    });
+  window.location = "{{url()}}/PlanningPageSlide4";
 });
-
 $(document).on('click', '#gotohome', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/EconomicsModule";
-          }
-    });
+  window.location = "{{url()}}/EconomicsModule";
 });
 
 // Wrap every letter in a span

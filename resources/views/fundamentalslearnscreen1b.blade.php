@@ -211,42 +211,12 @@ if(next == 5){
   }
 });
 
-/*$(document).on('click', '#next', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen1c";
-          }
-    });
-});*/
 
 $(document).on('click', '#back', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen1a";
-          }
-    });
+  window.location = "{{url()}}/FundamentalLearnScreen1a";
 });
 $(document).on('click', '#gotohome', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnPage";
-          }
-    });
+  window.location = "{{url()}}/FundamentalLearnPage";
 });
 </script>
 @stop

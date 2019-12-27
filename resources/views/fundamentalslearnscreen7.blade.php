@@ -127,41 +127,14 @@ input.addEventListener("keyup", function(event) {
   }
 
 });
-$(document).on('click', '#back', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen6";
-          }
-    });
-});
-$(document).on('click', '#next', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/FundamentalLearnScreen8";
-          }
-    });
-});
-$(document).on('click', '#gotohome', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/SidebarLearningPage";
-          }
-    });
-});
+  $(document).on('click', '#back', function(){
+    window.location = "{{url()}}/FundamentalLearnScreen6";
+  });
+  $(document).on('click', '#next', function(){
+    window.location = "{{url()}}/FundamentalLearnScreen8";
+  });
+  $(document).on('click', '#gotohome', function(){
+    window.location = "{{url()}}/SidebarLearningPage";
+  });
 </script>
 @stop

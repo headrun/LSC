@@ -196,149 +196,35 @@
 </html>
 
 <script type="text/javascript">
-
-$(document).on('click', '#module1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module1Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#speed1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module1ATest";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module2', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module2Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module3', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module3Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#constraints1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module3ATest";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module4', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module4Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#planning', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Module5Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module5', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module6', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-
- window.onload = function() {
- document.getElementById('test').className = 'test';
-
-};
-
+  $(document).on('click', '#module1', function(){
+    window.location = "{{url()}}/Module1Test";
+  });
+  $(document).on('click', '#speed1', function(){
+    window.location = "{{url()}}/Module1ATest";
+  });
+  $(document).on('click', '#module2', function(){
+    window.location = "{{url()}}/Module2Test";
+  });
+  $(document).on('click', '#module3', function(){
+    window.location = "{{url()}}/Module3Test";
+  });
+  $(document).on('click', '#constraints1', function(){
+    window.location = "{{url()}}/Module3ATest";
+  });
+  $(document).on('click', '#module4', function(){
+    window.location = "{{url()}}/Module4Test";
+  });
+  $(document).on('click', '#planning', function(){
+    window.location = "{{url()}}/Module5Test";
+  });
+  $(document).on('click', '#module5', function(){
+    window.location = "{{url()}}/Sample";
+  });
+  $(document).on('click', '#module6', function(){
+    window.location = "{{url()}}/Sample";
+  });
+  window.onload = function() {
+    document.getElementById('test').className = 'test';
+  };
 </script>
 @stop

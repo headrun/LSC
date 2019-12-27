@@ -118,19 +118,9 @@ font-size: 17px;
 </div></div>
     </body>
 
-    <script type="text/javascript">
-
+<script type="text/javascript">
 $(document).on('click', '#submit', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToTimer",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Unit3Module1Timer2";
-          }
-    });
+  window.location = "{{url()}}/Unit3Module1Timer2";
 });
 </script>
 @stop

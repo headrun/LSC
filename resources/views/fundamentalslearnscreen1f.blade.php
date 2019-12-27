@@ -114,41 +114,11 @@ if (event.keyCode === 40) {
    }
   }
 });
-// $(document).on('click', '#next', function(){
-//    $.ajax({
-//          url : "{{url()}}/quick/goToSample",
-//          type : "POST",
-//          // data : { 'getuser' : user,'getpassword' : password },
-//          dataType : 'json',
-//          success: function(response) {
-//            console.log('success');
-//            window.location = "{{url()}}/FundamentalLearnScreen1g";
-//          }
-//    });
-// });
 $(document).on('click', '#back', function(){
-   $.ajax({
-         url : "{{url()}}/quick/goToSample",
-         type : "POST",
-         // data : { 'getuser' : user,'getpassword' : password },
-         dataType : 'json',
-         success: function(response) {
-console.log('success');
-         window.location = "{{url()}}/FundamentalLearnScreen1e";
-         }
-   });
+  window.location = "{{url()}}/FundamentalLearnScreen1e";
 });
 $(document).on('click', '#gotohome', function(){
-   $.ajax({
-         url : "{{url()}}/quick/goToSample",
-         type : "POST",
-         // data : { 'getuser' : user,'getpassword' : password },
-         dataType : 'json',
-         success: function(response) {
-           console.log('success');
-           window.location = "{{url()}}/FundamentalLearnPage";
-         }
-   });
+  window.location = "{{url()}}/FundamentalLearnPage";
 });
 </script>
 @stop
