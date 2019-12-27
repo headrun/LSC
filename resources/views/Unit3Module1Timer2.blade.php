@@ -352,7 +352,7 @@ var AllQuestions = {
      A: 'TRUE',
      B: 'FALSE',
      C: 'Perishability is not related to distribution chain',
-     D: ' ',
+     D: '',
      E: 'Highly perishable products require a shorter chain to ensure product does not expire before reaching customer'
   },
   {
@@ -368,7 +368,7 @@ var AllQuestions = {
      A: 'Multiple manufacturing units to reduce the transportation of the biscuits',
      B: 'One Manufacturing unit; Many warehouses across country to ship biscuits from factory to warehouses and then to customers',
      C: 'Any of the above',
-     D: ' ',
+     D: '',
      E: 'Since transportation is costlier than production, it is better to set up many manufturing units rather than make the product centrally and transport it across the country'
   }]
 }
