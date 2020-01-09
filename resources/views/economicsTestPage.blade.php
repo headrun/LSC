@@ -139,103 +139,26 @@
 
 
 <script type="text/javascript">
-
-$(document).on('click', '#module1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module1_Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module2', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module2_Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module3', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module3_Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module4', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module4_Test";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module5', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module6', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-
- window.onload = function() {
- document.getElementById('test').className = 'test';
-
-};
+  $(document).on('click', '#module1', function(){
+    window.location = "{{url()}}/Economics/Module1_Test";
+  });
+  $(document).on('click', '#module2', function(){
+    window.location = "{{url()}}/Economics/Module2_Test";
+  });
+  $(document).on('click', '#module3', function(){
+    window.location = "{{url()}}/Economics/Module3_Test";
+  });
+  $(document).on('click', '#module4', function(){
+    window.location = "{{url()}}/Economics/Module4_Test";
+  });
+  $(document).on('click', '#module5', function(){
+    window.location = "{{url()}}/Sample";
+  });
+  $(document).on('click', '#module6', function(){
+    window.location = "{{url()}}/Sample";
+  });
+  window.onload = function() {
+    document.getElementById('test').className = 'test';
+  };
 </script>
 @stop
