@@ -211,19 +211,10 @@ display: none;
   // End Quiz JS
 });
 </script>
-<script type="text/javascript">
-$(document).on('click', '.concept', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToAverageConcept",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/AverageConcept";
-          }
-    });
-});
-</script>
 
+<script type="text/javascript">
+  $(document).on('click', '.concept', function(){
+    window.location = "{{url()}}/AverageConcept";
+  });
+</script>
 @stop

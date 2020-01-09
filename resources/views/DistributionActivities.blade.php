@@ -108,15 +108,7 @@
 
 <script type="text/javascript">
   $(document).on('click', '#module1', function(){
-      $.ajax({
-            url : "{{url()}}/quick/goToSample",
-            type : "POST",
-            dataType : 'json',
-            success: function(response) {
-              console.log('success');
-              window.location = "{{url()}}/Unit3activity1";
-            }
-      });
+    window.location = "{{url()}}/Unit3activity1";
   });
   window.onload = function() {
     document.getElementById('activity').className = 'activity';

@@ -97,37 +97,17 @@
   </div>
 </body>
 </html>
+
 <script type="text/javascript">
-
-$(document).on('click', '#distribution', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/DistributionLearnPage";
-          }
-    });
-});
-
-$(document).on('click', '#warehouse', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/WarehouseLearnPage";
-          }
-    });
-});
-
-window.onload = function() {
-  document.getElementById('learn').className = 'learn';
-};
+  $(document).on('click', '#distribution', function(){
+    window.location = "{{url()}}/DistributionLearnPage";
+  });
+  $(document).on('click', '#warehouse', function(){
+    window.location = "{{url()}}/WarehouseLearnPage";
+  });
+  window.onload = function() {
+    document.getElementById('learn').className = 'learn';
+  };
 </script>
 @stop
 

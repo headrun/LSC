@@ -142,20 +142,9 @@ Supply = 4000/2 ltrs/day = 2000 ltrs/day.
     </footer> -->
     </body>
 
-    <script type="text/javascript">
-
-$(document).on('click', '#submit', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToTimer",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module2/Timer";
-          }
-    });
-});
-</script>
-    
+<script type="text/javascript">
+  $(document).on('click', '#submit', function(){
+    window.location = "{{url()}}/Economics/Module2/Timer";
+  });
+</script>    
 @stop

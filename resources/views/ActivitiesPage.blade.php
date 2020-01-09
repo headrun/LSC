@@ -109,31 +109,15 @@
 </html>
 
 <script type="text/javascript">
-$(document).on('click', '#module1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Activity1";
-          }
-    });
-});
-$(document).on('click', '#module2', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Activity2";
-          }
-    });
-});
- window.onload = function() {
+  $(document).on('click', '#module1', function(){
+    window.location = "{{url()}}/Activity1";
+  });
+  $(document).on('click', '#module2', function(){
+    window.location = "{{url()}}/Activity2";
+  });
+  window.onload = function() {
     document.getElementById('activity').className = 'activity';
- };
+  };
 </script>
 @stop
 

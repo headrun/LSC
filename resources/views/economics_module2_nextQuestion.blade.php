@@ -226,17 +226,7 @@
 </script> -->
 
 <script type="text/javascript">
-
-$(document).on('click', '.concept', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToAverageConcept",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module2/next_question/Concept";
-          }
-    });
-});
+  $(document).on('click', '.concept', function(){
+    window.location = "{{url()}}/Economics/Module2/next_question/Concept";
+  });
 </script>

@@ -97,35 +97,15 @@
   </div>
 </body>
 </html>
+
 <script type="text/javascript">
-
-$(document).on('click', '#distribution', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/DistributionModule1";
-          }
-    });
-});
-
-$(document).on('click', '#warehouse', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/WarehouseModule";
-          }
-    });
-});
-
-window.onload = function() {
+  $(document).on('click', '#distribution', function(){
+    window.location = "{{url()}}/DistributionModule1";
+  });
+  $(document).on('click', '#warehouse', function(){
+    window.location = "{{url()}}/WarehouseModule";
+  });
+  window.onload = function() {
   document.getElementById('practice').className = 'practice';
 };
 </script>

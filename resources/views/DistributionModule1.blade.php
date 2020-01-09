@@ -104,153 +104,37 @@
 </html>
 
 <script type="text/javascript">
-$(document).on('click', '#module1', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/EconomicsModule2";
-          }
-    });
-});
+  $(document).on('click', '#module1', function(){
+    window.location = "{{url()}}/EconomicsModule2";
+  });
+  $(document).on('click', '#module2', function(){
+    window.location = "{{url()}}/SocialModulePage";
+  });
+  $(document).on('click', '#module3', function(){
+    window.location = "{{url()}}/EconomicsModule1";
+  });
+  $(document).on('click', '#module4', function(){
+    window.location = "{{url()}}/PlanningPage";
+  });
+  $(document).on('click', '#module5', function(){
+    window.location = "{{url()}}/Sample";
+  });
+  $(document).on('click', '#module6', function(){
+    window.location = "{{url()}}/Sample";
+  });
+  window.onload = function() {
+    document.getElementById('practice').className = 'practice';
+  };
+  $(document).on('click', '#demand', function(){
+    window.location = "{{url()}}/Unit3Module1Sample";
+  });
+  $(document).on('click', '#supply', function(){
+    window.location = "{{url()}}/Unit3Module1Sample2";
+  });
+  $(document).on('click', '#inventory', function(){
+    window.location = "{{url()}}/Economics/Module3/Sample";
+  });
 </script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module2', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/SocialModulePage";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module3', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/EconomicsModule1";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module4', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/PlanningPage";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module5', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#module6', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Sample";
-          }
-    });
-});
-
- window.onload = function() {
- document.getElementById('practice').className = 'practice';
-
-};
-
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#demand', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Unit3Module1Sample";
-          }
-    });
-});
-</script>
-
-<script type="text/javascript">
-
-$(document).on('click', '#supply', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Unit3Module1Sample2";
-          }
-    });
-});
-</script>
-<script type="text/javascript">
-
-$(document).on('click', '#inventory', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToSample",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module3/Sample";
-          }
-    });
-});
-</script>
-
 @stop
 
 

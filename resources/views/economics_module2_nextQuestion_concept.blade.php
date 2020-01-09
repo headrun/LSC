@@ -123,19 +123,9 @@
     </footer> -->
     </body>
 
-       <script type="text/javascript">
-
-$(document).on('click', '#submit', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToAverageTimer",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/Economics/Module2/next_question/Timer";
-          }
-    });
-});
+<script type="text/javascript">
+  $(document).on('click', '#submit', function(){
+    window.location = "{{url()}}/Economics/Module2/next_question/Timer";
+  });
 </script>
     

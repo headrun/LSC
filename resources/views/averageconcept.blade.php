@@ -122,20 +122,9 @@ font-size: 17px;
 </div>
     </body>
 
-       <script type="text/javascript">
-
-$(document).on('click', '#submit', function(){
-    $.ajax({
-          url : "{{url()}}/quick/goToAverageTimer",
-          type : "POST",
-          // data : { 'getuser' : user,'getpassword' : password },
-          dataType : 'json',
-          success: function(response) {
-            console.log('success');
-            window.location = "{{url()}}/module1/AverageTimerConcept";
-          }
-    });
-});
-</script>
-    
+<script type="text/javascript">
+  $(document).on('click', '#submit', function(){
+    window.location = "{{url()}}/module1/AverageTimerConcept";
+  });
+</script>  
 @stop  
