@@ -392,3 +392,6 @@ Route::any('/Unit3Activity1Page3L', function(){return view('Unit3Activity1Page3L
 Route::any('/Unit3Activity1Page4L', function(){return view('Unit3Activity1Page4L');});
 Route::any('/Unit3Activity1Page5L', function(){return view('Unit3Activity1Page5L');});
 
+// -------------------- Unit 4 Activity ----------------------------
+
+Route::any('/Unit4Activity1Page1', function(){return view('Unit4Activity1Page1');});
