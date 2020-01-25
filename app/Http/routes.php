@@ -415,3 +415,22 @@ Route::any('/InventoryModule1LearnScreen6', function(){return view('InventoryMod
 Route::any('/InventoryModule1LearnScreen7', function(){return view('InventoryModule1LearnScreen7');});
 Route::any('/InventoryModule1LearnScreen8', function(){return view('InventoryModule1LearnScreen8');});
 Route::any('/InventoryModule1LearnScreen9', function(){return view('InventoryModule1LearnScreen9');});
+
+
+Route::any('/inventoryModule2Learn', function(){return view('inventoryModule2Learn');});
+Route::any('/inventoryModule2LearnScreen2', function(){return view('inventoryModule2LearnScreen2');});
+Route::any('/inventoryModule2LearnScreen3', function(){return view('inventoryModule2LearnScreen3');});
+Route::any('/inventoryModule2LearnScreen4', function(){return view('inventoryModule2LearnScreen4');});
+Route::any('/inventoryModule2LearnScreen5', function(){return view('inventoryModule2LearnScreen5');});
+Route::any('/inventoryModule2LearnScreen6', function(){return view('inventoryModule2LearnScreen6');});
+Route::any('/inventoryModule2LearnScreen7', function(){return view('inventoryModule2LearnScreen7');});
+
+Route::any('/inventoryModule2LearnScreen8', function(){return view('inventoryModule2LearnScreen8');});
+
+Route::any('/inventoryModule2LearnScreen9', function(){return view('inventoryModule2LearnScreen9');});
+Route::any('/inventoryModule2LearnScreen10', function(){return view('inventoryModule2LearnScreen10');});
+Route::any('/inventoryModule2LearnScreen11', function(){return view('inventoryModule2LearnScreen11');});
+Route::any('/inventoryModule2LearnScreen12', function(){return view('inventoryModule2LearnScreen12');});
+Route::any('/inventoryModule2LearnScreen13', function(){return view('inventoryModule2LearnScreen13');});
+Route::any('/inventoryModule2LearnScreen14', function(){return view('inventoryModule2LearnScreen14');});
+Route::any('/inventoryModule2LearnScreen15', function(){return view('inventoryModule2LearnScreen15');});
