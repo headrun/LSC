@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>:: Activity ::</title>
@@ -56,6 +56,7 @@
             <div class="simulatequs">
                 <h2>See impact on final inventory on branded canvas shoes for a trader</h2>
                 <h3>You have the power to vary <span>purchase and sales</span></h3>
+                <p>Closing inventory = Opening inventory + Purchase - Sales</p>
             </div>
             <div class="unitvalues">
               <div class="row">
@@ -275,17 +276,26 @@
             var stop = function(ev, ui) {
                 sliding = false;
                 var this_val = ui.value;
-                console.log(ui.value);
+                //console.log(ui.value);
                 // console.log(ui);
                 // console.log(ev.target);
                 var slided_id = $(ev.target).attr('id');
+        if(slided_id=='slider_sales'){
+          $("#sslider_sales").text(this_val);
+        }
+        if(slided_id=='slider1_sales'){
+          $("#sslider1_sales").text(this_val);
+        }
+        if(slided_id=='slider2_sales'){
+          $("#sslider2_sales").text(this_val);
+        }
                 // debugger;
                 switch (slided_id) {
                     case 'slider':
                     case 'slider1':
                     case 'slider2':
                         {
-                            console.log(this_val);
+                            //console.log(this_val);
                             if (slided_id == 'slider' || slided_id == 'slider1' || slided_id == 'slider2') {
                                 var slided_idd = slided_id;
                             } else {
@@ -344,7 +354,7 @@
                              $('#s' + id).html(i * step);
                          }*/
                         console.log('#s' + id);
-                        $('#s' + id).html(i * step);
+                        $('#s' + id).html(0);
                         // var ml = max_val / step;
                         $('#' + id).append(el);
                         //console.log(opt.cvalue);
