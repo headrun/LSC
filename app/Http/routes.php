@@ -394,4 +394,8 @@ Route::any('/Unit3Activity1Page5L', function(){return view('Unit3Activity1Page5L
 
 // -------------------- Unit 4 Activity ----------------------------
 
+Route::any('/Unit4ActivityPage', function(){return view('Unit4ActivityPage');});
 Route::any('/Unit4Activity1Page1', function(){return view('Unit4Activity1Page1');});
+Route::any('/Unit4Activity2Page1', function(){return view('Unit4Activity2Page1');});
+Route::any('/Unit4Activity3Page1', function(){return view('Unit4Activity3Page1');});
+Route::any('/Unit4Activity4Page1', function(){return view('Unit4Activity4Page1');});

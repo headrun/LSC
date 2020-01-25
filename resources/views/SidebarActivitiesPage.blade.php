@@ -149,7 +149,7 @@
     window.location = "{{url()}}/DistributionActivitiesPage";
   });
   $(document).on('click', '#module4', function(){
-    window.location = "{{url()}}/Unit4Activity1Page1";
+    window.location = "{{url()}}/Unit4ActivityPage";
   });
 </script>
 
