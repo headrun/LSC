@@ -55,40 +55,13 @@ background:#35395c;
 .sweep:hover:before{transform: scaleX(1);}
 </style>
 </head>
-<body id="body" style="">
+<body id="body" style="background-color: blue;">
 <div class="container-fluid">
-   <div class="row" style="background-color: white;">
-     <!-- <h2 align="center"><b>Let us try to understand this with another example:<b> </h2> -->
-   </div>
    <div class="row" >
     <div style="padding: 20px;">
-      <h2 align="center">Closing Stock = Opening Stock + Purchase receipt - Sale</h2>
+      <br><br><br><br><br><br><br><br><br>
+      <h2 align="center" style="color: white;">Recap of our understanding Inventory through a small exercise</h2>
     </div>
-
-    <div class="row"> 
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3Slide2_1.png')}}" width="80px;" height="80px;">
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="20px;" height="20px;">
-        <img src="{{asset('assets/img/U4M3Slide2_2.png')}}" width="80px;" height="80px;">
-        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="20px;" height="20px;">
-      </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3Slide2_3.png')}}" width="80px;" height="80px;">
-      </div>
-    </div>
-    <br><br>
-<div style="background-color: red;">
-  Day 1
-</div>
-<br><br>
-<div style="background-color: red;">
-  Day 2
-</div>
-  <!-- <h2 align="center" style="color: red;">Time from warehouse to distributor is 1 day. Material from distributor reaches retailer on same day</h2> -->
-  <!-- <h2 align="center">Let us calculate inventory of these players for 2 days</h2> -->
-
    </div>
     <div class="row footer">
       <div class="col-lg-3 col-md-3 col-sm-3">
@@ -122,14 +95,14 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule3LearnScreen4";
+   window.location = "{{url()}}/inventoryModule3LearnScreen2";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
    if(next == -1){
-   window.location = "{{url()}}/inventoryModule3LearnScreen2";
+   window.location = "{{url()}}/Unit4LearnPage";
    }
   }
 });
