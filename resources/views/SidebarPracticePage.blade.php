@@ -104,6 +104,24 @@
                     </div>
                 </div>
             </div>
+            <?php if(Session::get('email') == 'vimal@mieone.com'){?>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="card" id ="module4">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            
+                                <img src="https://image.flaticon.com/icons/svg/1792/1792155.svg" alt="Smiley face" width="110" height="110">
+                            
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <h3>Role of Inventory in Logistics</h3>
+                            <br>
+                            <p>a complete list of items such as property, goods in stock, or the contents of a building.</p>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+            <?php }?>
 
 	</div>
     </div>
@@ -125,6 +143,10 @@ $(document).on('click', '#fundamentalsOfLogistics', function(){
 
 $(document).on('click', '#DistributionModule', function(){
    window.location = "{{url()}}/DistributionModule"; 
+});
+
+$(document).on('click', '#module4', function(){
+   window.location = "{{url()}}/InventoryModuleUnit4"; 
 });
 
  window.onload = function() {

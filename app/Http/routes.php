@@ -399,3 +399,7 @@ Route::any('/Unit4Activity1Page1', function(){return view('Unit4Activity1Page1')
 Route::any('/Unit4Activity2Page1', function(){return view('Unit4Activity2Page1');});
 Route::any('/Unit4Activity3Page1', function(){return view('Unit4Activity3Page1');});
 Route::any('/Unit4Activity4Page1', function(){return view('Unit4Activity4Page1');});
+
+Route::any('/InventoryModuleUnit4', function(){return view('InventoryModuleUnit4');});
+Route::any('/inventoryModule1', function(){return view('inventoryModule1');});
+Route::any('/inventoryModule2', function(){return view('inventoryModule2');});
