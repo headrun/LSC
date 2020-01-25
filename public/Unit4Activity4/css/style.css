@@ -822,3 +822,23 @@
         .canvasjs-chart-canvas{
           width: 100% !important;
         }
+.simulatequs h3 {
+    width: 90%;
+    float: none;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin: 5px auto 25px auto;
+    line-height: 27px;
+    font-family: 'Montserrat-Light';
+}
+.simulatequs p {
+    width: 100%;
+    float: none;
+    font-size: 15px;
+    color: #22a527;
+    text-align: center;
+    margin: 5px auto 20px auto;
+    line-height: 27px;
+    font-family: 'Montserrat-Light';
+}

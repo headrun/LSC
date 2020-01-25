@@ -403,6 +403,8 @@ Route::any('/Unit4Activity4Page1', function(){return view('Unit4Activity4Page1')
 Route::any('/InventoryModuleUnit4', function(){return view('InventoryModuleUnit4');});
 Route::any('/inventoryModule1', function(){return view('inventoryModule1');});
 Route::any('/inventoryModule2', function(){return view('inventoryModule2');});
+Route::any('/inventoryModule3', function(){return view('inventoryModule3');});
+Route::any('/inventoryModule4', function(){return view('inventoryModule4');});
 
 
 Route::any('/Unit4LearnPage', function(){return view('Unit4LearnPage');});

@@ -825,3 +825,13 @@
   font-family: 'Montserrat-Regular' !important;
       color: #b3c30d;
 }
+.simulatequs p {
+    width: 100%;
+    float: none;
+    font-size: 15px;
+    color: #22a527;
+    text-align: center;
+    margin: 5px auto 20px auto;
+    line-height: 27px;
+    font-family: 'Montserrat-Light';
+}

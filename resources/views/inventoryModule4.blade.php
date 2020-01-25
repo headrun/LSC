@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>:: Activity ::</title>
@@ -39,8 +39,6 @@
         <div class="simulate">
             <div class="simulatequs">
                 <h2>Months/Days of Inventory cover indicates how many months/days worth of demand you should hold in your stock</h2>
-                <h3>Understand your purchase requirements for a given opening inventory and closing inventory requirements (You can vary Monthly sales and Months of cover)</h3>
-                <p>Month of inventory = inventory / Monthly sales</p>
             </div>
             <div class="monthlysale">
                 <div class="row">
