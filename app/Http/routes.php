@@ -403,3 +403,15 @@ Route::any('/Unit4Activity4Page1', function(){return view('Unit4Activity4Page1')
 Route::any('/InventoryModuleUnit4', function(){return view('InventoryModuleUnit4');});
 Route::any('/inventoryModule1', function(){return view('inventoryModule1');});
 Route::any('/inventoryModule2', function(){return view('inventoryModule2');});
+
+
+Route::any('/Unit4LearnPage', function(){return view('Unit4LearnPage');});
+Route::any('/inventoryModule1Learn', function(){return view('inventoryModule1Learn');});
+Route::any('/InventoryModule1LearnScreen2', function(){return view('InventoryModule1LearnScreen2');});
+Route::any('/InventoryModule1LearnScreen3', function(){return view('InventoryModule1LearnScreen3');});
+Route::any('/InventoryModule1LearnScreen4', function(){return view('InventoryModule1LearnScreen4');});
+Route::any('/InventoryModule1LearnScreen5', function(){return view('InventoryModule1LearnScreen5');});
+Route::any('/InventoryModule1LearnScreen6', function(){return view('InventoryModule1LearnScreen6');});
+Route::any('/InventoryModule1LearnScreen7', function(){return view('InventoryModule1LearnScreen7');});
+Route::any('/InventoryModule1LearnScreen8', function(){return view('InventoryModule1LearnScreen8');});
+Route::any('/InventoryModule1LearnScreen9', function(){return view('InventoryModule1LearnScreen9');});

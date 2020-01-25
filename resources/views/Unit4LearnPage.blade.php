@@ -1,4 +1,5 @@
 @extends('layout.sidebar')
+
 @section('content')
 
 <html lang="en">
@@ -6,10 +7,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <style>
 	.header_area {
    background-color: #7f5fc6;
@@ -54,81 +55,79 @@
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
     <div class="container" >
        <div>
-        <h1>Hi {{ Session::get('user_name') }}, Welcome to Logistics Learning Module</h1>
+        <h1>Hi {{ Session::get('user_name') }}, Welcome to Logistics Practice Module</h1>
        </div>
        <br><br>
-	<div class="row">
-           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <div class="card" id ="fundamentalsOfLogistics">
+       <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="card" id ="inventoryModule1" ><!-- <a href="{{url()}}/Subjects"> -->
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                             <!-- <div id="image"> -->
-                                <img src="https://image.flaticon.com/icons/svg/138/138297.svg" alt="Smiley face" width="110" height="110">
+                                <img src="https://image.flaticon.com/icons/svg/992/992900.svg" alt="Smiley face" width="110" height="110">
                             <!-- </div> -->
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                            <h3>1. Fundamentals of Logistics</h3>
+                            <h3>Basics of Inventory</h3>
+                            <br>
+                            <p>Demand is an economic term that refers to the amount of products or services that consumers wish to purchase at any given price level.</p>
+                        </div>
+                    </div><!-- </a> -->
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="card" id ="inventoryModule2">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <!-- <div id="image"> -->
+                                <img src="https://image.flaticon.com/icons/svg/1642/1642331.svg" alt="Smiley face" width="110" height="110">
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <h3>Inventory Module 2</h3>
+                            <br>
+                            <p>Supply is a fundamental economic concept that describes the total amount of a specific good or service that is available to consumers. </p>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <br><br>
+	<div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                <div class="card" id ="inventoryModule3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <!-- <div id="image"> -->
+                                <img src="https://image.flaticon.com/icons/svg/1935/1935797.svg" alt="Smiley face" width="110" height="110">
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <h3>Inventory Module 3</h3>
                             <br>
                             <p>Provides a unique opportunity to leverage high profile, quality authorship into a market segment .</p>
                         </div>
                     </div>
                 </div>        
-	    </div>
-           
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <div class="card" id ="transportation" ><!-- <a href="{{url()}}/Subjects"> -->
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display: none;">
+                <div class="card" id ="inventoryModule4" ><!-- <a href="{{url()}}/Subjects"> -->
                     <div class="row">
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                             <!-- <div id="image"> -->
-                                <img src="https://image.flaticon.com/icons/svg/726/726455.svg" alt="Smiley face" width="110" height="110">
+                                <img src="https://image.flaticon.com/icons/svg/138/138302.svg" alt="Smiley face" width="" height="">
                             <!-- </div> -->
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                            <h3>2. Transportation</h3>
+                            <h3>Inventory Module 4</h3>
                             <br>
-                            <p>Transportation is the movement of humans, animals and goods from one location to another .</p>
+                            <p>Transportation is the movement of humans, animals and goods from one location to another.</p>
                         </div>
                     </div><!-- </a> -->
                 </div>
-	    </div>
-           </div>
-	    <br><br>
-        <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" >
-                <div class="card" id ="distribution">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            <!-- <div id="image"> -->
-                                <img src="https://image.flaticon.com/icons/svg/994/994365.svg" alt="Smiley face" width="110" height="110">
-                            <!-- </div> -->
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                            <h3>3. Distribution</h3>
-                            <br>
-                            <p> It is a chain of businesses or intermediaries through which a good or service passes until it reaches the final buyer or the end consumer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-            <?php if(Session::get('email') == 'vimal@mieone.com'){?>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <div class="card" id ="module4">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            
-                                <img src="https://image.flaticon.com/icons/svg/1792/1792155.svg" alt="Smiley face" width="110" height="110">
-                            
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                            <h3>Role of Inventory in Logistics</h3>
-                            <br>
-                            <p>The action of making the best use of a resource.The action of making the best use of a resource.</p>
-                        </div>
-                    </div>
-                </div>        
             </div>
-            <?php }?>
-	</div>
+        </div>
+        <br><br>
     </div>
 </div>
 </div>
@@ -138,25 +137,18 @@
 </html>
 
 <script type="text/javascript">
-$(document).on('click', '#transportation', function(){
-   window.location = "{{url()}}/Learn"
-});
-
-$(document).on('click', '#distribution', function(){
-  window.location = "{{url()}}/DistributionLearning";
-});
-
- window.onload = function() {
- document.getElementById('learn').className = 'learn';
-};
-
-$(document).on('click', '#fundamentalsOfLogistics', function(){
-   window.location = "{{url()}}/FundamentalLearnPage";
-});
-
-$(document).on('click', '#module4', function(){
-   window.location = "{{url()}}/Unit4LearnPage";
-});
+  $(document).on('click', '#inventoryModule1', function(){
+    window.location = "{{url()}}/inventoryModule1Learn";
+  });
+  $(document).on('click', '#inventoryModule2', function(){
+    window.location = "{{url()}}/inventoryModule2Learn";
+  });
+  $(document).on('click', '#inventoryModule3', function(){
+    window.location = "{{url()}}/inventoryModule3Learn";
+  });
+  window.onload = function() {
+    document.getElementById('learn').className = 'learn';
+  };
 </script>
 @stop
 
