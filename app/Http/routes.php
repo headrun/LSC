@@ -436,3 +436,12 @@ Route::any('/inventoryModule2LearnScreen12', function(){return view('inventoryMo
 Route::any('/inventoryModule2LearnScreen13', function(){return view('inventoryModule2LearnScreen13');});
 Route::any('/inventoryModule2LearnScreen14', function(){return view('inventoryModule2LearnScreen14');});
 Route::any('/inventoryModule2LearnScreen15', function(){return view('inventoryModule2LearnScreen15');});
+
+
+Route::any('/inventoryModule3Learn', function(){return view('inventoryModule3Learn');});
+Route::any('/inventoryModule3LearnScreen2', function(){return view('inventoryModule3LearnScreen2');});
+Route::any('/inventoryModule3LearnScreen3', function(){return view('inventoryModule3LearnScreen3');});
+Route::any('/inventoryModule3LearnScreen4', function(){return view('inventoryModule3LearnScreen4');});
+Route::any('/inventoryModule3LearnScreen5', function(){return view('inventoryModule3LearnScreen5');});
+Route::any('/inventoryModule3LearnScreen6', function(){return view('inventoryModule3LearnScreen6');});
+Route::any('/inventoryModule3LearnScreen7', function(){return view('inventoryModule3LearnScreen7');});
