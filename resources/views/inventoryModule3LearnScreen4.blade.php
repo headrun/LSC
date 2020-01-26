@@ -54,6 +54,63 @@ background:#35395c;
 }
 .sweep:hover:before{transform: scaleX(1);}
 </style>
+
+<style type="text/css">
+  .circle_container
+{
+  width : 128px;
+  height : 128px;
+  margin : 0;
+  padding : 0;
+/*  border : 1px solid red; */
+}
+
+/* Circle Main draws the actual circle */
+.circle_main
+{
+  width : 100%;
+  height : 100%;
+  border-radius : 50%;
+  border : 2px solid green; /* can alter thickness and colour of circle on this line */
+  margin : 0;
+  padding : 0;
+}
+
+/* Circle Text Container - constrains text area to within the circle */
+.circle_text_container
+{
+  /* area constraints */
+  width : 70%;
+  height : 70%;
+  max-width : 70%;
+  max-height : 70%;
+  margin : 0;
+  padding : 0;
+
+  /* some position nudging to center the text area */
+  position : relative;
+  left : 15%;
+  top : 15%;
+  
+  /* preserve 3d prevents blurring sometimes caused by the text centering in the next class */
+  transform-style : preserve-3d;
+  
+  /*border : 1px solid green;*/
+}
+
+/* Circle Text - the appearance of the text within the circle plus vertical centering */
+.circle_text
+{
+  /* change font/size/etc here */
+  /*font: 11px "Tahoma", Arial, Serif;  */
+  text-align : center;
+  
+  /* vertical centering technique */
+  position : relative;
+  top : 50%;
+  transform : translateY(-50%);
+}
+</style>
 </head>
 <body id="body" style="">
 <div class="container-fluid">
@@ -61,7 +118,7 @@ background:#35395c;
      <h2 align="center"><b>Types of Inventory<b> </h2>
    </div>
 
-    <div class="row"> 
+    <div class="row" align="center"> 
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         <p>Supplier</p>
         <img src="{{asset('assets/img/U4M3Van.png')}}" width="230px;" height="230px;">
@@ -76,6 +133,89 @@ background:#35395c;
       </div>
     </div>
 
+    <div class="row" align="center">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+        <div class="circle_container">
+          <div class="circle_main">
+            <div class="circle_text_container">
+              <div class = "circle_text">
+                Transit Inventory
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+        
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+        
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+        <div class="circle_container">
+          <div class="circle_main">
+            <div class="circle_text_container">
+              <div class = "circle_text">
+                Transit Inventory
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<br><br><br>
+     <div class="row" align="center">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+        
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+        <div class="circle_container">
+          <div class="circle_main">
+            <div class="circle_text_container">
+              <div class = "circle_text">
+                Raw Material inventory
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+        <div class="circle_container">
+          <div class="circle_main">
+            <div class="circle_text_container">
+              <div class = "circle_text">
+                Finished Goods inventory
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+        
+      </div>
+    </div>
+<br><br><br>
+     <div class="row" align="center">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-sm-4">
+        
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-sm-4">
+        <!-- <span style="border-radius: 100px; background: green;color : white;padding : 10px 15px;">Work in progress inventory</span> -->
+        <div class="circle_container">
+          <div class="circle_main">
+            <div class="circle_text_container">
+              <div class = "circle_text">
+                Work in progress inventory
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-sm-4">
+        
+      </div>
+    </div>
+<br><br><br>
   <!-- <h2 align="center">Firm buys from cast iron from suppliers, manufactures in production unit and sends to warehouse</h2> -->
   <!-- <h2 align="center">Let us calculate inventory of these players for 2 days</h2> -->
 

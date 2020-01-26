@@ -54,6 +54,16 @@ background:#35395c;
 }
 .sweep:hover:before{transform: scaleX(1);}
 </style>
+
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+td{
+  text-align: center;
+}
+</style>
 </head>
 <body id="body" style="">
 <div class="container-fluid">
@@ -67,24 +77,183 @@ background:#35395c;
 
     <div class="row"> 
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3Slide2_1.png')}}" width="80px;" height="80px;">
+        <img src="{{asset('assets/img/U4M3Slide2_1.png')}}" width="100px;" height="100px;">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="20px;" height="20px;">
-        <img src="{{asset('assets/img/U4M3Slide2_2.png')}}" width="80px;" height="80px;">
-        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="20px;" height="20px;">
+        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="40px;" height="40px;">
+        <img src="{{asset('assets/img/U4M3Slide2_2.png')}}" width="100px;" height="100px;">
+        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="40px;" height="40px;">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3Slide2_3.png')}}" width="80px;" height="80px;">
+        <img src="{{asset('assets/img/U4M3Slide2_3.png')}}" width="100px;" height="100px;">
       </div>
     </div>
     <br><br>
-<div style="background-color: red;">
-  Day 1
+<div style="background-color: red;" align="center">
+  <b>Day 1</b>
 </div>
-<br><br>
-<div style="background-color: red;">
-  Day 2
+<br>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <table style="width:100%">
+  <tr>
+    <td>Opening Stock</td>
+    <td>100</td> 
+  </tr>
+  <tr>
+    <td>Purchase order placed</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Purchase receipt</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Sale</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Closing Stock</td>
+    <td>80</td>
+  </tr>
+</table>
+  </div>
+   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <table style="width:100%">
+  <tr>
+    <td>Opening Stock</td>
+    <td>50</td> 
+  </tr>
+  <tr>
+    <td>Purchase order placed</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Purchase receipt</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Sale</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Closing Stock</td>
+    <td>35</td>
+  </tr>
+</table>
+  </div>
+   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <table style="width:100%">
+  <tr>
+    <td>Opening Stock</td>
+    <td>30</td> 
+  </tr>
+  <tr>
+    <td>Purchase order placed</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>Purchase receipt</td>
+    <td>15</td>
+  </tr>
+  <tr>
+    <td>Sale</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Closing Stock</td>
+    <td>35</td>
+  </tr>
+</table>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" align="center">
+    <span style="color: blue;"><b>Purchase form distributor is the sale of warehouse</b></span>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" align="center">
+    <span style="color: blue;"><b>Purchase form retailer is the sale of distributor</b></span>
+  </div>
+</div>
+<br>
+<div style="background-color: red;" align="center">
+  <b>Day 2</b>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <table style="width:100%">
+  <tr>
+    <td>Opening Stock</td>
+    <td>80</td> 
+  </tr>
+  <tr>
+    <td>Purchase order placed</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Purchase receipt</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Sale</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Closing Stock</td>
+    <td>50</td>
+  </tr>
+</table>
+  </div>
+   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <table style="width:100%">
+  <tr>
+    <td>Opening Stock</td>
+    <td>35</td> 
+  </tr>
+  <tr>
+    <td>Purchase order placed</td>
+    <td>30</td>
+  </tr>
+  <tr>
+    <td>Purchase receipt</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Sale</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>Closing Stock</td>
+    <td>37</td>
+  </tr>
+</table>
+  </div>
+   <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <table style="width:100%">
+  <tr>
+    <td>Opening Stock</td>
+    <td>35</td> 
+  </tr>
+  <tr>
+    <td>Purchase order placed</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>Purchase receipt</td>
+    <td>18</td>
+  </tr>
+  <tr>
+    <td>Sale</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Closing Stock</td>
+    <td>33</td>
+  </tr>
+</table>
+  </div>
 </div>
   <!-- <h2 align="center" style="color: red;">Time from warehouse to distributor is 1 day. Material from distributor reaches retailer on same day</h2> -->
   <!-- <h2 align="center">Let us calculate inventory of these players for 2 days</h2> -->

@@ -65,7 +65,7 @@ background:#35395c;
       <h2 align="center">Consider a firm making gears from cast iron and few other material</h2>
     </div>
     <div class="col-lg-2 col-md-2 col-sm=2 col-xs-2">
-      <img src="{{asset('assets/img/U4M3Setting.jpg')}}">
+      <img src="{{asset('assets/img/U4M3Setting.jpg')}}" width="230px;" height="230px;">
     </div>
   </div>
 
