@@ -445,3 +445,11 @@ Route::any('/inventoryModule3LearnScreen4', function(){return view('inventoryMod
 Route::any('/inventoryModule3LearnScreen5', function(){return view('inventoryModule3LearnScreen5');});
 Route::any('/inventoryModule3LearnScreen6', function(){return view('inventoryModule3LearnScreen6');});
 Route::any('/inventoryModule3LearnScreen7', function(){return view('inventoryModule3LearnScreen7');});
+
+
+Route::any('/Unit4TestPage', function(){return view('Unit4TestPage');});
+Route::any('/inventoryModule1Test', function(){return view('inventoryModule1Test');});
+
+Route::any('/inventoryModule2Test', function(){return view('inventoryModule2Test');});
+
+Route::any('/inventoryModule3Test', function(){return view('inventoryModule3Test');});
