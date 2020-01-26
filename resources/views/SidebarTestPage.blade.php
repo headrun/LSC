@@ -114,7 +114,7 @@
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
               <!-- <div id="image"> -->
-              <img src="https://image.flaticon.com/icons/svg/726/726455.svg" alt="Smiley face" width="110" height="110">
+              <img src="https://image.flaticon.com/icons/svg/1792/1792155.svg" alt="Smiley face" width="110" height="110">
               <!-- </div> -->
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
