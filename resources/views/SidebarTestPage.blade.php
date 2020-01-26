@@ -108,8 +108,9 @@
           </div>
         </div>        
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="display: none;">
-        <div class="card" id ="" ><!-- <a href="{{url()}}/Subjects"> -->
+      <?php if(Session::get('email') == 'vimal@mieone.com'){?>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="">
+        <div class="card" id ="module4" ><!-- <a href="{{url()}}/Subjects"> -->
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
               <!-- <div id="image"> -->
@@ -117,13 +118,14 @@
               <!-- </div> -->
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-              <h3>2. Transportation</h3>
+              <h3>Role of Inventory in Logistics</h3>
               <br>
-              <p>Transportation is the movement of humans, animals and goods from one location to another.</p>
+              <p>The action of making the best use of a resource.The action of making the best use of a resource.</p>
             </div>
           </div><!-- </a> -->
         </div>
       </div>
+      <?php }?>
     </div>
     <br><br>
   </div>
@@ -138,6 +140,9 @@
   });
   $(document).on('click', '#distribution', function(){
     window.location = "{{url()}}/DistributionTest"    
+  });
+  $(document).on('click', '#module4', function(){
+    window.location = "{{url()}}/Unit4TestPage"    
   });
   window.onload = function() {
   document.getElementById('test').className = 'test';
