@@ -89,48 +89,36 @@ th {
    <br>
    <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-      <img src="{{asset('assets/img/U4M2Slide7.png')}}" width="300px;" height="300px;">
-      <!-- <p style="color: white;" align="center">Rice</p> -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <h2 align="center">Purchase</h2>
+      <h2 align="center">Sale</h2>
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-      <table>
-  <tr>
-    <th></th>
-    <th style="color: blue;">Opening Stock</th>
-    <th style="color: blue;">Receipt</th>
-    <th style="color: blue;">Sales</th>
-    <th style="color: blue;">Closing Stock</th>
-  </tr>
-  <tr>
-    <td style="color: blue;">Monday</td>
-    <td style="border: 1px solid; background-color: blue; color: white;">6000</td>
-    <td style="border: 1px solid red;">1000</td>
-    <td style="border: 1px solid red;">0</td>
-    <td style="border: 1px solid; background-color: blue; color: white;">7000</td>
-  </tr>
-  <tr>
-    <td style="color: blue;">Tuesday</td>
-    <td style="border: 1px solid; background-color: blue; color: white;">7000</td>
-    <td style="border: 1px solid red;">0</td>
-    <td style="border: 1px solid red;">2000</td>
-    <td style="border: 1px solid; background-color: blue; color: white;">5000</td>
-  </tr>
-  <tr>
-    <td style="color: blue;">Wednesday</td>
-    <td style="border: 1px solid; background-color: blue; color: white;">5000</td>
-    <td style="border: 1px solid red;">500</td>
-    <td style="border: 1px solid red;">500</td>
-    <td style="border: 1px solid; background-color: blue; color: white;">5000</td>
-  </tr>
-   <tr>
-    <td style="color: blue;">Thursday</td>
-    <td style="border: 1px solid; background-color: blue; color: white;">5000</td>
-    <td style="border: 1px solid red;">500</td>
-    <td style="border: 1px solid red;">1000</td>
-    <td style="border: 1px solid; background-color: blue; color: white;">4500</td>
-  </tr>
-  
-</table>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+      <h2 align="center">Purchase increases inventory</h2>
+      <br><br><br>
+      <br><br><br>
+      <h2 align="center">Sales decreases inventory</h2>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" align="center" style="border: 2px solid blue; border-radius: 15px; padding: 20px;">
+      <p><span style="border: 2px solid black; padding: 10px;">Open Stock</span></p>
+      <br>
+      <span><b>+</b></span>
+      <br>
+      <br>
+      <p><span style="border: 2px solid black; padding: 10px; ">Purchase receipt</span></p>
+      <br>
+      <span><b>-</b></span>
+      <br>
+      <br>
+      <p><span style="border: 2px solid black; padding: 10px;">Sales</span></p>
+      <br>
+      <span><b>=</b></span>
+      <br>
+      <br>
+      <p><span style="border: 2px solid black; padding: 10px;">Closing Stock</span></p>
     </div>
    </div>
 
@@ -173,14 +161,14 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen8";
+   window.location = "{{url()}}/inventoryModule2LearnScreen9";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
    if(next == -1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen6";
+   window.location = "{{url()}}/inventoryModule2LearnScreen7";
    }
   }
 });

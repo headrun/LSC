@@ -116,7 +116,7 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next-1;
    if(next == -1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen7";
+   window.location = "{{url()}}/inventoryModule2LearnScreen8";
    }
   }
 });
