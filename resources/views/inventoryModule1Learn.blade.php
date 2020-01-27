@@ -145,20 +145,14 @@ input.addEventListener("keyup", function(event) {
    }
    else if(next == 5){
    $("#h2").hide();
-   }
-   else if(next == 6){   
-    $("#plan").hide();
-   }
-   else if(next == 7){
+   $("#plan").hide();
    $("#move").hide();
-   } 
-   else if(next == 8){
    $("#h22").hide();
-   } 
-   else if(next == 9){
+   }
+   else if(next == 6){
    $("#start").show();
    }
-   else if(next == 10){
+   else if(next == 7){
    window.location = "{{url()}}/InventoryModule1LearnScreen2";
    }
   }
@@ -176,13 +170,16 @@ input.addEventListener("keyup", function(event) {
    $("#move").hide();
    }
    else if(next == 3){
-   $("#hand").hide();
-   }
-   else if(next == 4){
    $("#h22").hide();
    }
+   else if(next == 4){
+    $("#h2").show();
+    $("#plan").show();
+    $("#move").show();
+    $("#h22").show();
+   }
    else if(next == 5){
- $("#start").hide();
+    $("#start").hide();
    } 
    else if(next == -1){
    window.location = "{{url()}}/Unit4LearnPage";
@@ -275,4 +272,3 @@ console.log('success');
 });
 </script>
 @stop
-

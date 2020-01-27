@@ -12,6 +12,21 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+  @media screen and (min-width: 1200px) {
+  #image {
+    height: 540px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #image {
+    height: 780px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  #image {
+    width: 870px;
+  }
+}
  .row{
     margin-left:0px;
   }
@@ -58,9 +73,9 @@ background:#35395c;
 <body id="body" style="">
 <div class="container-fluid">
    <div class="row" style="background-color: white;">
-     <h2 align="center"><b>Let us consider a simple day to day example</b></h2>
+     <h2 align="center" id="two" class="w3-animate-left"><b>Let us consider a simple day to day example</b></h2>
    </div>
-   <div class="row" align="center">
+   <div class="row" align="center" id="one">
     <div class="row">
       <img src="{{asset('assets/img/dosa.jpg')}}">
       <img src="{{asset('assets/img/idly.jpg')}}">
@@ -69,11 +84,9 @@ background:#35395c;
     </div>
     <br>
     <br>
-     <h2>
-     Dosa /Idly are made at your house every day
-     </h2>
-     <h2>2 days of breakfast requires 1 Kg of batter</h2>
-     <h2>You are asked to go to a store and buy 2 Kg of batter to last for 4 days.</h2>
+     <h2 id="three" class="w3-animate-left">Dosa /Idly are made at your house every day</h2>
+     <h2 id="four" class="w3-animate-left">2 days of breakfast requires 1 Kg of batter</h2>
+     <h2 id="five" class="w3-animate-left">You are asked to go to a store and buy 2 Kg of batter to last for 4 days.</h2>
 
    </div>
     <div class="row footer">
@@ -98,7 +111,10 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#one").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#five").hide();
 });
 var count = 0;
 var next = 0;
@@ -108,13 +124,37 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/InventoryModule1LearnScreen3";
+    $("#one").show();
+   }
+   else if(next == 2){
+    $("#three").show();
+   }
+   else if(next == 3){
+    $("#four").show();
+   }
+   else if(next == 4){
+    $("#five").show();
+   }
+   else if(next == 5){
+    window.location = "{{url()}}/InventoryModule1LearnScreen3";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#one").hide();
+   }
+   else if(next == 1){
+    $("#three").hide();
+   }
+   else if(next == 2){
+    $("#four").hide();
+   }
+   else if(next == 3){
+    $("#five").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/inventoryModule1Learn";
    }
   }

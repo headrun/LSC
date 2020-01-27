@@ -58,27 +58,27 @@ background:#35395c;
 <body id="body" style="">
 <div class="container-fluid">
    <div class="row" style="background-color: white;">
-     <h2 align="center"><b>Objective of inventory is to store optimally to ensure minimal cost and wastage and complete fulfilment of demand<b> </h2>
+     <h2 align="center" id="one"><b>Objective of inventory is to store optimally to ensure minimal cost and wastage and complete fulfilment of demand<b> </h2>
    </div>
 
-   <h2 style="padding: 20px;">3 parameters everyone should be aware:</h2>
+   <h2 style="padding: 20px;" id="two">3 parameters everyone should be aware:</h2>
    <br>
    <div class="row">
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
      </div>
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="three1"> 
        <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px;"> Inventory (in units) <span style="color: blue;"> llll </span></p>
      </div>
      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> 
      </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="three2"> 
        <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px;"> Days of inventory cover</p>
      </div>
      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> 
      </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="three3"> 
        <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px;"> Days of inventory cover</p>
      </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
@@ -90,19 +90,19 @@ background:#35395c;
 
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
      </div>
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="four"> 
        <p style="color: blue;"> How much do you stock?</p>
      </div>
      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> 
      </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="five">
       <p style="color: blue;">How much days of demand will your inventory satisfy?</p>
      </div>
      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> 
      </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="six"> 
         <p style="color: blue;">What is the value of inventory held?</p>
      </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
@@ -111,7 +111,7 @@ background:#35395c;
 
 
    <br>
-   <h2 style="padding: 20px;" align="center"> With this background, let us learn further
+   <h2 style="padding: 20px;" align="center" id="seven"> With this background, let us learn further
 </h2>
   
   
@@ -137,7 +137,14 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#two").hide();
+  $("#three1").hide();
+  $("#three2").hide();
+  $("#three3").hide();
+  $("#four").hide();
+  $("#five").hide();
+  $("#six").hide();
+  $("#seven").hide();
 });
 var count = 0;
 var next = 0;
@@ -147,13 +154,61 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/Unit4LearnPage";
+    $("#two").show();
+   }
+   else if(next == 2){
+    $("#three1").show();
+   }
+   else if(next == 3){
+    $("#three2").show();
+   }
+   else if(next == 4){
+    $("#three3").show();
+   }
+   else if(next == 5){
+    $("#four").show();
+   }
+   else if(next == 6){
+    $("#five").show();
+   }
+   else if(next == 7){
+    $("#six").show();
+   }
+   else if(next == 8){
+    $("#seven").show();
+   }
+   else if(next == 9){
+    window.location = "{{url()}}/Unit4LearnPage"; 
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#two").hide();
+   }
+   else if(next == 1){
+    $("#three1").hide();
+   }
+   else if(next == 2){
+    $("#three2").hide();
+   }
+   else if(next == 3){
+    $("#three3").hide();
+   }
+   else if(next == 4){
+    $("#four").hide();
+   }
+   else if(next == 5){
+    $("#five").hide();
+   }
+   else if(next == 6){
+    $("#six").hide();
+   }
+   else if(next == 7){
+    $("#seven").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/InventoryModule1LearnScreen8";
    }
   }

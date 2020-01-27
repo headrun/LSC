@@ -62,20 +62,20 @@ background:#35395c;
    </div>
    <div class="row" align="center">
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-        <h1 style="color: red;">Day 1</h1>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="two">
+        <h2 style="color: red;">Day 1</h2>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-          <h1 style="color: red;">Day 2</h1>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="three">
+          <h2 style="color: red;">Day 2</h2>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-          <h1 style="color: red;">Day 3</h1>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="four">
+          <h2 style="color: red;">Day 3</h2>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3">
-          <h1 style="color: red;">Day 4</h1>
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="five">
+          <h2 style="color: red;">Day 4</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="one">
       <div class="col-lg-3 col-md-3 col-sm-3 col-3">
           <img id="img1" src="{{asset('assets/img/U4Slide31.jpg')}}" width="80px;" height="80px;">
         </div>
@@ -84,13 +84,14 @@ background:#35395c;
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-3">
           <img id="img1" src="{{asset('assets/img/U4Slide3_3.jpg')}}" width="80px;" height="80px;">
+          <span id="seven">+</span>
           <img id="img1" src="{{asset('assets/img/U4Slide3_4.jpg')}}" width="80px;" height="80px;">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-3">
           <img id="img1" src="{{asset('assets/img/U4Slide3_5.jpg')}}" width="80px;" height="80px;">
         </div>
     </div>
-    <div class="row">
+    <div class="row" id="one">
       <div class="col-lg-3 col-md-3 col-sm-3 col-3">
           <img id="img1" src="{{asset('assets/img/arrowDownUnit4.png')}}" width="80px;" height="80px;">
         </div>
@@ -105,22 +106,22 @@ background:#35395c;
         </div>
     </div>
     <div class="row">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="one">
           <img id="img1" src="{{asset('assets/img/U4Slide3_6.jpg')}}" width="80px;" height="80px;">
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="one">
           <img id="img1" src="{{asset('assets/img/U4Slide3_7.jpg')}}" width="80px;" height="80px;">
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="one">
           <img id="img1" src="{{asset('assets/img/U4Slide3_8.jpg')}}" width="80px;" height="80px;">
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-3 col-3">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="six">
           <h1>????</h1>
         </div>
     </div>
     <br>
     <br>
-    <h2>Arrival of guests on Day 3 , lead to out of stock situation on Day 4</h2>
+    <h2 id="eight" class="w3-animate-left">Arrival of guests on Day 3 , lead to out of stock situation on Day 4</h2>
 
    </div>
     <div class="row footer">
@@ -145,7 +146,14 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#two").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#five").hide();
+  $("#six").hide();
+  $("#seven").hide();
+  $("#eight").hide();
+  // document.getElementById("one").style.marginTop = "80px";
 });
 var count = 0;
 var next = 0;
@@ -155,13 +163,55 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/InventoryModule1LearnScreen4";
+    $("#two").show();
+   }
+   else if(next == 2){
+    $("#three").show();
+   }
+   else if(next == 3){
+    $("#four").show();
+   }
+   else if(next == 4){
+    $("#five").show();
+   }
+   else if(next == 5){
+    $("#six").show();
+   }
+   else if(next == 6){
+    $("#seven").show();
+   }
+   else if(next == 7){
+    $("#eight").show();
+   }
+   else if(next == 8){
+    window.location = "{{url()}}/InventoryModule1LearnScreen4";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#two").hide();
+   }
+   else if(next == 1){
+    $("#three").hide()
+   }
+   else if(next == 2){
+    $("#four").hide()
+   }
+   else if(next == 3){
+    $("#five").hide()
+   }
+   else if(next == 4){
+    $("#six").hide()
+   }
+   else if(next == 5){
+    $("#seven").hide()
+   }
+   else if(next == 6){
+    $("#eight").hide()
+   }
+   else if(next == -1){
    window.location = "{{url()}}/InventoryModule1LearnScreen2";
    }
   }

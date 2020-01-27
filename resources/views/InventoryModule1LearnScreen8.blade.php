@@ -58,29 +58,29 @@ background:#35395c;
 <body id="body" style="">
 <div class="container-fluid">
    <div class="row" style="background-color: white;">
-     <h2 align="center"><b>Does that mean you can hold a huge amount of stock, so there is no chance of stock-out? No!!! For the following reasons<b> </h2>
+     <h2 align="center" id="one"><b>Does that mean you can hold a huge amount of stock, so there is no chance of stock-out? No!!! For the following reasons<b> </h2>
    </div>
    <div class="row" style="padding-left: 30px;">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="one">
       <img src="{{asset('assets/img/U4Slide8_1.jpg')}}" width="220px;" height="220px;">
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="two">
       <p>You could be holding perishable items like fruits. If you do not sell within a short period of time, your entire stock will go waste</p>
     </div>
    </div>
    <div class="row" style="padding-left: 30px;">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="one">
       <img src="{{asset('assets/img/U4Slide8_2.png')}}" width="220px;" height="220px;">
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="three">
       <p>The more inventory you buy and stock, the more money gets locked until you sell them. Optimal inventory is required</p>
     </div>
    </div>
    <div class="row" style="padding-left: 30px;">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="one">
       <img src="{{asset('assets/img/U4Slide8_3.jpg')}}" width="220px;" height="220px;">
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="four">
       <p>The more inventory you buy and stock, expense goes up in form of warehousing and storage space, people expense for handling the products and so on</p>
     </div>
    </div>
@@ -106,7 +106,9 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#two").hide();
+  $("#three").hide();
+  $("#four").hide();
 });
 var count = 0;
 var next = 0;
@@ -116,13 +118,31 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/InventoryModule1LearnScreen9";
+    $("#two").show();
+   }
+   else if(next == 2){
+    $("#three").show();
+   }
+   else if(next == 3){
+    $("#four").show();
+   }
+   else if(next == 4){
+    window.location = "{{url()}}/InventoryModule1LearnScreen9";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#two").hide();
+   }
+   else if(next == 1){
+    $("#three").hide();
+   }
+   else if(next == 2){
+    $("#four").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/InventoryModule1LearnScreen7";
    }
   }

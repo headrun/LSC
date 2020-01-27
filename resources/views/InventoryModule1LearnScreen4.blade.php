@@ -58,16 +58,16 @@ background:#35395c;
 <body id="body" style="">
 <div class="container-fluid">
    <div class="row" style="background-color: white;">
-     <h2 align="center"><b>In out of stock situation at home, you just have to go to nearby shop and buy more batter.<b> </h2>
+     <h2 align="center" id="one"><b>In out of stock situation at home, you just have to go to nearby shop and buy more batter.<b> </h2>
    </div>
    <div class="row" >
     <div style="padding: 20px;">
-      <h2>However, assume following complications</h2>
+      <h2 id="two" class="w3-animate-left">However, assume following complications</h2>
       <br>
-     <h2><b>(a)</b><i>Nearby shops do not have batter hence, you are unable to buy (or)</i></h2>
-     <h2><b>(b)</b><i>You need to take a taxi to go to a shop which will cost you 100 Rs making it expensive to go regularly</i></h2>
+     <h2 id="three" class="w3-animate-left"><b>(a)</b><i>Nearby shops do not have batter hence, you are unable to buy (or)</i></h2>
+     <h2 id="four" class="w3-animate-left"><b>(b)</b><i>You need to take a taxi to go to a shop which will cost you 100 Rs making it expensive to go regularly</i></h2>
      <br><br>
-     <h2><i>These complications are regular in a business environment</i></h2>
+     <h2 id="five" class="w3-animate-left"><i>These complications are regular in a business environment</i></h2>
     </div>
      
 
@@ -94,7 +94,10 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#two").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#five").hide();
 });
 var count = 0;
 var next = 0;
@@ -104,13 +107,37 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/InventoryModule1LearnScreen5";
+    $("#two").show();
+   } 
+   else if(next == 2){
+    $("#three").show();
+   }
+   else if(next == 3){
+    $("#four").show();
+   }
+   else if(next == 4){
+    $("#five").show();
+   }
+   else if(next == 5){
+    window.location = "{{url()}}/InventoryModule1LearnScreen5";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#two").hide();
+   }
+   else if(next == 1){
+    $("#three").hide();
+   }
+   else if(next == 2){
+    $("#four").hide();
+   }
+   else if(next == 3){
+    $("#five").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/InventoryModule1LearnScreen3";
    }
   }
