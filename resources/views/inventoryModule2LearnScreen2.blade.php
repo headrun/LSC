@@ -99,38 +99,38 @@ th {
       <table>
         <tr>
     <td></td>
-    <td style="color: red;">Inventory</td>
-    <td>Inventory value</td>
+    <td style="color: red;" id="first6">Inventory</td>
+    <td id="second6">Inventory value</td>
   </tr>
   <tr>
     <th>Buy Price per unit (Rs)</th>
-    <th>Number of units</th>
-    <th>Value (in Rs)</th>
+    <th id="first">Number of units</th>
+    <th id="second">Value (in Rs)</th>
   </tr>
   <tr>
     <td>12</td>
-    <td>100</td>
-    <td>1200</td>
+    <td id="first1">100</td>
+    <td id="second1">1200</td>
   </tr>
   <tr>
     <td></td>
-    <td></td>
-    <td></td>
+    <td id="first2"></td>
+    <td id="second2"></td>
   </tr>
   <tr>
     <td>10</td>
-    <td>500</td>
-    <td>5000</td>
+    <td id="first3">500</td>
+    <td id="second3">5000</td>
   </tr>
    <tr>
     <td></td>
-    <td></td>
-    <td></td>
+    <td id="first4"></td>
+    <td id="second4"></td>
   </tr>
   <tr>
     <td>20</td>
-    <td>50</td>
-    <td>1000</td>
+    <td id="first5">50</td>
+    <td id="second5">1000</td>
 </tr>
 </table>
     </div>
@@ -177,7 +177,25 @@ if (event.keyCode === 40) {
    if(next == 1){
     $("#three").show();
    }
-   else if (next == 2){
+   else if(next == 2){
+    document.getElementById("first").style.backgroundColor = "#ef00ff36";
+    document.getElementById("first1").style.backgroundColor = "#ef00ff36";
+    document.getElementById("first2").style.backgroundColor = "#ef00ff36"; 
+    document.getElementById("first3").style.backgroundColor = "#ef00ff36";
+    document.getElementById("first4").style.backgroundColor = "#ef00ff36";
+    document.getElementById("first5").style.backgroundColor = "#ef00ff36";
+    document.getElementById("first6").style.backgroundColor = "#ef00ff36";
+   }
+   else if(next == 3){
+    document.getElementById("second").style.backgroundColor = "#43c3d847";
+    document.getElementById("second1").style.backgroundColor = "#43c3d847";
+    document.getElementById("second2").style.backgroundColor = "#43c3d847"; 
+    document.getElementById("second3").style.backgroundColor = "#43c3d847";
+    document.getElementById("second4").style.backgroundColor = "#43c3d847";
+    document.getElementById("second5").style.backgroundColor = "#43c3d847";
+    document.getElementById("second6").style.backgroundColor = "#43c3d847";
+   }
+   else if (next == 4){
     window.location = "{{url()}}/inventoryModule2LearnScreen3";
    }
   }
@@ -186,6 +204,24 @@ if (event.keyCode === 40) {
    next = next-1;
    if(next == 0){
     $("#three").hide();
+   }
+   else if (next == 1){
+    document.getElementById("first").style.backgroundColor = "";
+    document.getElementById("first1").style.backgroundColor = "";
+    document.getElementById("first2").style.backgroundColor = ""; 
+    document.getElementById("first3").style.backgroundColor = "";
+    document.getElementById("first4").style.backgroundColor = "";
+    document.getElementById("first5").style.backgroundColor = "";
+    document.getElementById("first6").style.backgroundColor = "";
+   }
+   else if (next == 2){
+    document.getElementById("second").style.backgroundColor = "";
+    document.getElementById("second1").style.backgroundColor = "";
+    document.getElementById("second2").style.backgroundColor = ""; 
+    document.getElementById("second3").style.backgroundColor = "";
+    document.getElementById("second4").style.backgroundColor = "";
+    document.getElementById("second5").style.backgroundColor = "";
+    document.getElementById("second6").style.backgroundColor = "";
    }
    else if(next == -1){
    window.location = "{{url()}}/inventoryModule2Learn";

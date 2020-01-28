@@ -71,7 +71,7 @@ background:#35395c;
      <!-- <h2><i>These complications are regular in a business environment</i></h2> -->
     </div>
 
-    <div class="row"> 
+    <div class="row" align="center"> 
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="three">
         <p>Day 1</p>
       </div>
@@ -86,7 +86,7 @@ background:#35395c;
       </div>
     </div>
 
-    <div class="row"> 
+    <div class="row" align="center"> 
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="four">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
@@ -105,7 +105,7 @@ background:#35395c;
       </div>
     </div>
 
-    <div class="row"> 
+    <div class="row" align="center"> 
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="four1">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
@@ -123,7 +123,7 @@ background:#35395c;
       </div>
     </div>
 
-    <div class="row"> 
+    <div class="row" align="center"> 
       <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <!-- <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;"> -->
         <!-- <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;"> -->

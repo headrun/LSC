@@ -100,37 +100,37 @@ th {
         <tr>
     <td></td>
     <td></td>
-    <td>DOC = Inventory/ Sales per day</td>
+    <td id="first">DOC = Inventory/ Sales per day</td>
   </tr>
   <tr>
     <th>Inventory</th>
     <th>Sales per day (Average)</th>
-    <th>Days of Inventory Cover (DOC)</th>
+    <th id="first1">Days of Inventory Cover (DOC)</th>
   </tr>
   <tr>
     <td>100</td>
     <td>10</td>
-    <td>10</td>
+    <td id="first2">10</td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td></td>
+    <td id="first3"></td>
   </tr>
   <tr>
     <td>500</td>
     <td>20</td>
-    <td>25</td>
+    <td id="first4">25</td>
   </tr>
    <tr>
     <td></td>
     <td></td>
-    <td></td>
+    <td id="first5"></td>
   </tr>
   <tr>
     <td>50</td>
     <td>10</td>
-    <td>5</td>
+    <td id="first6">5</td>
 </tr>
 </table>
     </div>
@@ -178,6 +178,15 @@ if (event.keyCode === 40) {
     $("#three").show();
    }
    else if(next == 2){
+    document.getElementById("first").style.backgroundColor = "#7dd8c36b";
+    document.getElementById("first1").style.backgroundColor = "#7dd8c36b";
+    document.getElementById("first2").style.backgroundColor = "#7dd8c36b";
+    document.getElementById("first3").style.backgroundColor = "#7dd8c36b";
+    document.getElementById("first4").style.backgroundColor = "#7dd8c36b";
+    document.getElementById("first5").style.backgroundColor = "#7dd8c36b";
+    document.getElementById("first6").style.backgroundColor = "#7dd8c36b";
+   }
+   else if(next == 3){
    window.location = "{{url()}}/inventoryModule2LearnScreen4"; 
    }
   }
@@ -186,6 +195,15 @@ if (event.keyCode === 40) {
    next = next-1;
    if(next == 0){
     $("#three").hide();
+   }
+   else if(next == 1){
+    document.getElementById("first").style.backgroundColor = "";
+    document.getElementById("first1").style.backgroundColor = "";
+    document.getElementById("first2").style.backgroundColor = "";
+    document.getElementById("first3").style.backgroundColor = "";
+    document.getElementById("first4").style.backgroundColor = "";
+    document.getElementById("first5").style.backgroundColor = "";
+    document.getElementById("first6").style.backgroundColor = "";
    }
    else if(next == -1){
    window.location = "{{url()}}/inventoryModule2LearnScreen2";

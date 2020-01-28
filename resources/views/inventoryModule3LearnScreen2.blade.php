@@ -62,7 +62,7 @@ background:#35395c;
    </div>
    <div class="row" >
     <div style="padding: 20px;">
-      <h2 align="center">A company has a central warehouse which sells material to a distributor who further sells to a retailer form which end customers buy the product.</h2>
+      <h2 align="center" id="two">A company has a central warehouse which sells material to a distributor who further sells to a retailer form which end customers buy the product.</h2>
       <br>
      <!-- <h2>Ration Z wants to stock enough for 4 days</h2> -->
      <br>
@@ -71,22 +71,33 @@ background:#35395c;
      <!-- <h2><i>These complications are regular in a business environment</i></h2> -->
     </div>
 
-    <div class="row"> 
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="row" align="center" id="one"> 
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img src="{{asset('assets/img/U4M3Slide2_1.png')}}" width="230px;" height="230px;">
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="80px;" height="80px;">
-        <img src="{{asset('assets/img/U4M3Slide2_2.png')}}" width="230px;" height="230px;">
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <br>
+        <span id="four">1 day</span>
+        <br><br>
         <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="80px;" height="80px;">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+        <img src="{{asset('assets/img/U4M3Slide2_2.png')}}" width="230px;" height="230px;">
+      </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <br>
+          <span id="five">Same day</span>
+          <br><br>
+        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="80px;" height="80px;">
+      </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
         <img src="{{asset('assets/img/U4M3Slide2_3.png')}}" width="230px;" height="230px;">
       </div>
     </div>
 
-  <h2 align="center" style="color: red;">Time from warehouse to distributor is 1 day. Material from distributor reaches retailer on same day</h2>
-  <h2 align="center">Let us calculate inventory of these players for 2 days</h2>
+  <h2 align="center" style="color: red;" id="three">Time from warehouse to distributor is 1 day. Material from distributor reaches retailer on same day</h2>
+  <h2 align="center" id="six">Let us calculate inventory of these players for 2 days</h2>
 
    </div>
     <div class="row footer">
@@ -111,7 +122,11 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#two").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#five").hide();
+  $("#six").hide();
 });
 var count = 0;
 var next = 0;
@@ -121,13 +136,43 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule3LearnScreen3";
+    $("#two").show();
+   }
+   else if(next == 2){
+    $("#three").show();    
+   }
+   else if(next == 3){
+    $("#four").show();    
+   }
+   else if(next == 4){
+    $("#five").show();    
+   }
+   else if(next == 5){
+    $("#six").show();    
+   }
+   else if(next == 6){
+    window.location = "{{url()}}/inventoryModule3LearnScreen3";   
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#two").hide();
+   }
+   else if(next == 1){
+    $("#three").hide();
+   }
+   else if(next == 2){
+    $("#four").hide();
+   }
+   else if(next == 3){
+    $("#five").hide();
+   }
+   else if(next == 4){
+    $("#six").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/inventoryModule3Learn";
    }
   }

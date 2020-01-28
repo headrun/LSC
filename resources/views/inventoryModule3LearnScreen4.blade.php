@@ -132,9 +132,9 @@ background:#35395c;
         <img src="{{asset('assets/img/U4M3User.jpg')}}" width="230px;" height="230px;">
       </div>
     </div>
-
+<br>
     <div class="row" align="center">
-      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3" id="four">
         <div class="circle_container">
           <div class="circle_main">
             <div class="circle_text_container">
@@ -151,7 +151,7 @@ background:#35395c;
       <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
         
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3" id="four1">
         <div class="circle_container">
           <div class="circle_main">
             <div class="circle_text_container">
@@ -168,7 +168,7 @@ background:#35395c;
       <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
         
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3" id="one">
         <div class="circle_container">
           <div class="circle_main">
             <div class="circle_text_container">
@@ -179,7 +179,7 @@ background:#35395c;
           </div>
         </div>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-sm-3" id="three">
         <div class="circle_container">
           <div class="circle_main">
             <div class="circle_text_container">
@@ -199,7 +199,7 @@ background:#35395c;
       <div class="col-lg-4 col-md-4 col-sm-4 col-sm-4">
         
       </div>
-      <div class="col-lg-4 col-md-4 col-sm-4 col-sm-4">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-sm-4" id="two">
         <!-- <span style="border-radius: 100px; background: green;color : white;padding : 10px 15px;">Work in progress inventory</span> -->
         <div class="circle_container">
           <div class="circle_main">
@@ -241,7 +241,11 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#one").hide();
+  $("#two").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#four1").hide();
 });
 var count = 0;
 var next = 0;
@@ -251,13 +255,39 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule3LearnScreen5";
+    $("#one").show();
+   }
+   else if(next == 2){
+    $("#two").show();
+   }
+   else if(next == 3){
+    $("#three").show();
+   }
+   else if(next == 4){
+    $("#four").show();
+    $("#four1").show();
+   }
+   else if(next == 5){
+    window.location = "{{url()}}/inventoryModule3LearnScreen5"; 
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#one").hide();
+   }
+   else if(next == 1){
+    $("#two").hide();
+   }
+   else if(next == 2){
+    $("#three").hide();
+   }
+   else if(next == 3){
+    $("#four").hide();
+    $("#four1").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/inventoryModule3LearnScreen3";
    }
   }
