@@ -103,22 +103,22 @@ th {
       <h2 align="center">Sales decreases inventory</h2>
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" align="center" style="border: 2px solid blue; border-radius: 15px; padding: 20px;">
-      <p><span style="border: 2px solid black; padding: 10px;">Open Stock</span></p>
+      <p id="one"><span style="border: 2px solid black; padding: 10px;">Open Stock</span></p>
       <br>
-      <span><b>+</b></span>
-      <br>
-      <br>
-      <p><span style="border: 2px solid black; padding: 10px; ">Purchase receipt</span></p>
-      <br>
-      <span><b>-</b></span>
+      <span id="two"><b>+</b></span>
       <br>
       <br>
-      <p><span style="border: 2px solid black; padding: 10px;">Sales</span></p>
+      <p id="three"><span style="border: 2px solid black; padding: 10px; ">Purchase receipt</span></p>
       <br>
-      <span><b>=</b></span>
+      <span id="four"><b>-</b></span>
       <br>
       <br>
-      <p><span style="border: 2px solid black; padding: 10px;">Closing Stock</span></p>
+      <p id="five"><span style="border: 2px solid black; padding: 10px;">Sales</span></p>
+      <br>
+      <span id="six"><b>=</b></span>
+      <br>
+      <br>
+      <p id="seven"><span style="border: 2px solid black; padding: 10px;">Closing Stock</span></p>
     </div>
    </div>
 
@@ -151,7 +151,13 @@ th {
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#one").hide();
+  $("#two").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#five").hide();
+  $("#six").hide();
+  $("#seven").hide();
 });
 var count = 0;
 var next = 0;
@@ -161,13 +167,55 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen9";
+    $("#one").show();
+   }
+   else if(next == 2){
+    $("#two").show();
+   }
+   else if(next == 3){
+    $("#three").show();
+   }
+   else if(next == 4){
+    $("#four").show();
+   }
+   else if(next == 5){
+    $("#five").show();
+   }
+   else if(next == 6){
+    $("#six").show();
+   }
+   else if(next == 7){
+    $("#seven").show();
+   }
+   else if(next == 8){
+   window.location = "{{url()}}/inventoryModule2LearnScreen9"; 
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#one").hide();
+   }
+   else if(next == 1) {
+    $("#two").hide();
+   }
+   else if(next == 2) {
+    $("#three").hide();
+   }
+   else if(next == 3) {
+    $("#four").hide();
+   }
+   else if(next == 4) {
+    $("#five").hide();
+   }
+   else if(next == 5) {
+    $("#six").hide();
+   }
+   else if(next == 6) {
+    $("#seven").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/inventoryModule2LearnScreen7";
    }
   }

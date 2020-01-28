@@ -81,13 +81,13 @@ th {
 <body id="body" style="">
 <div class="container-fluid">
    <div class="row" style="background-color: white;">
-     <h2 align="center"><b>HighVal Stationeries decides to have the following material<b> </h2>
+     <h2 align="center" id="one"><b>HighVal Stationeries decides to have the following material<b> </h2>
    </div>
 
    <!-- <h2 style="padding: 20px;">3 parameters everyone should be aware:</h2> -->
    <br>
    <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="two">
       <img src="{{asset('assets/img/U4M2Slide3_1.jpg')}}" width="180px;" height="180px;">
       <p align="center">Notebooks</p>
       <img src="{{asset('assets/img/U4M2Slide3_2.jpg')}}" width="180px;" height="180px;">
@@ -95,7 +95,7 @@ th {
       <img src="{{asset('assets/img/U4M2Silde3_3.jpg')}}" width="180px;" height="180px;">
       <p align="center">Staplers</p>
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+    <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="three">
       <table>
         <tr>
     <td></td>
@@ -165,7 +165,7 @@ th {
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#three").hide();
 });
 var count = 0;
 var next = 0;
@@ -175,14 +175,20 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen3";
+    $("#three").show();
+   }
+   else if (next == 2){
+    window.location = "{{url()}}/inventoryModule2LearnScreen3";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen2";
+   if(next == 0){
+    $("#three").hide();
+   }
+   else if(next == -1){
+   window.location = "{{url()}}/inventoryModule2Learn";
    }
   }
 });

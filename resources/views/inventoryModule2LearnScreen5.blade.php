@@ -62,9 +62,9 @@ background:#35395c;
    </div>
    <div class="row" >
     <div style="padding: 20px;">
-      <h2>Each retailer buys 20 Kg of rice. RationZ prcoures rice at 30 Rs/Kg Following are number of retailers during 4 days.</h2>
+      <h2 id="one">Each retailer buys 20 Kg of rice. RationZ prcoures rice at 30 Rs/Kg Following are number of retailers during 4 days.</h2>
       <br>
-     <h2>Ration Z wants to stock enough for 4 days</h2>
+     <h2 id="two">Ration Z wants to stock enough for 4 days</h2>
      <br>
      <!-- <h2 style="color: red">Find Inventory, Days of Cover and Inventory value</h2> -->
      <br><br>
@@ -72,52 +72,52 @@ background:#35395c;
     </div>
 
     <div class="row"> 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="three">
         <p>Day 1</p>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="five">
         <p>Day 2</p>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="seven">
         <p>Day 3</p>
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="nine">
         <p>Day 4</p>
       </div>
     </div>
 
     <div class="row"> 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="four">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="six">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="eight">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="ten">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
     </div>
 
     <div class="row"> 
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="four1">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-        <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
-        <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
-      </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="six1">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="eight1">
+        <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
+        <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="ten1">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
@@ -128,15 +128,15 @@ background:#35395c;
         <!-- <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;"> -->
         <!-- <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;"> -->
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="six2">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="eight2">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
       </div>
-      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" id="ten2">
         <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;">
         <!-- <img src="{{asset('assets/img/U4M2Slide5.png')}}" width="100px;" height="100px;"> -->
       </div>
@@ -166,7 +166,21 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#four1").hide();
+  $("#five").hide();
+  $("#six").hide();
+  $("#six1").hide();
+  $("#six2").hide();
+  $("#seven").hide();
+  $("#eight").hide();
+  $("#eight1").hide();
+  $("#eight2").hide();
+  $("#nine").hide();
+  $("#ten").hide();
+  $("#ten1").hide();
+  $("#ten2").hide();
 });
 var count = 0;
 var next = 0;
@@ -176,12 +190,74 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen6";
+    $("#three").show();
+   }
+   else if(next == 2){
+    $("#four").show();
+    $("#four1").show();
+   }
+   else if(next == 3){
+    $("#five").show();
+   }
+   else if(next == 4){
+    $("#six").show();
+    $("#six1").show();
+    $("#six2").show();
+   }
+   else if(next == 5){
+    $("#seven").show();
+   }
+   else if(next == 6){
+    $("#eight").show();
+    $("#eight1").show();
+    $("#eight2").show();
+   }
+   else if(next == 7){
+    $("#nine").show();
+   }
+   else if(next == 8){
+    $("#ten").show();
+    $("#ten1").show();
+    $("#ten2").show();
+   }
+   else if(next == 9){
+    window.location = "{{url()}}/inventoryModule2LearnScreen6";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
+   if(next == 0){
+    $("#three").hide();
+   }
+   else if(next == 1){
+    $("#four").hide();
+    $("#four1").hide();
+   }
+   else if(next == 2){
+    $("#five").hide();
+   }
+   else if(next == 3){
+    $("#six").hide();
+    $("#six1").hide();
+    $("#six2").hide();
+   }
+   else if(next == 4){
+    $("#seven").hide();
+   }
+   else if(next == 5){
+    $("#eight").hide();
+    $("#eight1").hide();
+    $("#eight2").hide();
+   }
+   else if(next == 6){
+    $("#nine").hide();
+   }
+   else if(next == 7){
+    $("#ten").hide();
+    $("#ten1").hide();
+    $("#ten2").hide();
+   }
    if(next == -1){
    window.location = "{{url()}}/inventoryModule2LearnScreen4";
    }

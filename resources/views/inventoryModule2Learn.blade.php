@@ -58,7 +58,7 @@ background:#35395c;
 <body id="body" style="background-color: #35395c;">
 <div class="container-fluid">
    <div class="row" style="background-color: white;">
-     <h2 align="center"><b>Major inventory related terminologies are<b> </h2>
+     <h2 align="center" id="one"><b>Major inventory related terminologies are<b> </h2>
    </div>
 
    <!-- <h2 style="padding: 20px;">3 parameters everyone should be aware:</h2> -->
@@ -69,20 +69,20 @@ background:#35395c;
    <div class="row">
     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
      </div>
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
-       <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px;"> Inventory (in units) <span style="color: blue;"> llll </span></p>
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="two"> 
+       <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px; border-radius: 15px;"> Inventory (in units) <span style="color: blue;"> llll </span></p>
      </div>
      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> 
      </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
-       <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px;"> Days of inventory cover</p>
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="three"> 
+       <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px;border-radius: 15px;"> Days of inventory cover</p>
      </div>
      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> 
      </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
-       <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px;"> Inventory Value</p>
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="four"> 
+       <p style=" background-color:blue; border: 2px solid; color: white; padding: 20px; border-radius: 15px;"> Inventory Value</p>
      </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
      </div>
@@ -93,19 +93,19 @@ background:#35395c;
 
       <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
      </div>
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="two1"> 
        <p style="color: white;"> How much do you stock?</p>
      </div>
      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> 
      </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="three1">
       <p style="color: white;">How much days of demand will your inventory satisfy?</p>
      </div>
      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"> 
      </div>
 
-     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
+     <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" id="four1"> 
         <p style="color: white;">What is the value of inventory held?</p>
      </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"> 
@@ -140,7 +140,12 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#two").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#two1").hide();
+  $("#three1").hide();
+  $("#four1").hide();
 });
 var count = 0;
 var next = 0;
@@ -150,13 +155,37 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen2";
+    $("#two").show();
+    $("#two1").show();
+   }
+   else if(next == 2){
+    $("#three").show();
+    $("#three1").show();
+   }
+   else if(next == 3){
+    $("#four").show();
+    $("#four1").show();
+   }
+   else if(next == 4){
+   window.location = "{{url()}}/inventoryModule2LearnScreen2"; 
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#two").hide();
+    $("#two1").hide();
+   }
+   else if(next == 1){
+    $("#three").hide();
+    $("#three1").hide();
+   }
+   else if (next == 2){
+    $("#four").hide();
+    $("#four1").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/Unit4LearnPage";
    }
   }

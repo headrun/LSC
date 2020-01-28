@@ -61,23 +61,23 @@ background:#35395c;
      <!-- <h2 align="center"><b>In out of stock situation at home, you just have to go to nearby shop and buy more batter.<b> </h2> -->
    </div>
    <div class="row" >
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="one">
      <img src="{{asset('assets/img/U4Slide6_1.jpg')}}"  width="480px;" height="480px;"> 
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-      <h2>Opening inventory = 12 boxes</h2>
+      <h2 id="two">Opening inventory = 12 boxes</h2>
       <br>
-     <h2>Sales today = 8 boxes</h2>
+     <h2 id="two1">Sales today = 8 boxes</h2>
      <br>
-     <h2>Closing stock (required) = 10 boxes</h2>
+     <h2 id="two2">Closing stock (required) = 10 boxes</h2>
      <br>
-     <h2>Purchase = ???</h2>
+     <h2 id="two3">Purchase = ???</h2>
      <br>
-     <h2>Opening inventory  + Purchase – Sales = Closing Inventory</h2>
+     <h2 id="three">Opening inventory  + Purchase – Sales = Closing Inventory</h2>
      <br>
-     <h2>12 + Purchase – 8 = 10</h2>
+     <h2 id="four">12 + Purchase – 8 = 10</h2>
     <br>
-    <h2>Purchase = 6 boxes</h2>
+    <h2 id="five">Purchase = 6 boxes</h2>
     </div>
     
     <br>
@@ -107,7 +107,13 @@ background:#35395c;
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#two").hide();
+  $("#two1").hide();
+  $("#two2").hide();
+  $("#two3").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#five").hide();
 });
 var count = 0;
 var next = 0;
@@ -117,12 +123,42 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen11";
+    $("#two").show();
+    $("#two1").show();
+    $("#two2").show();
+    $("#two3").show();
+   }
+   else if(next == 2){
+    $("#three").show();
+   }
+   else if(next == 3){
+    $("#four").show();
+   }
+   else if(next == 4){
+    $("#five").show();
+   }
+   else if(next == 5) {
+    window.location = "{{url()}}/inventoryModule2LearnScreen11";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
+   if(next == 0){
+    $("#two").hide();
+    $("#two1").hide();
+    $("#two2").hide();
+    $("#two3").hide();
+   }
+   else if(next == 1){
+    $("#three").hide();
+   }
+   else if(next == 2){
+    $("#four").hide();
+   }
+   else if(next == 3){
+    $("#five").hide();
+   }
    if(next == -1){
    window.location = "{{url()}}/inventoryModule2LearnScreen9";
    }
