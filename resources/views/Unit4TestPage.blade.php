@@ -147,7 +147,7 @@
     window.location = "{{url()}}/inventoryModule3Test";
   });
   window.onload = function() {
-    document.getElementById('learn').className = 'learn';
+    document.getElementById('test').className = 'test';
   };
 </script>
 @stop
