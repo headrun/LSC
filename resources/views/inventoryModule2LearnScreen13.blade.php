@@ -99,27 +99,27 @@ th {
   </tr>
   <tr>
     <td>Yesterday</td>
-    <td>12</td>
-    <td>10</td>
-    <td>0</td>
-    <td>8</td>
-    <td>12+0-8 = 4</td>
+    <td><span id="one">12</span></td>
+    <td><span id="three">10</span></td>
+    <td><span id="four">0</span></td>
+    <td><span id="two">8</span></td>
+    <td><span id="five">12+0-8 = 4</span></td>
   </tr>
   <tr>
     <td>Today</td>
-    <td>4</td>
-    <td></td>
-    <td>10</td>
-    <td>3</td>
-    <td>4+10-3 = 11</td>
+    <td><span id="six">4</span></td>
+    <td><span ></span></td>
+    <td><span id="seven">10</span></td>
+    <td><span id="eight">3</span></td>
+    <td><span id="nine">4+10-3 = 11</span></td>
   </tr>
   <tr>
     <td>Tomorrow</td>
-    <td>1</td>
-    <td></td>
-    <td>10</td>
-    <td>5</td>
-    <td>1+10-5 = 6</td>
+    <td><span id="ten">1</span></td>
+    <td><span id="eleven"></span></td>
+    <td><span id="twelve">10</span></td>
+    <td><span id="thirteen">5</span></td>
+    <td><span id="fourteen">1+10-5 = 6</span></td>
   </tr>
 </table>
      
@@ -147,7 +147,21 @@ th {
 </html>
 <script type="text/javascript">
 $(document).ready(function() {
-  $(".cent").hide();
+  $("#one").hide();
+  $("#two").hide();
+  $("#three").hide();
+  $("#four").hide();
+  $("#five").hide();
+  $("#six").hide();
+  $("#seven").hide();
+  $("#eight").hide();
+  $("#nine").hide();
+  $("#ten").hide();
+  $("#eleven").hide();
+  $("#twelve").hide();
+  $("#thirteen").hide();
+  $("#fourteen").hide();
+  $("#fifteen").hide();
 });
 var count = 0;
 var next = 0;
@@ -157,13 +171,98 @@ if (event.keyCode === 40) {
    event.preventDefault();
    next = next+1;
    if(next == 1){
-   window.location = "{{url()}}/inventoryModule2LearnScreen14";
+    $("#one").show();
+   }
+   else if(next == 2){
+    $("#two").show();
+   }
+   else if(next == 3){
+    $("#three").show();
+   }
+   else if(next == 4){
+    $("#four").show();
+   }
+   else if(next == 5){
+    $("#five").show();
+   }
+   else if(next == 6){
+    $("#six").show();
+   }
+   else if(next == 7){
+    $("#seven").show();
+   }
+   else if(next == 8){
+    $("#eight").show();
+   }
+   else if(next == 9){
+    $("#nine").show();
+   }
+   else if(next == 10){
+    $("#ten").show();
+   }
+   else if(next == 11){
+    $("#eleven").show();
+    drawArrowOnTable('table', 1, 2, 3, 3);
+   }
+   else if(next == 12){
+    $("#twelve").show();
+   }
+   else if(next == 13){
+    $("#thirteen").show();
+   }
+   else if(next == 14){
+    $("#fourteen").show();
+   }
+   else if(next == 15){
+    window.location = "{{url()}}/inventoryModule2LearnScreen14";
    }
   }
   else if (event.keyCode === 38) {
    event.preventDefault();
    next = next-1;
-   if(next == -1){
+   if(next == 0){
+    $("#one").hide()
+   }
+   else if(next == 1){
+    $("#two").hide();
+   }
+   else if(next == 2){
+    $("#three").hide();
+   }
+   else if(next == 3){
+    $("#four").hide();
+   }
+   else if(next == 4){
+    $("#five").hide();
+   }
+   else if(next == 5){
+    $("#six").hide();
+   }
+   else if(next == 6){
+    $("#seven").hide();
+   }
+   else if(next == 7){
+    $("#eight").hide();
+   }
+   else if(next == 8){
+    $("#nine").hide();
+   }
+   else if(next == 9){
+    $("#ten").hide();
+   }
+   else if(next == 10){
+    $("#eleven").hide();
+   }
+   else if(next == 11){
+    $("#twelve").hide();
+   }
+   else if(next == 12){
+    $("#thirteen").hide();
+   }
+   else if(next == 13){
+    $("#fourteen").hide();
+   }
+   else if(next == -1){
    window.location = "{{url()}}/inventoryModule2LearnScreen12";
    }
   }
@@ -243,7 +342,7 @@ function drawArrowOnTable(table, startRow, startColumn, endRow, endColumn) {
 }
 
 // draw an arrow from (1, 0) to (2, 4)
-drawArrowOnTable('table', 1, 2, 3, 3);
+// drawArrowOnTable('table', 1, 2, 3, 3);
 </script>
 @stop
 
