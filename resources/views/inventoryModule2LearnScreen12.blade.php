@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
  .row{
@@ -162,6 +163,80 @@ if (event.keyCode === 40) {
 $(document).on('click', '#gotohome', function(){
   window.location = "{{url()}}/FundamentalLearnPage";
 });
+// gets the center of a table cell relative to the document
+function getCellCenter(table, row, column) {
+  var tableRow = $(table).find('tr')[row];
+  var tableCell = $(tableRow).find('td')[column];
+
+  var offset = $(tableCell).offset();
+  var width = $(tableCell).innerWidth();
+  var height = $(tableCell).innerHeight();
+  
+  return {
+    x: offset.left + width / 2,
+    y: offset.top + height / 2
+  }
+}
+
+// draws an arrow on the document from the start to the end offsets
+function drawArrow(start, end) {
+
+  // create a canvas to draw the arrow on
+  var canvas = document.createElement('canvas');
+  canvas.width = $('body').innerWidth();
+  canvas.height = $('body').innerHeight();
+  $(canvas).css('position', 'absolute');
+  $(canvas).css('pointer-events', 'none');
+  $(canvas).css('top', '0');
+  $(canvas).css('left', '0');
+  $(canvas).css('opacity', '0.85');
+  $('body').append(canvas);
+  
+  // get the drawing context
+  var ctx = canvas.getContext('2d');
+  ctx.fillStyle = 'steelblue';
+  ctx.strokeStyle = 'steelblue';
+  
+  // draw line from start to end
+  ctx.beginPath();
+  ctx.moveTo(start.x, start.y);
+  ctx.lineTo(end.x, end.y);
+  ctx.lineWidth = 2;
+  ctx.stroke();
+  
+  // draw circle at beginning of line
+  ctx.beginPath();  
+  ctx.arc(start.x, start.y, 4, 0, Math.PI * 2, true);
+  ctx.fill();
+
+  // draw pointer at end of line (needs rotation)
+  ctx.beginPath();  
+  var angle = Math.atan2(end.y - start.y, end.x - start.x);
+  ctx.translate(end.x, end.y);
+  ctx.rotate(angle);
+  ctx.moveTo(0, 0);
+  ctx.lineTo(-10, -7);
+  ctx.lineTo(-10, 7);
+  ctx.lineTo(0, 0);
+  ctx.fill();
+
+  // reset canvas context
+  ctx.setTransform(1, 0, 0, 1, 0, 0);  
+  
+  return canvas;
+}
+
+// finds the center of the start and end cells, and then calls drawArrow
+function drawArrowOnTable(table, startRow, startColumn, endRow, endColumn) {
+  drawArrow(
+    getCellCenter($(table), startRow, startColumn),
+    getCellCenter($(table), endRow, endColumn)
+  );
+}
+
+// draw an arrow from (1, 0) to (2, 4)
+drawArrowOnTable('table', 1, 2, 2, 3);
+
 </script>
 @stop
 
