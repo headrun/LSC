@@ -120,7 +120,7 @@
                             
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                            <h3>4. Role of Inventory in Logistics</h3>
+                            <h3>4. Role of Inventory</h3>
                             <br>
                             <p>The action of making the best use of a resource.The action of making the best use of a resource.</p>
                         </div>
