@@ -121,7 +121,7 @@
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
                             <h3>4. Role of Inventory</h3>
                             <br>
-                            <p>a complete list of items such as property, goods in stock, or the contents of a building.</p>
+                            <p>A complete list of items such as property, goods in stock, or the contents of a building.</p>
                         </div>
                     </div>
                 </div>        
