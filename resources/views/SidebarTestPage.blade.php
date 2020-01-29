@@ -108,7 +108,6 @@
           </div>
         </div>        
       </div>
-      <?php if(Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'testuser@gmail.com'){?>
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="">
         <div class="card" id ="module4" ><!-- <a href="{{url()}}/Subjects"> -->
           <div class="row">
@@ -125,7 +124,6 @@
           </div><!-- </a> -->
         </div>
       </div>
-      <?php }?>
     </div>
     <br><br>
   </div>
