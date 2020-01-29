@@ -62,7 +62,7 @@ background:#35395c;
    </div>
    <div class="row" >
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="one">
-     <img src="{{asset('assets/img/U4Slide6_1.jpg')}}"  width="480px;" height="480px;"> 
+     <img src="{{asset('assets/img/U4Slide6_1C.jpg')}}"  width="480px;" height="480px;"> 
     </div>
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
       <h2 id="two">Opening inventory = 12 boxes</h2>

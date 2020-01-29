@@ -129,7 +129,7 @@ background:#35395c;
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         <p>Warehouse</p>
-        <img src="{{asset('assets/img/U4M3User.jpg')}}" width="230px;" height="230px;">
+        <img src="{{asset('assets/img/U4M3UserC.jpg')}}" width="230px;" height="230px;">
       </div>
     </div>
 <br>

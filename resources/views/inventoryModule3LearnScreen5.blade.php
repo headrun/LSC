@@ -77,7 +77,7 @@ background:#35395c;
         <img src="{{asset('assets/img/U4M3Factory.png')}}" width="230px;" height="230px;">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3User.jpg')}}" width="230px;" height="230px;">
+        <img src="{{asset('assets/img/U4M3UserC.jpg')}}" width="230px;" height="230px;">
       </div>
     </div>
 

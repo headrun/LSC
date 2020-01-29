@@ -107,13 +107,13 @@ background:#35395c;
     </div>
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="one">
-          <img id="img1" src="{{asset('assets/img/U4Slide3_6.jpg')}}" width="80px;" height="80px;">
+          <img id="img1" src="{{asset('assets/img/U4Slide3_6C.jpg')}}" width="80px;" height="80px;">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="one">
-          <img id="img1" src="{{asset('assets/img/U4Slide3_7.jpg')}}" width="80px;" height="80px;">
+          <img id="img1" src="{{asset('assets/img/U4Slide3_7C.jpg')}}" width="80px;" height="80px;">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="one">
-          <img id="img1" src="{{asset('assets/img/U4Slide3_8.jpg')}}" width="80px;" height="80px;">
+          <img id="img1" src="{{asset('assets/img/U4Slide3_8C.jpg')}}" width="80px;" height="80px;">
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 col-3" id="six">
           <h1>????</h1>

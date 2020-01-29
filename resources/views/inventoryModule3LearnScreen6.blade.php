@@ -96,7 +96,7 @@ Supplier takes 1 month to send material; Manufacturer takes 2 month to make gear
         <img src="{{asset('assets/img/U4M3Factory.png')}}" width="130px;" height="130px;">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3User.jpg')}}" width="130px;" height="130px;">
+        <img src="{{asset('assets/img/U4M3UserC.jpg')}}" width="130px;" height="130px;">
       </div>
     </div>
 

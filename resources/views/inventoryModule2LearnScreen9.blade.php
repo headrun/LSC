@@ -72,7 +72,7 @@ background:#35395c;
     </div>
     <br>
     <div align="center">
-     <img src="{{asset('assets/img/U4Slide6_1.jpg')}}"  width="230px;" height="230px;"> 
+     <img src="{{asset('assets/img/U4Slide6_1C.jpg')}}"  width="230px;" height="230px;"> 
     </div>
      
 
