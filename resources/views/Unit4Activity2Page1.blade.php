@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -123,8 +125,17 @@
             </div>
           </div>
         </div>
-        
+        <button id = "back" style="color: white; float: left; background-color: red;" class="btn btn-primary btn-lg"> Back</button>
+        <button id = "next" style="color: white; float: right; background-color: red;" class="btn btn-primary btn-lg"> Next</button>
     </div>
+    <script type="text/javascript">
+          $(document).on('click', '#next', function(){
+            window.location = "{{url()}}/Unit4Activity2Act2";
+          });
+          $(document).on('click', '#back', function(){
+            window.location = "{{url()}}/Unit4ActivityPage";
+          });
+    </script>
     <script src="https://code.jquery.com/jquery-1.12.4.js "></script>
     <script src="Unit4Activity2/js/popper.min.js " type="text/javascript "></script>
     <script src="Unit4Activity2/js/bootstrap.min.js " type="text/javascript "></script>
@@ -159,7 +170,7 @@
                     icon: "success",
                     button: "Go to Next Level",
                 }).then((value) => {
-                    location.href = 'Unit4Activity2/question2.html';
+                    location.href = '{{url()}}/Unit4Activity2Act2';
                 });
             } else {
                 if (act1 != act1_1) {
@@ -197,3 +208,4 @@
 </body>
 
 </html> 
+@stop
