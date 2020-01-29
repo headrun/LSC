@@ -402,7 +402,15 @@ Route::any('/Unit4Activity4Page1', function(){return view('Unit4Activity4Page1')
 
 Route::any('/InventoryModuleUnit4', function(){return view('InventoryModuleUnit4');});
 Route::any('/inventoryModule1', function(){return view('inventoryModule1');});
+Route::any('/InventoryModule1Act2', function(){return view('InventoryModule1Act2');});
+Route::any('/InventoryModule1Act3', function(){return view('InventoryModule1Act3');});
+Route::any('/InventoryModule1Act4', function(){return view('InventoryModule1Act4');});
+
 Route::any('/inventoryModule2', function(){return view('inventoryModule2');});
+Route::any('/InventoryModule2Act2', function(){return view('InventoryModule2Act2');});
+Route::any('/InventoryModule2Act3', function(){return view('InventoryModule2Act3');});
+Route::any('/InventoryModule2Act4', function(){return view('InventoryModule2Act4');});
+
 Route::any('/inventoryModule3', function(){return view('inventoryModule3');});
 Route::any('/inventoryModule4', function(){return view('inventoryModule4');});
 
