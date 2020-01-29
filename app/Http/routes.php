@@ -396,7 +396,15 @@ Route::any('/Unit3Activity1Page5L', function(){return view('Unit3Activity1Page5L
 
 Route::any('/Unit4ActivityPage', function(){return view('Unit4ActivityPage');});
 Route::any('/Unit4Activity1Page1', function(){return view('Unit4Activity1Page1');});
+Route::any('/Unit4Activity1Act2', function(){return view('Unit4Activity1Act2');});
+Route::any('/Unit4Activity1Act3', function(){return view('Unit4Activity1Act3');});
+Route::any('/Unit4Activity1Act4', function(){return view('Unit4Activity1Act4');});
+
 Route::any('/Unit4Activity2Page1', function(){return view('Unit4Activity2Page1');});
+Route::any('/Unit4Activity2Act2', function(){return view('Unit4Activity2Act2');});
+Route::any('/Unit4Activity2Act3', function(){return view('Unit4Activity2Act3');});
+Route::any('/Unit4Activity2Act4', function(){return view('Unit4Activity2Act4');});
+
 Route::any('/Unit4Activity3Page1', function(){return view('Unit4Activity3Page1');});
 Route::any('/Unit4Activity4Page1', function(){return view('Unit4Activity4Page1');});
 

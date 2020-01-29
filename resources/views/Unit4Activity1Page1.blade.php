@@ -1,3 +1,5 @@
+@extends('layout.sidebar1')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,7 +37,17 @@
                 <input type="button" class="submit" value="SUBMIT" Onclick='Activity_1();' />
             </div>
         </div>
+        <button id = "back" style="color: white; float: left; background-color: red;" class="btn btn-primary btn-lg"> Back</button>
+        <button id = "next" style="color: white; float: right; background-color: red;" class="btn btn-primary btn-lg"> Next</button>
     </div>
+    <script type="text/javascript">
+          $(document).on('click', '#next', function(){
+            window.location = "{{url()}}/Unit4Activity1Act2";
+          });
+          $(document).on('click', '#back', function(){
+            window.location = "{{url()}}/Unit4ActivityPage";
+          });
+    </script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="Unit4Activity1/js/popper.min.js" type="text/javascript"></script>
     <script src="Unit4Activity1/js/bootstrap.min.js" type="text/javascript"></script>
@@ -88,7 +100,7 @@
                     icon: "success",
                     button: "Go to Next Level",
                 }).then((value) => {
-                    location.href = 'Unit4Activity1/question2.html';
+                    location.href = '{{url()}}/Unit4Activity1Act2';
                 });
             } else {
 
@@ -106,3 +118,4 @@
 </body>
 
 </html>
+@stop

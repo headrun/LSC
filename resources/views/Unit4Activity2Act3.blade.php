@@ -1,0 +1,198 @@
+@extends('layout.sidebar2')
+@section('content')
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>:: Activity ::</title>
+    <link rel="stylesheet" href="Unit4Activity2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Unit4Activity2/css/fontawesome.css">
+    <link rel="stylesheet" href="Unit4Activity2/fontawsome/css/all.css">
+    <link rel="stylesheet" href="Unit4Activity2/css/style.css">
+    <link rel="stylesheet" href="Unit4Activity2/css/introjs.css">
+    <link rel="stylesheet" href="Unit4Activity2/fonts.css">
+    <link rel="stylesheet" href="Unit4Activity2/css/jquery-ui.css">
+
+</head>
+
+<body class="newbg2">
+    <div class="container">
+        <!-- <div class="question3">
+        <div class="kitchen_section">
+          <h2>Comming Soon</h2>
+          
+          <ul>
+            <li>Supermarket wants to stock rice to serve 2 day demand.</li>
+            <li>20 people walk in every day. 50% people buy 0.5 kg rice.</li>
+          </ul>
+        </div>
+      </div>
+    
+    <div class="submit_btn1">
+      <button class="submit1" Onclick="Activity();">Submit</button>
+    </div> -->
+
+        <div class="simulate">
+            <div class="clothshop">
+                <h2>Clothing (apparel) industry works on creating finished products from yarn. </h2>
+                <p>The process is as follows</p>
+                <div class="clothimg">
+                    <img src="Unit4Activity2/images/cloth.png">
+                </div>
+                <h3>2m of Yarn gives 1m of Grey Fabric, which gives 1m of dyed fabric which results in 1 shirt piece. </h3>
+                <p>Inventory as on <span class="boldcontentcolor">December 1st</span> in each stage is mentioned. Predict inventory for <span class="boldcontentcolor">1st of January, February, March and April.</span></p>
+                <p>(For example, if shirt inventory on Dec 1st is 100 units and another 50 units gets converted from Dyed fabric to shirt in 1 month, Jan1st inventory would be 100+50=150) </p>
+                <div class="clothimg">
+                    <img src="Unit4Activity2/images/cloth.png">
+                </div>
+            </div>
+            <div class="simulate_table">
+                <table class="table text-center simultetablecontent">
+                    <tr>
+                        <th>Dec 1st</th>
+                        <td>
+                            <h3>1000</h3>
+                        </td>
+                        <td>
+                            <h3>200</h3>
+                        </td>
+                        <td>
+                            <h3>150</h3>
+                        </td>
+                        <td>
+                            <h3>0</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th>Jan 1st</th>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="1000" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="0" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="200" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="150" /></td>
+                    </tr>
+
+                    <tr>
+                        <th>Feb 1st</th>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="0" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="1000" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="0" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="350" /></td>
+                    </tr>
+
+                    <tr>
+                        <th>Mar 1st</th>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="0" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="0" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="1000" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="350" /></td>
+                    </tr>
+
+                    <tr>
+                        <th>Apr 1st</th>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="0" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="0" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="0" /></td>
+                        <td><input type="text" class="tablefield" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" rel="1350" /></td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="blackshirtinput">
+                <input type="button" onclick="Activity();" value="submit" class="submit1">
+            </div>
+            
+            <div class="showsolution">
+            <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal2" />
+        </div>
+        
+        <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg showinganw" role="document">
+            <div class="modal-content">
+              <div class="modal-body solutionimage">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <img src="Unit4Activity2/images/anw3.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+          <button id = "back" style="color: white; float: left; background-color: red;" class="btn btn-primary btn-lg"> Back</button>
+        <button id = "next" style="color: white; float: right; background-color: red;" class="btn btn-primary btn-lg"> Next</button>
+
+        </div>
+        <script type="text/javascript">
+          $(document).on('click', '#next', function(){
+            window.location = "{{url()}}/Unit4Activity2Act4";
+          });
+          $(document).on('click', '#back', function(){
+            window.location = "{{url()}}/Unit4Activity2Act2";
+          });
+    </script>
+
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="Unit4Activity2/js/popper.min.js" type="text/javascript"></script>
+        <script src="Unit4Activity2/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="Unit4Activity2/js/intro.js" type="text/javascript"></script>
+        <script src="Unit4Activity2/js/jquery-ui.js"></script>
+        <script src="Unit4Activity2/js/activity.js"></script>
+        <script src="Unit4Activity2/js/bootbox.min.js"></script>
+        <script src="Unit4Activity2/js/sweetalert.min.js "></script>
+        <script>
+            $(document).ready(function() {
+                $(".tablefield").blur(function() {
+                    var val = $(this).val();
+                    var defval = $(this).attr('rel');
+                    if (val == '') {
+                        $(this).removeClass('errclass');
+                        $(this).removeClass('emp');
+                        $(this).removeClass('suc');
+                        $(this).removeClass('err');
+                        $(this).addClass('emp');
+                    } else if (val != defval) {
+                        $(this).addClass('errclass');
+                        $(this).removeClass('emp');
+                        $(this).removeClass('suc');
+                        $(this).removeClass('err');
+                        $(this).addClass('err');
+                    } else {
+                        $(this).removeClass('errclass');
+                        $(this).removeClass('emp');
+                        $(this).removeClass('suc');
+                        $(this).removeClass('err');
+                        $(this).addClass('suc');
+                    }
+                    Activity();
+                });
+
+            });
+
+            function Activity() {
+                var all = 16;
+                var err = $('.err').length;
+                var suc = $('.suc').length;
+                var emp = $('.emp').length;
+                //console.log('Error: '+err+' Success: '+suc+' Empty: '+emp);
+                if (all == suc) {
+                   swal({                    title: "Congratulations",                    icon: "success",                    button: "Go to Next Level",                }).then((value) => {                    location.href = '{{url()}}/Unit4Activity2Act4';                });
+                }
+                /*
+                var calc=parseFloat(err)+parseFloat(suc);
+                if(all == calc){
+                	swal({
+                	title: "Retry",
+                	button: "OK",
+                	className: "red-bg"
+                	});
+                }
+                */
+
+            }
+        </script>
+</body>
+
+</html>
+@stop

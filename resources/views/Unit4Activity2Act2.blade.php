@@ -24,21 +24,18 @@
             </h2>
             <div class="fabricimages">
                 <img src="Unit4Activity2/images/fabric.png" alt="" class="fabricbox" />
-                <img src="Unit4Activity2/images/right-arrow.png " alt=" " class="rightarrow" />
+                <img src=" Unit4Activity2/images/right-arrow.png " alt=" " class="rightarrow" />
                 <img src="Unit4Activity2/images/shirt.png " alt=" " class="fabricbox" />
             </div>
             <!-- <p>Per person consumption : <span class="boldcontentcolor ">250 gm.</span></p> -->
         </div>
         <div class="veg_sec2 ">
-            <h3>For the varying production capacity per day, enter the fabric stock required (in metres) </h3>
+            <h3>If fabric stocked (in m) are as provided, what is the average number of shirts daily produced? </h3>
 
             <div class="row justify-content-center">
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="box">
-                        <h2>
-                            Daily Shirt Production (in units)
-                        </h2>
-
+                        <h2>Fabric stock(in m)</h2>
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
@@ -46,7 +43,9 @@
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="box">
-                        <h2>Fabric stock(in m)</h2>
+                        <h2>
+                            Daily Shirt Production (in units)
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -54,12 +53,12 @@
             <div class="row justify-content-center">
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="box">
-                        <span>100</span>
+                        <span>1500</span>
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
                     <div class="middlearrow">
-                        <img src="Unit4Activity2/images/arrow.png" alt=" " />
+                        <img src=" Unit4Activity2/images/arrow.png" alt=" " />
                     </div>
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
@@ -72,12 +71,12 @@
             <div class="row justify-content-center">
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="box">
-                        <span>200</span>
+                        <span>4500</span>
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
                     <div class="middlearrow">
-                        <img src="Unit4Activity2/images/arrow.png" alt=" " />
+                        <img src=" Unit4Activity2/images/arrow.png" alt=" " />
                     </div>
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
@@ -90,12 +89,12 @@
             <div class="row justify-content-center">
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
                     <div class="box">
-                        <span>400</span>
+                        <span>6000</span>
                     </div>
                 </div>
                 <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
                     <div class="middlearrow">
-                        <img src="Unit4Activity2/images/arrow.png" alt=" " />
+                        <img src=" Unit4Activity2/images/arrow.png" alt=" " />
                     </div>
                 </div>
                 <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
@@ -110,30 +109,30 @@
         </div>
         
         <div class="showsolution">
-            <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal22" />
+            <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal23" />
         </div>
         
-        <div class="modal fade" id="exampleModal22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="exampleModal23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered modal-lg showinganw" role="document">
             <div class="modal-content">
               <div class="modal-body solutionimage">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
-                <img src="Unit4Activity2/images/anw1.jpg">
+                <img src="Unit4Activity2/images/anw2.jpg">
               </div>
             </div>
           </div>
         </div>
-        <button id = "back" style="color: white; float: left; background-color: red;" class="btn btn-primary btn-lg"> Back</button>
+         <button id = "back" style="color: white; float: left; background-color: red;" class="btn btn-primary btn-lg"> Back</button>
         <button id = "next" style="color: white; float: right; background-color: red;" class="btn btn-primary btn-lg"> Next</button>
     </div>
     <script type="text/javascript">
           $(document).on('click', '#next', function(){
-            window.location = "{{url()}}/Unit4Activity2Act2";
+            window.location = "{{url()}}/Unit4Activity2Act3";
           });
           $(document).on('click', '#back', function(){
-            window.location = "{{url()}}/Unit4ActivityPage";
+            window.location = "{{url()}}/Unit4Activity2Page1";
           });
     </script>
     <script src="https://code.jquery.com/jquery-1.12.4.js "></script>
@@ -156,11 +155,11 @@
 
         function Activity() {
             var act1 = $("#act1").val();
-            var act1_1 = 1500;
+            var act1_1 = 100;
             var act2 = $("#act2").val();
-            var act2_1 = 3000;
+            var act2_1 = 300;
             var act3 = $("#act3").val();
-            var act3_1 = 6000;
+            var act3_1 = 400;
             if (act1 == act1_1 && act2 == act2_1 && act3 == act3_1) {
                 $("#act1").removeClass('errclass');
                 $("#act2").removeClass('errclass');
@@ -170,7 +169,7 @@
                     icon: "success",
                     button: "Go to Next Level",
                 }).then((value) => {
-                    location.href = '{{url()}}/Unit4Activity2Act2';
+                    location.href = '{{url()}}/Unit4Activity2Act3';
                 });
             } else {
                 if (act1 != act1_1) {
@@ -207,5 +206,9 @@
     </script>
 </body>
 
-</html> 
+</html> location.reload(); }); } }
+</script>
+</body>
+
+</html>
 @stop
