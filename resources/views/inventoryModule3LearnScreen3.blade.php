@@ -16,7 +16,7 @@
     margin-left:0px;
   }
 .footer{
- position: fixed;
+ /*position: fixed;*/
  bottom: 0;
  width: 100%;
 }
@@ -75,14 +75,14 @@ td{
       <h2 align="center">Closing Stock = Opening Stock + Purchase receipt - Sale</h2>
     </div>
 
-    <div class="row"> 
+    <div class="row" align="center"> 
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         <img src="{{asset('assets/img/U4M3Slide2_1.png')}}" width="100px;" height="100px;">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="40px;" height="40px;">
-        <img src="{{asset('assets/img/U4M3Slide2_2.png')}}" width="100px;" height="100px;">
-        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="40px;" height="40px;">
+        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="80px;" height="80px;">
+        <img src="{{asset('assets/img/U4M3Slide2_2.png')}}" width="135px;" height="135px;">
+        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="80px;" height="80px;">
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
         <img src="{{asset('assets/img/U4M3Slide2_3.png')}}" width="100px;" height="100px;">
@@ -117,7 +117,9 @@ td{
     <td>80</td>
   </tr>
 </table>
+<span style="float: right; color: red;">After 1 day</span>
   </div>
+  
    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
     <table style="width:100%">
   <tr>
@@ -141,6 +143,7 @@ td{
     <td>35</td>
   </tr>
 </table>
+<span style="float: right; color: red;">Same day</span>
   </div>
    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
     <table style="width:100%">
@@ -205,6 +208,7 @@ td{
     <td>50</td>
   </tr>
 </table>
+<span style="float: right; color: red;">After 1 day</span>
   </div>
    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
     <table style="width:100%">
@@ -229,6 +233,7 @@ td{
     <td>37</td>
   </tr>
 </table>
+<span style="float: right; color: red;">Same day</span>
   </div>
    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
     <table style="width:100%">
@@ -267,7 +272,7 @@ td{
         </div>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-6" align="center">
- <div style="margin-top:-30px;font-size: 17px;">Press down arrow for next steps</div>
+ <div style="margin-top:-10px;font-size: 17px;">Press down arrow for next steps</div>
       </div>
       <div class="col-lg-3 col-md-3 col-sm-3">
         <div style="cursor: pointer;">
