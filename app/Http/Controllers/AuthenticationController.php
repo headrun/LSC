@@ -368,14 +368,29 @@ public function submitQuizAssessment(){
    }
 
    public function retakeAssessment() {
-       $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
-                                ->update(['status' => 'inactive']);
-       
-       if($quizsubmit){
-          return Response::json(array("status"=>"success")); 
-       }else{
-         return Response::json(array("status"=>"failed"));
+      $inputs = Input::all();
+      $quizsubmit = 0;
+      $unitName = $inputs['path'];
+      $strSplit = explode('=', $unitName);
+       if($strSplit[1] == 'Fundamentals of Logistics'){
+        $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
+                                        ->where('unit','=',$strSplit[1])
+                                        ->update(['status' => 'inactive']);
+        $quizsubmit =1;
        }
+       else if($strSplit[1] == 'Transportation'){
+        $secondUnit = Assessment_Student::where('student_id','=',Session::get('userId'))
+                                        ->where('unit','=',$strSplit[1])
+                                        ->update(['status' => 'inactive']);
+        $quizsubmit = 2;
+       }
+         if($quizsubmit == 1){
+            return Response::json(array("status"=>"success")); 
+         }else if ($quizsubmit == 2){
+           return Response::json(array("status"=>"unit2"));
+         }else{
+          return Response::json(array("status"=>"failed"));
+         }
      }
 
 

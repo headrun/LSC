@@ -159,10 +159,12 @@ anime.timeline({loop: true})
  }
  
  function retakeAssessment(){
+  var currurl = window.location.search;
   $.ajax({
           type: "GET",
             url: "{{URL::to('/retakeAssessment')}}",
           data: {
+            'path':currurl,
              '_token':$("input[name='_token']").val()
             },
           dataType: 'json',
@@ -170,7 +172,10 @@ anime.timeline({loop: true})
             if(response.status === "success"){
               
               window.location = "{{URL::to('/Assessment/Module1_Test')}}";
-            } else if (response.status === "failed"){
+            } else if(response.status === "unit2"){
+              window.location = "{{URL::to('/assessment_Unit2')}}";
+            }
+            else if (response.status === "failed"){
              
               window.location = "{{URL::to('/SidebarAssessmentpage')}}";
             }
