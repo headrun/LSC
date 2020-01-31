@@ -78,8 +78,8 @@ color:#333;
                    </div>
                </div>
            </div>
-       <?php if(Session::get('email') == 'testuser@gmail.com'){?>
-         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style = "display: none;">
+       <?php if(Session::get('email') == 'testuser@gmail.com' || Session::get('email') == 'vimal@mieone.com'){?>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                <div class="card" id ="activity1" >
                    <div class="row">
                      <a href="{{url()}}/assessment_Unit2">
@@ -89,9 +89,9 @@ color:#333;
                            <!-- </div> -->
                        </div>
                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                           <h3 style = "padding : 5px;" >Transportation</h3>
+                           <h3 style = "padding : 5px;" >The Second Assessment</h3>
                            <br>
-                           <p>Transportation is the movement of humans, animals and goods from one location to another .</p>
+                           <p>Please click here to write your second assessment.</p>
                        </div>
                        </a>
                    </div>

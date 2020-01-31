@@ -121,8 +121,8 @@
             }
             //if seconds becomes zero,
             //then page alert time up
-	    if (mins < 0) {
-		window.location = "{{url()}}/submitQuizAssessment/?unit=Transportation";
+      if (mins < 0) {
+    window.location = "{{url()}}/submitQuizAssessment/?unit=Transportation";
                 alert('time up');
                 minutes.value = 0;
                 seconds.value = 0;
@@ -202,11 +202,11 @@
     $(document).ready(function(){
         $(".footer").hide();
   });
- var numOfQsns = 20;
+ var numOfQsns = 3;
   var i;
   var qsnsArray = [];
   for(i=1;i<=numOfQsns;i++){
-    var randomNum = generateRandom(0, 34);
+    var randomNum = generateRandom(0, 2);
     qsnsArray.push(randomNum);
   }
   console.log(qsnsArray);
@@ -221,7 +221,7 @@
  var previousQsn;
  var selectedOption;
  var nextHide;
-   var AllQuestions = {
+   /*var AllQuestions = {
            data: [
            {
                name:'Train from munich, germany to salzburg, Austria takes 2 hours. If the distance is 500km, what is the speed of train?',
@@ -371,7 +371,7 @@
                D: '8 km/hr'
            },
            {
-               name:"A courier delivery package reaches the central hub at 6 am in the morning. It gets picked by the delivery person at 7am. When will the package reach the destination, which is 10 kms away?The delivery cab's speed is known to be 40km/hr",
+               name:'A courier delivery package reaches the central hub at 6 am in the morning. It gets picked by the delivery person at 7am. When will the package reach the destination, which is 10 kms away?The delivery cab\'s speed is known to be 40km/hr',
                A: '06:30 AM',
                B: '07:30 AM',
                C: '06:15 AM',
@@ -406,7 +406,7 @@
                D: 'Bus; RS.200/-'
            },
            {
-               name:'Your bike mileage is 40 km/ltr. You have half a litre of fuel left. You can either directly go home which is 25 kms away or you can refill the tank at a station which is 10 kms and then go home. What is your constraint here and which will you choose ?',
+               name:'Your bike milaege is 40 km/ltr. You have half a litre of fuel left. You can either directly go home which is 25 kms away or you can refill the tank at a station which is 10 kms and then go home. What is your constraint here and which will you choose ?',
                A: 'Time constraint ; fuel station',
                B: 'Speed constraint; home',
                C: 'Distance constraint ; fuel station',
@@ -469,7 +469,32 @@
                D: '4 km/h'
            },
            ]
-   }; 
+   };*/
+   var AllQuestions = {
+           data: [
+           {
+               name:'Test Question 1',
+               A: 'Test Option 1',
+               B: 'Test Option 2',
+               C: 'Test Option 3',
+               D: 'Test Option 4'
+           },
+           {
+               name:'Test Question 2',
+               A: 'Test Option 1',
+               B: 'Test Option 2',
+               C: 'Test Option 3',
+               D: 'Test Option 4'
+           },
+           {
+               name:'Test Question 3',
+               A: 'Test Option 1',
+               B: 'Test Option 2',
+               C: 'Test Option 3',
+               D: 'Test Option 4'
+           },]
+   };
+
  function nextFun() {
       var selectedOption = $("input[name='quiz']:checked").val();
     if (selectedOption != undefined){

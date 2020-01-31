@@ -339,11 +339,20 @@ public function submitQuizAssessment(){
          
         $result = $count;
 
-        $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
+        if($inputs['unit'] == 'Fundamentals Of Logistics'){
+            $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
                                         ->update(['assessment_result1' => $result]);
 
-        $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))
+            $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))
                                           ->count();
+        }else{
+            $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
+                                        ->update(['assessment_result2' => $result]);
+
+            $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))
+                                                    ->where('unit','=',$inputs['unit'])
+                                                    ->count();
+        }
 
 
         $dataToView = array('result','test_retake_value');
