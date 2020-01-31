@@ -381,7 +381,7 @@ public function submitQuizAssessment(){
        }
        else{
         $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
-                                        ->where('unit','=',$strSplit[1])
+                                        ->where('unit','=','Fundamentals Of Logistics')
                                         ->update(['status' => 'inactive']);
         $quizsubmit = 1;
        }
