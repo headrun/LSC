@@ -343,7 +343,8 @@ public function submitQuizAssessment(){
             $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
                                         ->update(['assessment_result1' => $result]);
 
-            $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))
+            $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))                           
+                                                    ->where('unit','=',$inputs['unit'])
                                           ->count();
         }else{
             $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
@@ -372,17 +373,17 @@ public function submitQuizAssessment(){
       $quizsubmit = 0;
       $unitName = $inputs['path'];
       $strSplit = explode('=', $unitName);
-       if($strSplit[1] == 'Fundamentals of Logistics'){
-        $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
-                                        ->where('unit','=',$strSplit[1])
-                                        ->update(['status' => 'inactive']);
-        $quizsubmit =1;
-       }
-       else if($strSplit[1] == 'Transportation'){
+       if($strSplit[1] == 'Transportation'){
         $secondUnit = Assessment_Student::where('student_id','=',Session::get('userId'))
                                         ->where('unit','=',$strSplit[1])
                                         ->update(['status' => 'inactive']);
-        $quizsubmit = 2;
+        $quizsubmit =2;
+       }
+       else{
+        $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
+                                        ->where('unit','=',$strSplit[1])
+                                        ->update(['status' => 'inactive']);
+        $quizsubmit = 1;
        }
          if($quizsubmit == 1){
             return Response::json(array("status"=>"success")); 
