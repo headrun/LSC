@@ -142,7 +142,7 @@ anime.timeline({loop: true})
   function stopQuiz() {
     $.ajax({
           type: "GET",
-            url: "{{URL::to('/gotToNextText')}}",
+            url: "{{URL::to('/gotToNextTextA')}}",
           data: {
              '_token':$("input[name='_token']").val()
             },

@@ -397,8 +397,6 @@ public function submitQuizAssessment(){
 
         public function gotToNextText()
 	{
-        $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
-		                         ->update(['status' => 'inactive']);
         $quizSubmit =  Quiz::where('subject','=','mathematics')
                             ->where('module','=','Speed')
 			    ->update(['user_answer' => 'NULL']);
@@ -427,7 +425,18 @@ public function submitQuizAssessment(){
         else{
             return Response::json(array("status"=>"failed"));
         }
-	}
+	} 
+
+  public function gotToNextTextA() {
+    $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
+                             ->update(['status' => 'inactive']);
+     if($quizSubmit){
+            return Response::json(array("status"=>"success"));
+        }
+        else{
+            return Response::json(array("status"=>"failed"));
+        }
+  }
 
     public function submitQuiz1(){
        /*$count = 0;
