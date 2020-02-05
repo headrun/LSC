@@ -78,7 +78,7 @@ color:#333;
                    </div>
                </div>
            </div>
-       <?php if(Session::get('email') == 'testuser@gmail.com' || Session::get('email') == 'vimal@mieone.com'){?>
+       <?php if(Session::get('email') == 'testuser@gmail.com' || Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com' || Session::get('email') == 'abi_monish_v'){?>
          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                <div class="card" id ="activity1" >
                    <div class="row">
