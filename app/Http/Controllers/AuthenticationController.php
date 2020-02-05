@@ -428,7 +428,7 @@ public function submitQuizAssessment(){
 	} 
 
   public function gotToNextTextA() {
-    $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
+    $quizSubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
                              ->update(['status' => 'inactive']);
      if($quizSubmit){
             return Response::json(array("status"=>"success"));
