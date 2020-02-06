@@ -515,7 +515,7 @@ $(document).on('click', '#signout', function(){
 });
 
 var currurl = window.location.pathname;
-if(currurl == "/Assessment/Module1_Test")
+if(currurl == "/Assessment/Module1_Test" || currurl == "/assessment_Unit2")
 $('#home_icon').addClass('home');
 
 </script>
