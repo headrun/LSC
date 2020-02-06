@@ -51,7 +51,7 @@
 <body>
     <div class="container">
         <div class="card">
-                <span style="font-size: 28px;line-height: 28px;color: #7d929d;">Transportation</span>
+                <span style="font-size: 28px;line-height: 28px;color: #7d929d;"></span>
                 <hr>
                 <div style="background: #eaedf0;padding: 10px;border-radius:4px;">
                   <p style="color: #3f464c;font-family: 'Varela Round','ProximaRegular', Helvetica, Arial, sans-serif;">Number of Questions:<span style="color: #4dbfbf;">30</span></p>
@@ -529,7 +529,7 @@
    
    function getQuestions(index,reqIndex) {
     var html = '';
-    html += '<span style="font-size: 28px;line-height: 28px;color: #7d929d;">Transportation</span><button type="button" class="btn btn-default" style="background-color: #f0ad4e;color: white;float: right; display:none" onclick="stop()">Exit Assessment</button><hr><div class="row"><div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div id="qno">' + (reqIndex + 1) + '</div></div><div class="col-lg-10 col-md-10col-sm-10 col-xs-10"><p style="color: #34495e;font-family: "Varela Round","ProximaRegular", Helvetica, Arial, sans-serif;">' + AllQuestions.data[index].name +'</p><hr><input id="a" type="checkbox" name="quiz" value="a" onclick="onlyOne(this)"><span> '+ AllQuestions.data[index].A + '</span><br><input id="b" type="checkbox" name="quiz" value="b" onclick="onlyOne(this)"><span> '+ AllQuestions.data[index].B + '</span><br><input id="c" type="checkbox" name="quiz" value="c" onclick="onlyOne(this)"><span> '+ AllQuestions.data[index].C;
+    html += '<span style="font-size: 28px;line-height: 28px;color: #7d929d;"></span><button type="button" class="btn btn-default" style="background-color: #f0ad4e;color: white;float: right; display:none" onclick="stop()">Exit Assessment</button><hr><div class="row"><div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><div id="qno">' + (reqIndex + 1) + '</div></div><div class="col-lg-10 col-md-10col-sm-10 col-xs-10"><p style="color: #34495e;font-family: "Varela Round","ProximaRegular", Helvetica, Arial, sans-serif;">' + AllQuestions.data[index].name +'</p><hr><input id="a" type="checkbox" name="quiz" value="a" onclick="onlyOne(this)"><span> '+ AllQuestions.data[index].A + '</span><br><input id="b" type="checkbox" name="quiz" value="b" onclick="onlyOne(this)"><span> '+ AllQuestions.data[index].B + '</span><br><input id="c" type="checkbox" name="quiz" value="c" onclick="onlyOne(this)"><span> '+ AllQuestions.data[index].C;
     if(AllQuestions.data[index].D !=''){
      html += '</span><br><input id="d" type="checkbox" name="quiz" value="d" onclick="onlyOne(this)"><span> '+ AllQuestions.data[index].D;
     } 
