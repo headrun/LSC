@@ -380,7 +380,7 @@
                D: 'All of the above'
            },
            {
-               name:'A toymaker manufactures 350 toy cars in September; If he had 50 toys at the beginning of the month and ends up with 10 toys at the end of September, what was his sale over the month',
+               name:'A toymaker manufactures 350 toy cars in September; If he had 50 toys at the beginning of the month and ends up with 10 toys at the end of September, what was his sale over the month?',
                A: '590 units',
                B: '400 units',
                C: '500 units',
@@ -458,7 +458,7 @@
                D: '16.66 days'
            },
            {
-               name:'Prices of gold change on a daily basis. A jewelry sales firm bought 100 gm of gold at 3000 Rs/gm last week and bought 200 gm of gold at 3500 Rs/gm this week. What is the inventory value now, if no sales have happened from the film over 2 weeks?',
+               name:'Prices of gold change on a daily basis. A jewelry sales firm bought 100 gm of gold at 3000 Rs/gm last week and bought 200 gm of gold at 3500 Rs/gm this week. What is the inventory value now, if no sales have happened from the firm over 2 weeks?',
                A: '10.5 Lakh Rs',
                B: '9 Lakh Rs',
                C: '10 Lakh Rs',
