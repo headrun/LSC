@@ -229,28 +229,28 @@
     var AllQuestions = {
            data: [
            {
-               name:'Which of the following channels are known for providing credit facility to both manufacturers and suppliers',
+               name:'Which of the following channels are known for providing credit facilities to both manufacturers and suppliers?',
                A: 'Wholesalers',
                B: 'Retailers',
                C: 'Supermarket',
                D: 'Online'
            },
            {
-               name:'A filter manufacturer makes filters and sells to dealers. Dealers sell the products to Sub-dealers who sell it to workshops, who consume it. How many level of channels are available in this trade (excluding manufacturer)?',
+               name:'A filter manufacturer makes filters and sells those to dealers. Dealers sell the products to Sub-dealers who sell it to workshops, who consume it. How many levels of channels are available in this trade (excluding manufacturer)?',
                A: '4 levels',
                B: '3 levels',
                C: '2 levels',
                D: 'None of the above'
            },
            {
-               name:'Which of the following is an example of direct distribution channel?',
+               name:'Which of the following is an example of a direct distribution channel?',
                A: 'A clothing brand selling  to customers through Amazon',
                B: 'Vegetable vendor who sells in his cart to customers',
                C: 'Hyundai dealer selling a car to customers',
                D: 'All of the above'
            },
            {
-               name:'An Shoe trading firm hols 30,000 Rs worth of products in its retail outlety. If this entire stock is depleted in 3 months, what is the annual sale?',
+               name:'A Shoe trading firm holds 30,000 Rs worth of products in its retail outlet. If this entire stock is depleted in 3 months, what is the annual sale?',
                A: '10,000 Rs',
                B: '1,20,000 Rs',
                C: '7,20,000 Rs',
@@ -272,21 +272,21 @@
                D: 'None of the above'
            },
            {
-               name:'Which of the mentioned factors justify use of channels of distribution or middle men for sale?',
+               name:'Which of the mentioned factors justify the use of channels of distribution or middlemen for sale?',
                A: 'Low shelf life',
                B: 'Customized products',
                C: 'High market size and geographical spread',
                D: 'None of the above'
            },
            {
-               name:'Which of the following is not a a warehousing activity?',
+               name:'Which of the following is not a warehousing activity?',
                A: 'Cross dock',
                B: 'Protection of goods',
                C: 'Marketing',
                D: 'None of the above'
            },
            {
-               name:'Which of the following determines a location of a warehouse?',
+               name:'Which of the following determines the location of a warehouse?',
                A: 'Proximity to customers and suppliers',
                B: 'Availability of trucks',
                C: 'Availability of human resource',
@@ -295,7 +295,7 @@
            {
                name:'Which of the following are reasons to establish a warehouse?',
                A: 'Seasonal demand and seasonal supply',
-               B: 'Continous supply',
+               B: 'Continuous supply',
                C: 'Both a & b',
                D: 'None of the above'
            },
@@ -315,21 +315,21 @@
                D: 'Private'
            },
            {
-               name:'A dealer had 700 units of Iphone 6s left at end of Saturday. If sales during Monday to Friday was 100 units per day, what was the inventory on Monday morning, if no purchase was made during the week?',
+               name:'A dealer had 700 units of iPhone 6s left at the end of Saturday. If sales during Monday to Friday were 100 units per day, what was the inventory on Monday morning if no purchase was made during the week?',
                A: '1200 units',
                B: '700 units',
                C: '800 units',
                D: '1400 units'
            },
            {
-               name:'An Indian firm imports 500 units of shampoo from US based FMCG company at 5$ per unit. If 200 units were sold over 2 months, what is the inventory value at end of 2 months?',
+               name:'An Indian firm imports 500 units of shampoo from the US-based FMCG company at 5$ per unit. If 200 units were sold over 2 months, what is the inventory value at the end of 2 months?',
                A: '1750$',
                B: '1500$',
                C: '2500$',
                D: 'None of the above'
            },
            {
-               name:'Poppy is an umbrella brand which sells 25 umbrellas per day during Monsoon and 20 umbrellas per day during Summer. If the brand decides to hold 50 days of inventory during monsoon and 70 days of inventory during summer, what are the monsoon and summer inventories?',
+               name:'Poppy is an umbrella brand that sells 25 umbrellas per day during Monsoon and 20 umbrellas per day during Summer. If the brand decides to hold 50 days of inventory during monsoon and 70 days of inventory during summer, what are the monsoon and summer inventories?',
                A: 'Summer: 1250; Monsoon: 1400',
                B: 'Summer: 1750; Monsoon: 1000',
                C: 'Summer: 1400; Monsoon: 1250',
@@ -344,7 +344,7 @@
                D: 'None of the above'
            },
            {
-               name:'A trader bought 900 car seats assuming he will sell it in 100 days. However it took him 150 days to sell the car seats. How much should he have bought if he wishes to sell his entire inventory in 100 days?',
+               name:'A trader bought 900 car seats assuming he will sell it in 100 days. However, it took him 150 days to sell the car seats. How much should he have bought if he wishes to sell his entire inventory in 100 days?',
                A: '300 units',
                B: '900 units',
                C: '600 units',
@@ -352,7 +352,7 @@
            },
            {
                name:'Identify the disadvantages of holding very little inventory',
-               A: 'Warehouse space under utilization',
+               A: 'Warehouse space underutilization',
                B: 'Stock out and loss of customer',
                C: 'Money locked up',
                D: 'All of the above'
@@ -361,11 +361,11 @@
                name:'Identify the disadvantages of holding very high inventory',
                A: 'Stock out and loss of customer',
                B: 'Money locked in inventory',
-               C: 'Possibility of inventory becoming obsolte',
+               C: 'Possibility of inventory becoming obsolete',
                D: 'b and c'
            },
            {
-               name:'A sales man in New York, had 1000 Christmas bells on December 1st. She bought 5000 more on 10th December and 3000 on 12th December; If he sold 7500 pieces in total in December, what is her closing inventory as of December 31st?',
+               name:'A salesman in New York, had 1000 Christmas bells on December 1st. She bought 5000 more on 10th December and 3000 on 12th December; If he sold 7500 pieces in total in December, what is her closing inventory as of December 31st?',
                A: '2000 units',
                B: '8000 units',
                C: '9000 units',
@@ -380,35 +380,35 @@
                D: 'All of the above'
            },
            {
-               name:'A toy maker manufactures 350 toy cars in September; If he had 50 toys at beginning of month and ends up with 10 toys at end of September, what was his sale over the month?',
+               name:'A toymaker manufactures 350 toy cars in September; If he had 50 toys at the beginning of the month and ends up with 10 toys at the end of September, what was his sale over the month',
                A: '590 units',
                B: '400 units',
                C: '500 units',
                D: '390 units'
            },
            {
-               name:'Month of June has 20 week days and 10 weekend days. A grocery store sells 100 cookie packs per week day and 160 cookie packs per weekend day. If the grocery wants to keep 30 days of inventory cover and 10% additional stock as buffer inventory, what is the buffer inventory?',
+               name:'Month of June has 20 weekdays and 10 weekend days. A grocery store sells 100 cookie packs per weekday and 160 cookie packs per weekend day. If the grocery wants to keep 30 days of inventory cover and 10% additional stock as buffer inventory, what is the buffer inventory?',
                A: '3600 packs',
                B: '360 packs',
                C: '4000 packs',
                D: '100 packs'
            },
            {
-               name:'You trade steel containers. You have 120 units of stock with 12 days of cover. If daily sales exceeds by 20%, what is the new days of cover',
+               name:'You trade steel containers. You have 120 units of stock with 12 days of cover. If daily sales exceed 20%, what are the new days of cover?',
                A: '12',
                B: '15',
                C: '10',
                D: '13'
            },
            {
-               name:'An apparel firm holds T-shirts worth 10 Lakhs. If cost per piece is 100 Rs, what is the total inventory?',
+               name:'An apparel firm holds T-shirts worth 10 Lakhs. If the cost per piece is 100 Rs, what is the total inventory?',
                A: '100',
                B: '1000',
                C: '10000',
                D: '1 Lakh'
            },
            {
-               name:'Water is converted to juice by a beverage company. 2 litre of water is converted to 1 litre of juice. The company has 200 Litres of water in beginning of a day. If produced 750 Litres of juice that month. How many litres of water was purchased over the month?',
+               name:'Water is converted to juice by a beverage company. 2 litre of water is converted to 1 litre of juice. The company has 200 Litres of water at the beginning of the day. It produced 750 Litres of juice that month. How many litres of water was purchased over the month?',
                A: '1500 litres',
                B: '550 litres',
                C: '1300 litres',
@@ -423,14 +423,14 @@
                D: '20 Rs'
            },
            {
-               name:'"Cost of producing a car accessory is Rs.1000 for a firm. The firm sells it to dealer with a 10% markup . The dealer sells it to retailer at further 10% markup. Retailer sells to end consumers at 20% markup. What is the final selling price and overall profit percentage from initial production cost? Markup = (Selling price - Cost Price)/Cost Price"',
+               name:'Cost of producing a car accessory is Rs.1000 for a firm. The firm sells it to a dealer with a 10% markup. The dealer sells it to a retailer at a further 10% markup. The retailer sells to end consumers at a 20% markup. What are the final selling price and overall profit percentage from the initial production cost? Markup = (Selling price - Cost Price)/Cost Price',
                A: '1452 Rs',
                B: '1100 Rs',
                C: '1430 Rs',
                D: '1400 Rs'
            },
            {
-               name:'Retailer buys 100 Kg wheat per month from wholesaler in Jan, Feb and March at 50 Rs/Kg. Wholesaler gives 3 month credit period to the retailer (Meaning retailer can pay for his purchase at end of 3months). If retailer pays 7000 Rs by May, how much should he pay to Wholesaler at end of May and end of June respectively?',
+               name:'Retailers buys 100 Kg wheat per month from a wholesaler in Jan, Feb and March at 50 Rs/Kg. Wholesaler gives a 3 month credit period to the retailer (Meaning retailer can pay for his purchase at the end of 3months). If the retailer pays 7000 Rs by May, how much should he pay to Wholesaler at the end of May and end of June respectively?',
                A: '10000 Rs and 15000 Rs',
                B: '8000 Rs and 8000 Rs',
                C: '3000 Rs and 8000 Rs',
@@ -451,31 +451,31 @@
                D: '200 Rs/ton'
            },
            {
-               name:'You bought a coffee instant powder of 50gm and consumed 5gm every day for last 4 days. If in future, you will consume 3 gm per day, how many days of inventory cover is currently avalaible?',
+               name:'You bought a coffee instant powder of 50gm and consumed 5gm every day for the last 4 days. If in future, you will consume 3 gm per day, how many days of inventory cover is currently available?',
                A: '14 days',
                B: '10 days',
                C: '7.25 days',
                D: '16.66 days'
            },
            {
-               name:'Prices of gold change on a daily bases. A jewellery sales firm bought 100 gm of gold at 3000 Rs/gm last week and bought 200 gm of gold at 3500 Rs/gm this week. What is the inventory value now if no sales has happened from the fim over 2 weeks?',
+               name:'Prices of gold change on a daily basis. A jewelry sales firm bought 100 gm of gold at 3000 Rs/gm last week and bought 200 gm of gold at 3500 Rs/gm this week. What is the inventory value now, if no sales have happened from the film over 2 weeks?',
                A: '10.5 Lakh Rs',
                B: '9 Lakh Rs',
                C: '10 Lakh Rs',
                D: '7 Lakh Rs'
            },
            {
-               name:'A vegetable vendor brought 20 kg of onion from market at 100 Rs/ kg and 30 kg of onion at 120 Rs/ kg. What is the weighted average inventory value per kg?',
+               name:'A vegetable vendor bought 20 kg of onion from the market at 100 Rs/ kg and 30 kg of onion at 120 Rs/ kg. What is the weighted average inventory value per kg?',
                A: '110 Rs',
                B: '112 Rs',
                C: '113 Rs',
                D: '100 Rs'
            },
            {
-               name:'A consumer electronics firm orderd 1000 washing machines from China on 1st April and 2000 machines on 1st of May. If it takes 2 months for material to reach the firm, what is the physical and intransit inventory as of 1st of June?',
-               A: 'Physcial inventory = 1000; In transit inventory = 2000',
-               B: 'Physcial inventory = 2000; In transit inventory = 2000',
-               C: 'Physcial inventory = 3000',
+               name:'A consumer electronics firm ordered 1000 washing machines from China on 1st April and 2000 machines on 1st of May. If it takes 2 months for material to reach the firm, what is the physical and intransit inventory as of 1st of June?',
+               A: 'Physical inventory = 1000; In transit inventory = 2000',
+               B: 'Physical inventory = 2000; In transit inventory = 2000',
+               C: 'Physical inventory = 3000',
                D: 'Intransit inventory = 3000'
            },
            ]
