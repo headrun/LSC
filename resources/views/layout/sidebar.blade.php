@@ -505,7 +505,7 @@ border-left: 4px solid #35395c;
 	  <li id="video"><a href="/Videos"><span class="sidebar-icon"><img src="https://img.icons8.com/cotton/50/000000/youtube.png" width="25" height="25"></span> <span class="menu-title">Videos</span></a></li>
 	  <li id="activity"><a href="/SidebarActivitiesPage"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/png/512/2132/2132129.png" width="25" height="25"></span> <span class="menu-title">Activities</span></a></li>
     
-    <?php if(Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com' || Session::get('email') == 'testuser@gmail.com' || Session::get('school_name') == 'TSAHSS'){?>
+    <?php if(Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com' || Session::get('email') == 'testuser@gmail.com'){?>
 	  <li id="assessment"><a href="/SidebarAssessmentpage"><span class="sidebar-icon"><img src="https://image.flaticon.com/icons/svg/1875/1875525.svg" width="25" height="25"></span> <span class="menu-title">Assessment</span></a></li>
     <?php }?>
          
