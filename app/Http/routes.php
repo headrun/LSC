@@ -467,8 +467,13 @@ Route::any('/inventoryModule3LearnScreen7', function(){return view('inventoryMod
 
 
 Route::any('/Unit4TestPage', function(){return view('Unit4TestPage');});
+Route::any('/Unit5TestPage', function(){return view('Unit5TestPage');});
 Route::any('/inventoryModule1Test', function(){return view('inventoryModule1Test');});
 
 Route::any('/inventoryModule2Test', function(){return view('inventoryModule2Test');});
 
 Route::any('/inventoryModule3Test', function(){return view('inventoryModule3Test');});
+
+Route::any('/unit5Module1Test', function(){return view('unit5Module1Test');});
+Route::any('/unit5Module2Test', function(){return view('unit5Module2Test');});
+Route::any('/unit5Module3Test', function(){return view('unit5Module3Test');});
