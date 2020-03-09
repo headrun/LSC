@@ -477,3 +477,47 @@ Route::any('/inventoryModule3Test', function(){return view('inventoryModule3Test
 Route::any('/unit5Module1Test', function(){return view('unit5Module1Test');});
 Route::any('/unit5Module2Test', function(){return view('unit5Module2Test');});
 Route::any('/unit5Module3Test', function(){return view('unit5Module3Test');});
+
+// -------------------- Unit 5 Activity ----------------------------
+
+Route::any('/Unit5Activity1Page', function(){return view('Unit5Activity1Page');});
+Route::any('/Unit5Activity1Page2', function(){return view('Unit5Activity1Page2');});
+Route::any('/Unit5Activity1Page3', function(){return view('Unit5Activity1Page3');});
+Route::any('/Unit5Activity1Page4', function(){return view('Unit5Activity1Page4');});
+Route::any('/Unit5Activity1Page5', function(){return view('Unit5Activity1Page5');});
+Route::any('/Unit5Activity1Page6', function(){return view('Unit5Activity1Page6');});
+Route::any('/Unit5Activity1Page7', function(){return view('Unit5Activity1Page7');});
+
+Route::any('/Unit5Activity2Page', function(){return view('Unit5Activity2Page');});
+Route::any('/Unit5Activity2Page2', function(){return view('Unit5Activity2Page2');});
+Route::any('/Unit5Activity2Page3', function(){return view('Unit5Activity2Page3');});
+Route::any('/Unit5Activity2Page4', function(){return view('Unit5Activity2Page4');});
+Route::any('/Unit5Activity2Page5', function(){return view('Unit5Activity2Page5');});
+Route::any('/Unit5Activity2Page6', function(){return view('Unit5Activity2Page6');});
+Route::any('/Unit5Activity2Page7', function(){return view('Unit5Activity2Page7');});
+
+Route::any('/Unit5Activities', function(){return view('Unit5Activities');});
+Route::any('/InventoriesWarehousePractice', function(){return view('InventoriesWarehousePractice');});
+
+Route::any('/Unit5Module1', function(){return view('Unit5Module1');});
+Route::any('/Unit5Module1Concept1', function(){return view('Unit5Module1Concept1');});
+Route::any('/Unit5Module1Timer1', function(){return view('Unit5Module1Timer1');});
+Route::any('/Unit5Module1Timer2', function(){return view('Unit5Module1Timer2');});
+Route::any('/Unit5Module1Timer3', function(){return view('Unit5Module1Timer3');});
+Route::any('/Unit5Module1Sample2', function(){return view('Unit5Module1Sample2');});
+Route::any('/Unit5Module1Concept2', function(){return view('Unit5Module1Concept2');});
+Route::any('/Unit5Module1Timer4', function(){return view('Unit5Module1Timer4');});
+Route::any('/Unit5Module1Timer5', function(){return view('Unit5Module1Timer5');});
+
+Route::any('/Unit5Module2', function(){return view('Unit5Module2');});
+Route::any('/Unit5Module2Concept1', function(){return view('Unit5Module2Concept1');});
+Route::any('/Unit5Module2Timer1', function(){return view('Unit5Module2Timer1');});
+Route::any('/Unit5Module2Sample2', function(){return view('Unit5Module2Sample2');});
+Route::any('/Unit5Module2Concept2', function(){return view('Unit5Module2Concept2');});
+
+Route::any('/Unit5Module3', function(){return view('Unit5Module3');});
+Route::any('/Unit5Module3Concept1', function(){return view('Unit5Module3Concept1');});
+Route::any('/Unit5Module3Timer1', function(){return view('Unit5Module3Timer1');});
+Route::any('/Unit5Module3Sample2', function(){return view('Unit5Module3Sample2');});
+Route::any('/Unit5Module3Concept2', function(){return view('Unit5Module3Concept2');});
+Route::any('/Unit5Module3Timer2', function(){return view('Unit5Module3Timer2');});
