@@ -145,7 +145,7 @@
     window.location = "{{url()}}/Unit5Module3LearnScreen1";
   });
   window.onload = function() {
-    document.getElementById('practice').className = 'practice';
+    document.getElementById('learn').className = 'learn';
   };
 </script>
 @stop
