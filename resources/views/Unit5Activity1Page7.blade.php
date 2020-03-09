@@ -155,7 +155,7 @@
                     icon: "success",
                     button: "Go to Home Page",
                 }).then((value) => {
-                    location.href = '/SidebarLearningPage';
+                    location.href = '/Unit5Activity2Page';
                 });
             } else {
                 swal({

@@ -16,7 +16,7 @@
 <body class="newbg">
     <div class="activity_content">
         <div class="container">
-            <p class="activity1">Welcome to EmporiaApparel.com.</p>
+            <p class="activity1">Welcome to EmporiaApparel.com</p>
             <p class="activity2">EmporioApparels receive online orders from customers across India for their unique collection of T- Shirts and Shirts. They have one warehouse, from where they pick material and dispatch to their customers. Let us help them</p>
             <div class="getstarted"><a href="/Unit5Activity2Page2">Let us Help</a></div>
         </div>
