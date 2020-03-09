@@ -62,7 +62,7 @@
                 <img src="https://img.icons8.com/color/2x/activity-history.png" alt="Activity1" width="110" height="110">
               </div>
               <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                <h3>1. Activity 1</h3>
+                <h3>Activity 1</h3>
                 <br>
                 <!-- <p>Provides a unique opportunity to leverage high profile, quality authorship into a market segment .</p> -->
               </div>
@@ -76,7 +76,7 @@
                 <img src="https://img.icons8.com/color/2x/activity-history.png" alt="Activity2" width="110" height="110">
               </div>
               <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                <h3>2. Activity 2</h3>
+                <h3>Activity 2</h3>
                 <br>
                 <!-- <p>Provides a unique opportunity to leverage high profile, quality authorship into a market segment .</p> -->
               </div>
