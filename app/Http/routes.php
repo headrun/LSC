@@ -521,3 +521,17 @@ Route::any('/Unit5Module3Timer1', function(){return view('Unit5Module3Timer1');}
 Route::any('/Unit5Module3Sample2', function(){return view('Unit5Module3Sample2');});
 Route::any('/Unit5Module3Concept2', function(){return view('Unit5Module3Concept2');});
 Route::any('/Unit5Module3Timer2', function(){return view('Unit5Module3Timer2');});
+
+
+Route::any('/Unit5LearnPage', function(){return view('Unit5LearnPage');});
+Route::any('/Unit5Module1LearnScreen1', function(){return view('Unit5Module1LearnScreen1');});
+Route::any('/Unit5Module1LearnScreen2', function(){return view('Unit5Module1LearnScreen2');});
+Route::any('/Unit5Module1LearnScreen3', function(){return view('Unit5Module1LearnScreen3');});
+Route::any('/Unit5Module1LearnScreen4', function(){return view('Unit5Module1LearnScreen4');});
+Route::any('/Unit5Module1LearnScreen5', function(){return view('Unit5Module1LearnScreen5');});
+Route::any('/Unit5Module1LearnScreen6', function(){return view('Unit5Module1LearnScreen6');});
+Route::any('/Unit5Module1LearnScreen7', function(){return view('Unit5Module1LearnScreen7');});
+Route::any('/Unit5Module1LearnScreen8', function(){return view('Unit5Module1LearnScreen8');});
+Route::any('/Unit5Module1LearnScreen9', function(){return view('Unit5Module1LearnScreen9');});
+Route::any('/Unit5Module1LearnScreen10', function(){return view('Unit5Module1LearnScreen10');});
+Route::any('/Unit5Module1LearnScreen11', function(){return view('Unit5Module1LearnScreen11');});

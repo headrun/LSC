@@ -128,6 +128,27 @@
                 </div>        
             </div>
 	</div>
+  <?php if(Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com' || Session::get('email') == 'testuser@gmail.com'){?>
+    <br><br>
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+        <div class="card" id ="module5">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+              <!-- <div id="image"> -->
+              <img src="https://www.flaticon.com/premium-icon/icons/svg/2104/2104165.svg" alt="Smiley face" width="110" height="110">
+              <!-- </div> -->
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+              <h3>5. Handling of Specific Inventories in Warehouse</h3>
+              <br><br>
+              <p>Handling of Specific Inventories in Warehouse.</p>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+    <?php }?>
     </div>
 </div>
 </div>
