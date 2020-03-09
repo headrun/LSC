@@ -103,7 +103,7 @@
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
               <h3>3. Distribution</h3>
               <br>
-              <p>It is a chain of businesses or intermediaries through which a good or service passes until it reaches the final buyer or the end consumer.</p>
+              <p>It is a chain of businesses or intermediaries through which a good passes the end consumer.</p>
             </div>
           </div>
         </div>        
@@ -134,13 +134,13 @@
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
               <!-- <div id="image"> -->
-              <img src="https://image.flaticon.com/icons/svg/1611/1611797.svg" alt="Smiley face" width="110" height="110">
+              <img src="https://www.flaticon.com/premium-icon/icons/svg/2104/2104165.svg" alt="Smiley face" width="110" height="110">
               <!-- </div> -->
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
               <h3>5. Handling of Specific Inventories in Warehouse</h3>
               <br><br>
-              <p>It includes the products, work-in-process goods and finished goods that make up the inventory that is for sale by a company.</p>
+              <p>It includes the products, work-in-process goods and finished goods.</p>
             </div>
           </div>
         </div>        

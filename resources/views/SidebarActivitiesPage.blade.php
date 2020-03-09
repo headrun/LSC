@@ -103,7 +103,7 @@
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
                             <h3>3. Distribution</h3>
                             <br>
-                            <p>It is a chain of businesses or intermediaries through which a good or service passes until it reaches the final buyer or the end consumer.</p>
+                            <p>It is a chain of businesses or intermediaries through which a good passes the end consumer.</p>
                         </div>
                     </div>
                 </div>
@@ -127,7 +127,8 @@
                 </div>        
             </div>
 	</div>
-  <br><br>    
+  <br><br>  
+  <?php if(Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com' || Session::get('email') == 'testuser@gmail.com'){?>  
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="">
                 <div class="card" id ="module5">
@@ -140,30 +141,13 @@
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
                             <h3>5. Handling of Specific Inventories in Warehouse</h3>
                             <br><br>
-                            <p>Handling of Specific Inventories in Warehouse.</p>
+                            <p>It includes the products, work-in-process goods and finished goods.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            
-            <!-- <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                <div class="card" id ="module6">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-                            
-                                <img src="https://image.flaticon.com/icons/svg/1792/1792155.svg" alt="Smiley face" width="110" height="110">
-                            
-                        </div>
-                        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-                            <h3>4. Role of Inventory</h3>
-                            <br>
-                            <p>A complete list of items such as property, goods in stock, or the contents of a building.</p>
-                        </div>
-                    </div>
-                </div>        
-            </div> -->
         </div>
+         <?php }?>
         <br><br>
     </div>
 </div>

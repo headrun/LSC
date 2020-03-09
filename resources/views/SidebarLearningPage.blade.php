@@ -105,7 +105,7 @@
                         <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
                             <h3>3. Distribution</h3>
                             <br>
-                            <p> It is a chain of businesses or intermediaries through which a good or service passes until it reaches the final buyer or the end consumer.</p>
+                            <p> It is a chain of businesses or intermediaries through which a good passes the end consumer.</p>
                         </div>
                     </div>
                 </div>
@@ -142,7 +142,7 @@
             <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
               <h3>5. Handling of Specific Inventories in Warehouse</h3>
               <br><br>
-              <p>Handling of Specific Inventories in Warehouse.</p>
+              <p>It includes the products, work-in-process goods and finished goods.</p>
             </div>
           </div>
         </div>        
