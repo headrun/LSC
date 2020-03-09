@@ -177,6 +177,10 @@ $(document).on('click', '#fundamentalsOfLogistics', function(){
 $(document).on('click', '#module4', function(){
    window.location = "{{url()}}/Unit4LearnPage";
 });
+
+$(document).on('click', '#module5', function(){
+   window.location = "{{url()}}/Unit5LearnPage";
+});
 </script>
 @stop
 
