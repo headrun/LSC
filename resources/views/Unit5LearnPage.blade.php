@@ -93,7 +93,7 @@
             </div>
         </div>
         <br><br>
-	<div class="row">
+	<div class="row" style="display: none;">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <div class="card" id ="Unit5Module3">
                     <div class="row">
