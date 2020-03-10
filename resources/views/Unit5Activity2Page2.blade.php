@@ -16,7 +16,7 @@
 </head>
 
 <body class="newbg">
-    <br><br><br>
+    <br>
     <div class="activity_content">
         <div class="container">
             <p class="activity1">The warehouse has a racking system as below</p>

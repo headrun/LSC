@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="Unit5Activity1/css/sweetalert.css">
 </head>
 <body class="newbg">
-    <br><br><br>
+    <br>
 <div class="activity_content">
     <div class="container">
         <div class="showsolution">
