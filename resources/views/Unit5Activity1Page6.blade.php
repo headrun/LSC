@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +17,7 @@
 </head>
 
 <body class="newbg">
+    <br><br><br>
     <section class="invoice">
         <div class="invoice-fixed">
             <p>PackFoods has a major policy: Products expiring within 30 days will not be accepted into the warehouse</p>
@@ -156,3 +159,4 @@
 </script>
 
 </html>
+@stop

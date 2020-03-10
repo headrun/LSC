@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +15,7 @@
     <link rel="stylesheet" href="Unit5Activity1/css/sweetalert.css">
 </head>
 <body class="newbg">
+    <br><br><br>
 <div class="activity_content">
     <div class="container">
         <div class="showsolution">
@@ -123,3 +126,4 @@ function Activity(){
 }
 </script>
 </html>
+@stop

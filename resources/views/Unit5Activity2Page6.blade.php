@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,3 +35,4 @@
 <script src="Unit5Activity2/js/sweetalert.min.js " type="text/javascript"></script>
 
 </html>
+@stop

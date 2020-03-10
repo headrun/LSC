@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,3 +30,4 @@
 <!-- <script src="js/intro.js" type="text/javascript"></script> -->
 
 </html>
+@stop

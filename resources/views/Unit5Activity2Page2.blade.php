@@ -1,3 +1,5 @@
+@extends('layout.sidebar2')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,6 +16,7 @@
 </head>
 
 <body class="newbg">
+    <br><br><br>
     <div class="activity_content">
         <div class="container">
             <p class="activity1">The warehouse has a racking system as below</p>
@@ -118,3 +121,4 @@
 <!-- <script src="js/intro.js" type="text/javascript"></script> -->
 
 </html>
+@stop
