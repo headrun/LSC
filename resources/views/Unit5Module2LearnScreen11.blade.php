@@ -114,41 +114,57 @@ background:#35395c;
 #para{
   border: 2px solid blue;
 }
+#rev_img{
+  -webkit-transform: scaleX(-1);
+  120    transform: scaleX(-1);
+}
 </style>
 </head>
 <body id="body" style="">
 <div class="container-fluid">
    <div class="row" style="background-color: white;">
-     <h2 align="center" style="color: #26e66ad4"><b>Transporting Equipment<b></h2>
+     <h2 align="center" style="color: #26e66ad4"><b>Tomorrow: Your reward for working SAFELY today<b><br>Personal Protective Equipment (PPE)</h2>
    </div>
    <br><br>
    <div class="row" > 
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" align="center">
-      <img src="{{asset('assets/img/U5M2last1.png')}}" width="150px;" height="100px;">
+      <img src="{{asset('assets/img/U5M2last1.png')}}" width="150px;" height="300px;">
+      <p>Body Suit</p>
      </div>
+
      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3" align="center">
-      <img src="{{asset('assets/img/U5M2last2.png')}}" width="250px;" height="200px;">
+      <img id = "rev_img" src="{{asset('assets/img/U4M3arrowright.png')}}" width="120px;" height="90px;" style="margin-left: -118px; margin-bottom: 185px;">
+      <img src="{{asset('assets/img/U5M2last2.png')}}" width="250px;" height="400px;">
      </div>
      <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
       <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src="{{asset('assets/img/U5M2last3.jpg')}}" width="90px;" height="90px;">
+          <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="120px;" height="90px;" style="margin-left: -152px;">
+          <img src="{{asset('assets/img/U5M2last3.jpg')}}" width="120px;" height="100px;">
+          <p>Hard Hat with Face Shield</p>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src="{{asset('assets/img/U5M2last4.jpg')}}" width="90px;" height="90px;">
+          <img src="{{asset('assets/img/U5M2last4.jpg')}}" width="120px;" height="100px;">
+          <p>Goggles</p>
         </div>
         <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src="{{asset('assets/img/U5M2last5.png')}}" width="90px;" height="90px;">
+          <img src="{{asset('assets/img/U5M2last5.png')}}" width="120px;" height="100px;">
+          <p>Ear Muffs</p>
         </div>
       </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-        <img src="{{asset('assets/img/U5M2last6.png')}}" width="90px;" height="90px;">
-      </div>
-      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-          <img src="{{asset('assets/img/U5M2last7.png')}}" width="90px;" height="90px;">
-        </div>
-      
      </div>
+     <div class="col-lg-7 col-md-7 col-sm-2 col-xs-2">
+      <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="120px;" height="90px;" style="margin-left: -152px;">
+        <img src="{{asset('assets/img/U5M2last6.png')}}" width="120px;" height="100px;">
+        <p>Insulated Gloves</p>
+      </div>
+      
+      <br>
+      <div class="col-lg-4 col-md-4 col-sm-1 col-xs-1">
+        <img src="{{asset('assets/img/U4M3arrowright.png')}}" width="120px;" height="90px;" style="margin-left: -152px;">
+        <img src="{{asset('assets/img/U5M2last7.png')}}" width="120px;" height="100px;">
+        <p>Industrial Shoes</p>
+      </div>
    </div>
 <br><br>
     <div class="row footer">

@@ -89,7 +89,7 @@ th {
     <br>
    </div>
 
-   <h2 style="padding: 20px;">Capture the Lot Code, Manufacturing Date, Expiry Date of thie below biscuit pack</h2>
+   <h2 style="padding: 20px;">Capture the Lot Code, Manufacturing Date, Expiry Date of the below biscuit pack</h2>
    <br>
    <div class="row">
     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">

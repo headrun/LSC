@@ -114,6 +114,31 @@ background:#35395c;
 #para{
   border: 2px solid blue;
 }
+
+#rev_img{
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  margin-left: 31px;
+}
+.rotate180 {
+ -webkit-transform: rotate(180deg);
+ -moz-transform: rotate(180deg);
+ -o-transform: rotate(180deg);
+ -ms-transform: rotate(180deg);
+ transform: rotate(180deg);
+ }
+ .rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+ #up{
+  margin-top: -86px;
+ margin-right: 175px;
+ }
+
 </style>
 </head>
 <body id="body" style="">
@@ -130,30 +155,45 @@ background:#35395c;
      </div>
    </div>
    <div class="row" align="center">
-    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-     </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
       <br><br><br>
        <p>Positioning Equipment</p>
+     </div>
+     <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+      <img src="{{asset('assets/img/U5M2Arrow2.jpg')}}" width="70px;" height="220px;">
      </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
        <img src="{{asset('assets/img/U5M2one.png')}}" width="220px;" height="220px;">
      </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
        <br><br><br>
-       <p>Transporting Equipment</p>
+       <img src="{{asset('assets/img/U5M2arrow3.png')}}" width="120px;" height="80px;">
+       <p style="margin-left: 20px;">Transporting Equipment</p>
      </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
        <img src="{{asset('assets/img/U5M2two.png')}}" width="220px;" height="220px;">
+     </div>
+      <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        <img id = "rev_img" src="{{asset('assets/img/U5M2Arrow2.jpg')}}" width="70px;" height="220px;">
      </div>
      <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
        <br><br><br>
        <p>Positioning Equipment</p>
      </div>
-     <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
-     </div>
+    
    </div>
-   <br><br><br>
+   <br>
+   <div class="row" align="center">
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+       <img class = "rotate90" src="{{asset('assets/img/U5M2arrow3.png')}}" width="35px;" height="30px;" style="margin-right: 65px;">
+     </div>
+     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+       <img class = "rotate90" src="{{asset('assets/img/U5M2arrow3.png')}}" width="35px;" height="30px;" style="margin-left: 149px;">
+     </div>
+     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"></div>
+   </div>
+   <br>
    <div class="row" align="center">
      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
        <p style="margin-left: 240px;">Loading/ Unloading Equipment</p>
@@ -163,18 +203,15 @@ background:#35395c;
      </div>
    </div>
    <br><br><br>
+   
    <div class="row" align="center">
      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
      </div>
      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+      <img class = "rotate180" src="{{asset('assets/img/U5M1nine.jpg')}}" width="370px;" height="70px;" id="up">
        <p style="margin-right: 188px;">Storage Equipment</p>
      </div>
    </div>
-
-
-
-    
-
 
     <div class="row footer">
       <div class="col-lg-3 col-md-3 col-sm-3">

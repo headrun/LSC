@@ -28,7 +28,7 @@
                     <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal22" />
                 </div>
                 <div class="invoice-content">
-                    <p>Reason: Expiry of cookie is within 30 days and hence it will not be accepted in the warehouse</p>
+                    <!-- <p>Reason: Expiry of cookie is within 30 days and hence it will not be accepted in the warehouse</p> -->
                 </div>
                 <div class="second-question">
                     <h4 class="text-center"> Assume today is 10-03-2020. Will you inward all the products? If not, which will you reject? </h4>

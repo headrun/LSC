@@ -68,7 +68,7 @@ background:#35395c;
      <br>
      <img id="three" src="{{asset('assets/img/U5M1one.jpg')}}" width="180px;" height="180px;">
      <br>
-     <h2 id="four" class="w3-animate-left" style="color: red;">Ensure FEFO (First Expiry First Out) : Material which has earliest expiry should be prioritized to se sent to stores/ customers</h2>
+     <h2 id="four" class="w3-animate-left" style="color: red;">Ensure FEFO (First Expiry First Out) : Material which has earliest expiry should be prioritized to be sent to stores/ customers</h2>
      <br>
      <h2 id="five" class="w3-animate-left" style="color: red;">(This helps in material reaching customer before expiry)</h2>
     </div>

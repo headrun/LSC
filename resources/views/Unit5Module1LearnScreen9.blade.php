@@ -58,7 +58,7 @@ background:#35395c;
 <body id="body" style="">
 <div class="container-fluid">
    <div class="row" style="background-color: white;">
-     <h2 id="one">Just like FEFO, multiple industries follow different dispatch method</h2>
+     <h2 id="one">Just like FEFO, multiple industries follow different dispatch methods</h2>
    </div>
    <div class="row" >
     <div style="padding: 20px;">
@@ -68,7 +68,7 @@ background:#35395c;
      <h2 id="three" style="color: red;" class="w3-animate-left"> Most preferred method in many warehouses since expiry is not relevant or available in many scenarios</h2>
      <br><br>
      <h2 id="four" class="w3-animate-left"><span>&#10148;</span> FMCG products have a low shelf life – Shelf Life indicates the life of product from Manufacture until Expiry</h2>
-     <h2 id="five" style="color: red;" class="w3-animate-left">If Expiry of order of products does not matter (Long shelf life or no expiry items), and material is stored in such a way that it is easy to retrieve the last stored item, LIFO is used</h2>
+     <h2 id="five" style="color: red;" class="w3-animate-left">If expiry of products does not matter (Long shelf life or no expiry items), and material is stored in such a way that it is easy to retrieve the last stored item, LIFO is used (Last In First Out)</h2>
      <br><br>
      <h2 id="six" class="w3-animate-left"><span>&#10148;</span>Random – No defined Order</h2>
      <!-- <h2 id="five" class="w3-animate-left"><i>These complications are regular in a business environment</i></h2> -->
