@@ -78,7 +78,7 @@ background:#35395c;
    <div class="row" style="padding-left: 30px;">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="two">
       <img src="{{asset('assets/img/U5M1eleven.png')}}" width="220px;" height="220px;">
-      <div class="centered">Box 3</div>
+      <div class="centered">Box 2</div>
     </div>
     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="five">
       <p>It is easier to pick the top most box.This process essentially is Last In First Out  (Since Box 3 came last)</p>
@@ -87,7 +87,7 @@ background:#35395c;
    <div class="row" style="padding-left: 30px;">
     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="three">
       <img src="{{asset('assets/img/U5M1eleven.png')}}" width="220px;" height="220px;">
-      <div class="centered">Box 3</div>
+      <div class="centered">Box 1</div>
     </div>
     <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="six">
       <p>In FMCG/ Perishable industry, this cannot be done as products have expiry date. FIFO/FEFO is to be followed</p>
