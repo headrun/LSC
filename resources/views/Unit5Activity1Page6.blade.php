@@ -19,7 +19,7 @@
 <body class="newbg">
     <br>
     <section class="invoice">
-        <div class="invoice-fixed" style="margin-top: 100px;">
+        <div class="invoice-fixed" style="display: none;">
             <p>PackFoods has a major policy: Products expiring within 30 days will not be accepted into the warehouse</p>
         </div>
         <div class="invoice-content">
