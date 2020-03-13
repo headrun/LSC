@@ -33,7 +33,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="showsolution">
+                    <div class="showsolution" style="display: none;">
                         <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal22" />
                     </div>
                 </div>

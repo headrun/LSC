@@ -19,12 +19,12 @@
 <body class="newbg">
     <br>
     <section class="invoice">
-        <div class="invoice-fixed">
+        <div class="invoice-fixed" style="margin-top: 100px;">
             <p>PackFoods has a major policy: Products expiring within 30 days will not be accepted into the warehouse</p>
         </div>
         <div class="invoice-content">
             <div class="container">
-                <div class="showsolution">
+                <div class="showsolution" style="display: none">
                     <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal22" />
                 </div>
                 <div class="invoice-content">

@@ -20,7 +20,7 @@
     <section class="invoice">
         <div class="invoice-content">
             <div class="container">
-                <div class="showsolution">
+                <div class="showsolution" style="display: none">
                     <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal22" />
                 </div>
                 <div class="invoice-content">

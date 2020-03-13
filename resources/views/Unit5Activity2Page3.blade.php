@@ -52,56 +52,31 @@
                         </tr>
                         <tr>
                             <th>OD05</th>
-                            <td>B1T1-S</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <th>OD06</th>
                             <td>B1T1-L</td>
                             <td>10</td>
                         </tr>
                         <tr>
-                            <th>OD07</th>
-                            <td>B2T1-M</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <th>OD08</th>
-                            <td>B1T1-S</td>
-                            <td>5</td>
-                        </tr>
-                        <tr>
-                            <th>OD09</th>
+                            <th>OD06</th>
                             <td>B1T1-S</td>
                             <td>3</td>
                         </tr>
                         <tr>
-                            <th>OD10</th>
+                            <th>OD07</th>
                             <td>B1T1-L</td>
                             <td>10</td>
                         </tr>
                         <tr>
-                            <th>OD11</th>
-                            <td>B1T1-L</td>
-                            <td>10</td>
-                        </tr>
-                        <tr>
-                            <th>OD12</th>
+                            <th>OD08</th>
                             <td>B2T1-M</td>
                             <td>5</td>
                         </tr>
                         <tr>
-                            <th>OD13</th>
+                            <th>OD09</th>
                             <td>B1T2-L</td>
                             <td>10</td>
                         </tr>
                         <tr>
-                            <th>OD14</th>
-                            <td>B1T2-L</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <th>OD15</th>
+                            <th>OD10</th>
                             <td>B3T2-L</td>
                             <td>4</td>
                         </tr>

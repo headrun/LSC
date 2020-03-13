@@ -25,137 +25,180 @@
             <br><br>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="vieworder">
+                    <!-- <div class="vieworder">
                         <input type="button" class="order_view" value="Show Stock Table" data-toggle="modal" data-target="#stocktable" />
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                    <div class="showsolution">
+                    <div class="showsolution" id="showslutn" style="display: none;">
                         <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal22" />
                     </div>
                 </div>
             </div>
 
-            <p class="activity1">Order picking</p>
-            <div class="codetable">
-                <table class="table table-striped table-bordered">
-                    <thead>
-                        <tr>
-                            <th scope="col">Order Number</th>
-                            <th scope="col">Product Code</th>
-                            <th scope="col">Quantity</th>
-                            <th scope="col">Pick Location</th>
-                            <th scope="col">Pick Quantity</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>OD01</th>
-                            <td>B1T1-S</td>
-                            <td>1</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="1" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD02</th>
-                            <td>B1T2-S</td>
-                            <td>5</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="5" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD03</th>
-                            <td>B2T1-L</td>
-                            <td>5</td>
-                            <td><input type="text" rel="R102" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="5" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD04</th>
-                            <td>B2T1-M</td>
-                            <td>8</td>
-                            <td><input type="text" rel="R102" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="8" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD05</th>
-                            <td>B1T1-S</td>
-                            <td>1</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="1" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD06</th>
-                            <td>B1T1-L</td>
-                            <td>10</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="10" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD07</th>
-                            <td>B2T1-M</td>
-                            <td>5</td>
-                            <td><input type="text" rel="R102" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="5" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD08</th>
-                            <td>B1T1-S</td>
-                            <td>5</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="5" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD09</th>
-                            <td>B1T1-S</td>
-                            <td>3</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="3" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD10</th>
-                            <td>B1T1-L</td>
-                            <td>10</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="10" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD11</th>
-                            <td>B1T1-L</td>
-                            <td>10</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="10" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD12</th>
-                            <td>B2T1-M</td>
-                            <td>5</td>
-                            <td><input type="text" rel="R102" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="5" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD13</th>
-                            <td>B1T2-L</td>
-                            <td>10</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="10" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD14</th>
-                            <td>B1T2-L</td>
-                            <td>12</td>
-                            <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="12" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                        <tr>
-                            <th>OD15</th>
-                            <td>B3T2-L</td>
-                            <td>4</td>
-                            <td><input type="text" rel="R202" class="picklocation" placeholder="Enter Location" /></td>
-                            <td><input type="text" rel="4" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="tablepicking">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="codetable">
+                            <p class="activity1">Stock Table</p>
+                            <table class="table table-striped table-bordered modelbackground">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Location Code</th>
+                                        <th scope="col">Product Code</th>
+                                        <th scope="col">Product Description</th>
+                                        <th scope="col">Quantity in Inventory</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th rowspan="6">R101</th>
+                                        <td>B1T1-S</td>
+                                        <td>Brand 1 Type 1 Size S</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B1T1-M</td>
+                                        <td>Brand 1 Type 1 Size M</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B1T1-L</td>
+                                        <td>Brand 1 Type 1 Size L</td>
+                                        <td>30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B1T2-S</td>
+                                        <td>Brand 1 Type 2 Size S</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B1T2-M</td>
+                                        <td>Brand 1 Type 2 Size M</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B1T2-L</td>
+                                        <td>Brand 1 Type 2 Size L</td>
+                                        <td>60</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="3">R102</td>
+                                        <td>B2T1-S</td>
+                                        <td>Brand 2 Type 1 Size S</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B2T1-M</td>
+                                        <td>Brand 2 Type 1 Size M</td>
+                                        <td>75</td>
+                                    </tr>
+                                    <tr>
+                                        <td>B2T1-L</td>
+                                        <td>Brand 2 Type 1 Size L</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>R202</td>
+                                        <td>B3T2-L</td>
+                                        <td>Brand 3 Type 2 Size L</td>
+                                        <td>50</td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="codetable">
+                            <p class="activity1">Order picking</p>
+                            <table class="table table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Order Number</th>
+                                        <th scope="col">Product Code</th>
+                                        <th scope="col">Quantity</th>
+                                        <th scope="col">Pick Location</th>
+                                        <th scope="col">Pick Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>OD01</th>
+                                        <td>B1T1-S</td>
+                                        <td>1</td>
+                                        <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="1" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD02</th>
+                                        <td>B1T2-S</td>
+                                        <td>5</td>
+                                        <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="5" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD03</th>
+                                        <td>B2T1-L</td>
+                                        <td>5</td>
+                                        <td><input type="text" rel="R102" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="5" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD04</th>
+                                        <td>B2T1-M</td>
+                                        <td>8</td>
+                                        <td><input type="text" rel="R102" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="8" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD05</th>
+                                        <td>B1T1-L</td>
+                                        <td>10</td>
+                                        <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="10" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD06</th>
+                                        <td>B1T1-S</td>
+                                        <td>3</td>
+                                        <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="3" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD07</th>
+                                        <td>B1T1-L</td>
+                                        <td>10</td>
+                                        <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="10" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD08</th>
+                                        <td>B2T1-M</td>
+                                        <td>5</td>
+                                        <td><input type="text" rel="R102" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="5" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD09</th>
+                                        <td>B1T2-L</td>
+                                        <td>10</td>
+                                        <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="10" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                    <tr>
+                                        <th>OD10</th>
+                                        <td>B3T2-L</td>
+                                        <td>4</td>
+                                        <td><input type="text" rel="R202" class="picklocation" placeholder="Enter Location" /></td>
+                                        <td><input type="text" rel="4" class="picklocation" placeholder="Enter Quantity" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="getstarted"><a href="javascript:void(0);" class="submit-btn" Onclick="Activity();">Submit</a></div>
 
@@ -176,7 +219,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="stocktable" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="stocktable" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg showinganw" role="document">
             <div class="modal-content">
                 <div class="modal-body solutionimage">
@@ -271,7 +314,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 <script src="Unit5Activity2/js/popper.min.js" type="text/javascript"></script>
