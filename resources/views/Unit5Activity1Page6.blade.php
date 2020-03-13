@@ -17,19 +17,18 @@
 </head>
 
 <body class="newbg">
-    <br>
     <section class="invoice">
-        <div class="invoice-fixed" style="display: none;">
+        <div class="invoice-fixed">
             <p>PackFoods has a major policy: Products expiring within 30 days will not be accepted into the warehouse</p>
         </div>
         <div class="invoice-content">
             <div class="container">
-                <div class="showsolution" style="display: none">
+                <div class="showsolution" id="showslu" style="display: none;">
                     <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal22" />
                 </div>
-                <div class="invoice-content">
-                    <!-- <p>Reason: Expiry of cookie is within 30 days and hence it will not be accepted in the warehouse</p> -->
-                </div>
+                <!--<div class="invoice-content">-->
+                <!--    <p>Reason: Expiry of cookie is within 30 days and hence it will not be accepted in the warehouse</p>-->
+                <!--</div>-->
                 <div class="second-question">
                     <h4 class="text-center"> Assume today is 10-03-2020. Will you inward all the products? If not, which will you reject? </h4>
                 </div>
@@ -140,6 +139,7 @@
                 }).then((value) => {
                     location.href = '/Unit5Activity1Page7';
                 });
+                $("#showslu").show();
             } else {
                 swal({
                     title: "Retry",
@@ -147,6 +147,7 @@
                     button: "Retry",
                     className: "red-bg",
                 });
+                $("#showslu").show();
             }
         } else {
             swal({
