@@ -33,7 +33,7 @@
             </div>
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                    <div class="showsolution" style="display: none;">
+                    <div class="showsolution" id="showslutn" style="display: none;">
                         <input type="button" class="solution" value="Show Solution" data-toggle="modal" data-target="#exampleModal22" />
                     </div>
                 </div>
@@ -53,7 +53,7 @@
                         <tr>
                             <td>B1T1-S</td>
                             <td>100</td>
-                            <td><input type="text" rel="10" class="picklocation" placeholder="Enter Location" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                            <td><input type="text" rel="4" class="picklocation" placeholder="Enter Location" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
                             <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Quantity" /></td>
                         </tr>
                         <tr>
@@ -71,19 +71,19 @@
                         <tr>
                             <td>B2T1-M</td>
                             <td>75</td>
-                            <td><input type="text" rel="18" class="picklocation" placeholder="Enter Location" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                            <td><input type="text" rel="13" class="picklocation" placeholder="Enter Location" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
                             <td><input type="text" rel="R102" class="picklocation" placeholder="Enter Quantity" /></td>
                         </tr>
                         <tr>
                             <td>B1T1-L</td>
                             <td>30</td>
-                            <td><input type="text" rel="30" class="picklocation" placeholder="Enter Location" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                            <td><input type="text" rel="20" class="picklocation" placeholder="Enter Location" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
                             <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Quantity" /></td>
                         </tr>
                         <tr>
                             <td>B1T2-L</td>
                             <td>60</td>
-                            <td><input type="text" rel="22" class="picklocation" placeholder="Enter Location" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
+                            <td><input type="text" rel="10" class="picklocation" placeholder="Enter Location" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" /></td>
                             <td><input type="text" rel="R101" class="picklocation" placeholder="Enter Quantity" /></td>
                         </tr>
                         <tr>
@@ -133,7 +133,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th rowspan="8">R101</th>
+                                    <th rowspan="6">R101</th>
                                     <td>B1T1-S</td>
                                     <td>Brand 1 Type 1 Size S</td>
                                     <td>100</td>
@@ -147,11 +147,6 @@
                                     <td>B1T1-L</td>
                                     <td>Brand 1 Type 1 Size L</td>
                                     <td>30</td>
-                                </tr>
-                                <tr>
-                                    <td>B1T1-XL</td>
-                                    <td>Brand 1 Type 1 Size XL</td>
-                                    <td>10</td>
                                 </tr>
                                 <tr>
                                     <td>B1T2-S</td>
@@ -169,11 +164,6 @@
                                     <td>60</td>
                                 </tr>
                                 <tr>
-                                    <td>B1T2-XL</td>
-                                    <td>Brand 1 Type 2 Size XL</td>
-                                    <td>20</td>
-                                </tr>
-                                <tr>
                                     <td rowspan="3">R102</td>
                                     <td>B2T1-S</td>
                                     <td>Brand 2 Type 1 Size S</td>
@@ -188,12 +178,6 @@
                                     <td>B2T1-L</td>
                                     <td>Brand 2 Type 1 Size L</td>
                                     <td>15</td>
-                                </tr>
-                                <tr>
-                                    <td>R201</td>
-                                    <td>B2T1-XL</td>
-                                    <td>Brand 2 Type 1 Size XL</td>
-                                    <td>100</td>
                                 </tr>
                                 <tr>
                                     <td>R202</td>
@@ -250,56 +234,31 @@
                                 </tr>
                                 <tr>
                                     <th>OD05</th>
-                                    <td>B1T1-S</td>
-                                    <td>1</td>
-                                </tr>
-                                <tr>
-                                    <th>OD06</th>
                                     <td>B1T1-L</td>
                                     <td>10</td>
                                 </tr>
                                 <tr>
-                                    <th>OD07</th>
-                                    <td>B2T1-M</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <th>OD08</th>
-                                    <td>B1T1-S</td>
-                                    <td>5</td>
-                                </tr>
-                                <tr>
-                                    <th>OD09</th>
+                                    <th>OD06</th>
                                     <td>B1T1-S</td>
                                     <td>3</td>
                                 </tr>
                                 <tr>
-                                    <th>OD10</th>
+                                    <th>OD07</th>
                                     <td>B1T1-L</td>
                                     <td>10</td>
                                 </tr>
                                 <tr>
-                                    <th>OD11</th>
-                                    <td>B1T1-L</td>
-                                    <td>10</td>
-                                </tr>
-                                <tr>
-                                    <th>OD12</th>
+                                    <th>OD08</th>
                                     <td>B2T1-M</td>
                                     <td>5</td>
                                 </tr>
                                 <tr>
-                                    <th>OD13</th>
+                                    <th>OD09</th>
                                     <td>B1T2-L</td>
                                     <td>10</td>
                                 </tr>
                                 <tr>
-                                    <th>OD14</th>
-                                    <td>B1T2-L</td>
-                                    <td>12</td>
-                                </tr>
-                                <tr>
-                                    <th>OD15</th>
+                                    <th>OD10</th>
                                     <td>B3T2-L</td>
                                     <td>4</td>
                                 </tr>
@@ -347,9 +306,6 @@
                 swal({
                     title: "Activity Completed",
                     icon: "success",
-                    button: "Go to Home Page",
-                }).then((value) => {
-                    location.href = '/SidebarLearningPage';
                 });
             } else {
                 swal({
@@ -358,6 +314,7 @@
                     button: "Retry",
                     className: "red-bg",
                 });
+                $("#showslutn").show();
             }
         }
     }
