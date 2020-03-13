@@ -128,7 +128,7 @@
             </div>
 	</div>
   <br><br>  
-  <?php if(Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com' || Session::get('email') == 'testuser@gmail.com'){?>  
+  
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" style="">
                 <div class="card" id ="module5">
@@ -147,7 +147,6 @@
                 </div>
             </div>
         </div>
-         <?php }?>
         <br><br>
     </div>
 </div>
