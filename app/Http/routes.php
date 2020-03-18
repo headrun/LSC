@@ -245,6 +245,8 @@ Route::any('/Assessment/Module1_Test', function(){return view('assessment_module
 
 Route::any('/assessment_Unit2', function(){return view('assessment_Unit2');});
 
+Route::any('/assessment_Unit3', function(){return view('assessment_Unit3');});
+
 Route::any('/submitAnswerAssesment',"AuthenticationController@submitAnswerAssesment");
 
 Route::any('/submitQuizAssessment',"AuthenticationController@submitQuizAssessment");

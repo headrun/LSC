@@ -346,9 +346,17 @@ public function submitQuizAssessment(){
             $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))                           
                                                     ->where('unit','=',$inputs['unit'])
                                           ->count();
-        }else{
+        }else if($inputs['unit'] == 'Transportation'){
             $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
                                         ->update(['assessment_result2' => $result]);
+
+            $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))
+                                                    ->where('unit','=',$inputs['unit'])
+                                                    ->count();
+        }
+        else{
+            $result_saving = DB::table('users')->where('id','=',Session::get('userId'))
+                                        ->update(['assessment_result3' => $result]);
 
             $test_retake_value = Assessment_Student::where('student_id','=',Session::get('userId'))
                                                     ->where('unit','=',$inputs['unit'])
@@ -378,6 +386,11 @@ public function submitQuizAssessment(){
                                         ->where('unit','=',$strSplit[1])
                                         ->update(['status' => 'inactive']);
         $quizsubmit =2;
+       }else if ($strSplit[1] == 'Final'){
+        $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
+                                        ->where('unit','=','Final')
+                                        ->update(['status' => 'inactive']);
+        $quizsubmit = 3;
        }
        else{
         $quizsubmit = Assessment_Student::where('student_id','=',Session::get('userId'))
@@ -389,6 +402,8 @@ public function submitQuizAssessment(){
             return Response::json(array("status"=>"success")); 
          }else if ($quizsubmit == 2){
            return Response::json(array("status"=>"unit2"));
+         }else if ($quizsubmit == 3){
+           return Response::json(array("status"=>"final"));
          }else{
           return Response::json(array("status"=>"failed"));
          }

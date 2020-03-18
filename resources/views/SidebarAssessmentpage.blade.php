@@ -60,6 +60,7 @@ color:#333;
         <h1>Hi {{ Session::get('user_name') }}, Welcome to Logistics Assessment Module</h1>
        </div>
        <br><br>
+       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                <div class="card" id ="activity1" >
                    <div class="row">
@@ -78,8 +79,8 @@ color:#333;
                    </div>
                </div>
            </div>
-       <?php if(Session::get('email') == 'testuser@gmail.com' || Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com'){?>
-         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+
+           <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                <div class="card" id ="activity1" >
                    <div class="row">
                      <a href="{{url()}}/assessment_Unit2">
@@ -96,8 +97,30 @@ color:#333;
                        </a>
                    </div>
                </div>
-	   </div>
+     </div>
+
+   </div>
+   <br><br>
+        <div class="row">
+          <?php if(Session::get('email') == 'testuser@gmail.com' || Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com'){?>
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div class="card" id ="activity1" >
+            <div class="row">
+              <a href="{{url()}}/assessment_Unit3">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <img src="https://image.flaticon.com/icons/svg/1754/1754149.svg" alt="Smiley face" width="110" height="110">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                  <h3 style = "padding : 5px;" >The Final Assessment</h3>
+                  <br>
+                  <p>Please click here to write your final assessment.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          </div>
           <?php }?>
+        </div>
 
       
     </div>

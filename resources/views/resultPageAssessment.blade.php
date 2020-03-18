@@ -175,6 +175,9 @@ anime.timeline({loop: true})
             } else if(response.status === "unit2"){
               window.location = "{{URL::to('/assessment_Unit2')}}";
             }
+            else if(response.status === "final"){
+              window.location = "{{URL::to('/assessment_Unit3')}}";
+            }
             else if (response.status === "failed"){
              
               window.location = "{{URL::to('/SidebarAssessmentpage')}}";
