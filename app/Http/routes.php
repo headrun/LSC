@@ -247,6 +247,26 @@ Route::any('/assessment_Unit2', function(){return view('assessment_Unit2');});
 
 Route::any('/assessment_Unit3', function(){return view('assessment_Unit3');});
 
+Route::any('/assessment_final_activity', function(){return view('assessment_final_activity');}); 
+
+Route::any('/finalActivityScreen1', function(){return view('finalActivityScreen1');});
+Route::any('/finalActivityScreen2', function(){return view('finalActivityScreen2');});
+Route::any('/finalActivityScreen3', function(){return view('finalActivityScreen3');});
+Route::any('/finalActivityScreen4', function(){return view('finalActivityScreen4');});
+Route::any('/finalActivityScreen5', function(){return view('finalActivityScreen5');});
+Route::any('/finalActivityScreen6', function(){return view('finalActivityScreen6');});
+Route::any('/finalActivityScreen7', function(){return view('finalActivityScreen7');});
+Route::any('/finalActivityScreen8', function(){return view('finalActivityScreen8');});
+Route::any('/finalActivityScreen9', function(){return view('finalActivityScreen9');});
+Route::any('/finalActivityScreen10', function(){return view('finalActivityScreen10');});
+Route::any('/finalActivityScreen11', function(){return view('finalActivityScreen11');});
+Route::any('/finalActivityScreen12', function(){return view('finalActivityScreen12');});
+Route::any('/finalActivityScreen13', function(){return view('finalActivityScreen13');});
+Route::any('/finalActivityScreen14', function(){return view('finalActivityScreen14');});
+Route::any('/finalActivityScreen15', function(){return view('finalActivityScreen15');});
+Route::any('/finalActivityScreen16', function(){return view('finalActivityScreen16');}); 
+Route::any('/finalActivityScreenCon', function(){return view('finalActivityScreenCon');});
+
 Route::any('/submitAnswerAssesment',"AuthenticationController@submitAnswerAssesment");
 
 Route::any('/submitQuizAssessment',"AuthenticationController@submitQuizAssessment");

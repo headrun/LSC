@@ -103,6 +103,24 @@ color:#333;
    <br><br>
         <div class="row">
           <?php if(Session::get('email') == 'testuser@gmail.com' || Session::get('email') == 'vimal@mieone.com' || Session::get('email') == 'bhargavi@headrun.com'){?>
+            
+         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <div class="card" id ="activity1" >
+            <div class="row">
+              <a href="{{url()}}/assessment_final_activity">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                  <img src="https://image.flaticon.com/icons/svg/2534/2534619.svg" alt="Smiley face" width="110" height="110">
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                  <h3 style = "padding : 5px;" >The Final Activity</h3>
+                  <br>
+                  <p>Please click here to write your final activity.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          </div>
+
          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
           <div class="card" id ="activity1" >
             <div class="row">
